@@ -1,38 +1,50 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+    './index.html',
+    './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     extend: {
       colors: {
-        // PartsDex brand colors — professional trade-tool aesthetic
-        brand: {
-          50:  '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#0f172a',
+        // PartsDex design system — per PRD Section 6.2
+        primary: '#1B4F8A', // Navigation, headings, primary CTAs, category badges
+        success: '#2E7D32', // Compatibility indicators, active states, status labels
+        bgGray: '#F5F5F5', // Page background, card backgrounds, alternate rows
+        textDark: '#1A1A2E', // Body text, part names, primary labels
+        textMuted: '#555555', // Secondary text, metadata, timestamps
+
+        // Industry vertical accent colors (for category badges)
+        plumbing: {
+          DEFAULT: '#1B4F8A',
+          light: '#E8F0FB',
         },
-        // Vertical accent colors
-        plumbing:  { DEFAULT: '#3b82f6', light: '#dbeafe' },  // Blue
-        hvac:      { DEFAULT: '#10b981', light: '#d1fae5' },  // Green
-        boiler:    { DEFAULT: '#f59e0b', light: '#fef3c7' },  // Amber
+        hvac: {
+          DEFAULT: '#E65100',
+          light: '#FFF3E0',
+        },
+        boiler: {
+          DEFAULT: '#4A148C',
+          light: '#F3E5F5',
+        },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
       },
-      screens: {
-        'xs': '375px',  // iPhone SE — primary design target
+      fontSize: {
+        // Typography scale
+        'part-name': ['1rem', { lineHeight: '1.5', fontWeight: '700' }], // 16px bold — PartCard
+        'part-desc': ['0.875rem', { lineHeight: '1.4', fontWeight: '400' }], // 14px — short description
+        'section': ['1.125rem', { lineHeight: '1.4', fontWeight: '600' }], // 18px — section headers
+        'page-title': ['1.5rem', { lineHeight: '1.2', fontWeight: '700' }], // 24px — page titles
+      },
+      spacing: {
+        'touch': '44px', // Minimum touch target per WCAG 2.1
+      },
+      borderRadius: {
+        'badge': '9999px', // Pill shape for category badges
       },
     },
   },
   plugins: [],
-};
+}

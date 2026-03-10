@@ -1,48 +1,87 @@
-{
-  "verticals": [
+[
     {
-      "id": "plumbing",
-      "name": "Plumbing",
-      "icon": "droplets",
-      "description": "Pipes, fittings, valves, fixtures, drainage, and supply components",
-      "subcategories": [
-        { "id": "fittings", "name": "Fittings" },
-        { "id": "valves", "name": "Valves" },
-        { "id": "pipes", "name": "Pipes" },
-        { "id": "fixtures", "name": "Fixtures" },
-        { "id": "drainage", "name": "Drainage" },
-        { "id": "supply", "name": "Supply" },
-        { "id": "tools", "name": "Tools & Accessories" }
-      ]
+        "id": "plumbing",
+        "label": "Plumbing",
+        "icon": "Droplets",
+        "subCategories": [
+            {
+                "id": "fittings",
+                "label": "Fittings"
+            },
+            {
+                "id": "valves",
+                "label": "Valves"
+            },
+            {
+                "id": "pipes",
+                "label": "Pipes"
+            },
+            {
+                "id": "fixtures",
+                "label": "Fixtures"
+            },
+            {
+                "id": "drainage",
+                "label": "Drainage"
+            },
+            {
+                "id": "supply",
+                "label": "Supply"
+            }
+        ]
     },
     {
-      "id": "hvac",
-      "name": "HVAC",
-      "icon": "wind",
-      "description": "Ductwork, air handlers, refrigerant components, thermostats, filters, and dampers",
-      "subcategories": [
-        { "id": "ductwork", "name": "Ductwork" },
-        { "id": "air-handling", "name": "Air Handling" },
-        { "id": "refrigerant", "name": "Refrigerant Components" },
-        { "id": "controls", "name": "Controls & Thermostats" },
-        { "id": "filters", "name": "Filters" },
-        { "id": "dampers", "name": "Dampers" },
-        { "id": "motors", "name": "Motors & Fans" }
-      ]
+        "id": "hvac",
+        "label": "HVAC",
+        "icon": "Wind",
+        "subCategories": [
+            {
+                "id": "refrigerant",
+                "label": "Refrigerant Circuit"
+            },
+            {
+                "id": "ductwork",
+                "label": "Ductwork"
+            },
+            {
+                "id": "mechanical",
+                "label": "Mechanical / Motors"
+            },
+            {
+                "id": "controls",
+                "label": "Controls"
+            },
+            {
+                "id": "air-quality",
+                "label": "Air Quality / Filtration"
+            }
+        ]
     },
     {
-      "id": "boiler-heating",
-      "name": "Boiler & Heating",
-      "icon": "flame",
-      "description": "Boiler components, expansion tanks, circulators, radiators, controls, and heat exchangers",
-      "subcategories": [
-        { "id": "boiler-components", "name": "Boiler Components" },
-        { "id": "expansion", "name": "Expansion & Pressure" },
-        { "id": "circulators", "name": "Circulators & Pumps" },
-        { "id": "radiators", "name": "Radiators & Emitters" },
-        { "id": "controls-heating", "name": "Controls & Valves" },
-        { "id": "heat-exchangers", "name": "Heat Exchangers" }
-      ]
+        "id": "boiler-heating",
+        "label": "Boiler & Heating",
+        "icon": "Flame",
+        "subCategories": [
+            {
+                "id": "system-components",
+                "label": "System Components"
+            },
+            {
+                "id": "circulation",
+                "label": "Circulation"
+            },
+            {
+                "id": "controls",
+                "label": "Controls"
+            },
+            {
+                "id": "safety",
+                "label": "Safety Devices"
+            },
+            {
+                "id": "heat-transfer",
+                "label": "Heat Transfer"
+            }
+        ]
     }
-  ]
-}
+]

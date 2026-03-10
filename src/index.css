@@ -1,61 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  * {
-    -webkit-tap-highlight-color: transparent;
-  }
-
   body {
-    @apply bg-slate-950 text-slate-100 font-sans;
+    @apply bg-bgGray text-textDark font-sans;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Smooth scrolling */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* Safe area padding for notched phones */
-  body {
-    padding-top: env(safe-area-inset-top);
-    padding-bottom: env(safe-area-inset-bottom);
+  * {
+    box-sizing: border-box;
   }
 }
 
 @layer components {
-  /* Vertical badge colors */
+  /* Category badge pills */
   .badge-plumbing {
-    @apply bg-blue-500/15 text-blue-400 border border-blue-500/20;
+    @apply bg-plumbing-light text-plumbing text-xs font-semibold px-3 py-1 rounded-badge;
   }
   .badge-hvac {
-    @apply bg-emerald-500/15 text-emerald-400 border border-emerald-500/20;
+    @apply bg-hvac-light text-hvac text-xs font-semibold px-3 py-1 rounded-badge;
   }
-  .badge-boiler-heating {
-    @apply bg-amber-500/15 text-amber-400 border border-amber-500/20;
+  .badge-boiler {
+    @apply bg-boiler-light text-boiler text-xs font-semibold px-3 py-1 rounded-badge;
   }
 
-  /* Vertical card backgrounds */
-  .card-plumbing {
-    @apply bg-gradient-to-br from-blue-500/10 to-blue-600/5 border border-blue-500/20;
+  /* Primary button */
+  .btn-primary {
+    @apply bg-primary text-white font-semibold px-5 py-3 rounded-lg
+           hover:bg-blue-800 active:scale-95 transition-all duration-150
+           min-h-[44px] min-w-[44px];
   }
-  .card-hvac {
-    @apply bg-gradient-to-br from-emerald-500/10 to-emerald-600/5 border border-emerald-500/20;
-  }
-  .card-boiler-heating {
-    @apply bg-gradient-to-br from-amber-500/10 to-amber-600/5 border border-amber-500/20;
-  }
-}
 
-@layer utilities {
-  /* Hide scrollbar but keep scrolling */
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
+  /* Part card */
+  .part-card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100
+           hover:shadow-md hover:-translate-y-0.5 transition-all duration-150
+           cursor-pointer;
   }
 }
