@@ -1,0 +1,48 @@
+{
+  "verticals": [
+    {
+      "id": "plumbing",
+      "name": "Plumbing",
+      "icon": "droplets",
+      "description": "Pipes, fittings, valves, fixtures, drainage, and supply components",
+      "subcategories": [
+        { "id": "fittings", "name": "Fittings" },
+        { "id": "valves", "name": "Valves" },
+        { "id": "pipes", "name": "Pipes" },
+        { "id": "fixtures", "name": "Fixtures" },
+        { "id": "drainage", "name": "Drainage" },
+        { "id": "supply", "name": "Supply" },
+        { "id": "tools", "name": "Tools & Accessories" }
+      ]
+    },
+    {
+      "id": "hvac",
+      "name": "HVAC",
+      "icon": "wind",
+      "description": "Ductwork, air handlers, refrigerant components, thermostats, filters, and dampers",
+      "subcategories": [
+        { "id": "ductwork", "name": "Ductwork" },
+        { "id": "air-handling", "name": "Air Handling" },
+        { "id": "refrigerant", "name": "Refrigerant Components" },
+        { "id": "controls", "name": "Controls & Thermostats" },
+        { "id": "filters", "name": "Filters" },
+        { "id": "dampers", "name": "Dampers" },
+        { "id": "motors", "name": "Motors & Fans" }
+      ]
+    },
+    {
+      "id": "boiler-heating",
+      "name": "Boiler & Heating",
+      "icon": "flame",
+      "description": "Boiler components, expansion tanks, circulators, radiators, controls, and heat exchangers",
+      "subcategories": [
+        { "id": "boiler-components", "name": "Boiler Components" },
+        { "id": "expansion", "name": "Expansion & Pressure" },
+        { "id": "circulators", "name": "Circulators & Pumps" },
+        { "id": "radiators", "name": "Radiators & Emitters" },
+        { "id": "controls-heating", "name": "Controls & Valves" },
+        { "id": "heat-exchangers", "name": "Heat Exchangers" }
+      ]
+    }
+  ]
+}
