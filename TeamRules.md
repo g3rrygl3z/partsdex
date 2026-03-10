@@ -34,7 +34,7 @@ Michael owns everything related to **data architecture, search functionality, an
 | Day 3 | Search Feature | Fuzzy search logic wired; alias search confirmed; results page rendering data correctly (even if Gary's UI isn't final yet) |
 | Day 4 | Data Expansion | Expand to 60 total parts; source/add diagrams for first 25 parts |
 | Day 5 | Data Expansion | Complete 100 total parts; all entries include aliases and compatibility data |
-| Day 6 | Filter System | Category, material, and vertical filters working on the browse page |
+| Day 6 | Filter System & Tests | Category, material, and vertical filters working on the browse page; write automated unit tests for search/filters |
 | Day 7 | Glossary Page | A–Z glossary built; filterable by vertical; each alias entry links to its part detail page |
 
 ### Rules for Michael's Work
