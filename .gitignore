@@ -24,3 +24,7 @@ node_modules/.tmp/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Gemini Agent Cache
+antigravity-browser-profile/
+antigravity/
