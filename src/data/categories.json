@@ -1,0 +1,87 @@
+[
+    {
+        "id": "plumbing",
+        "label": "Plumbing",
+        "icon": "Droplets",
+        "subCategories": [
+            {
+                "id": "fittings",
+                "label": "Fittings"
+            },
+            {
+                "id": "valves",
+                "label": "Valves"
+            },
+            {
+                "id": "pipes",
+                "label": "Pipes"
+            },
+            {
+                "id": "fixtures",
+                "label": "Fixtures"
+            },
+            {
+                "id": "drainage",
+                "label": "Drainage"
+            },
+            {
+                "id": "supply",
+                "label": "Supply"
+            }
+        ]
+    },
+    {
+        "id": "hvac",
+        "label": "HVAC",
+        "icon": "Wind",
+        "subCategories": [
+            {
+                "id": "refrigerant",
+                "label": "Refrigerant Circuit"
+            },
+            {
+                "id": "ductwork",
+                "label": "Ductwork"
+            },
+            {
+                "id": "mechanical",
+                "label": "Mechanical / Motors"
+            },
+            {
+                "id": "controls",
+                "label": "Controls"
+            },
+            {
+                "id": "air-quality",
+                "label": "Air Quality / Filtration"
+            }
+        ]
+    },
+    {
+        "id": "boiler-heating",
+        "label": "Boiler & Heating",
+        "icon": "Flame",
+        "subCategories": [
+            {
+                "id": "system-components",
+                "label": "System Components"
+            },
+            {
+                "id": "circulation",
+                "label": "Circulation"
+            },
+            {
+                "id": "controls",
+                "label": "Controls"
+            },
+            {
+                "id": "safety",
+                "label": "Safety Devices"
+            },
+            {
+                "id": "heat-transfer",
+                "label": "Heat Transfer"
+            }
+        ]
+    }
+]

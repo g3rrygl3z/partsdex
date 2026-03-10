@@ -1,0 +1,760 @@
+[
+    {
+        "id": "compression-fitting-15mm",
+        "primaryName": "Compression Fitting",
+        "aliases": [
+            "olive",
+            "compression ring",
+            "compression nut",
+            "cone fitting",
+            "ferrule fitting"
+        ],
+        "category": "plumbing",
+        "subCategory": "fittings",
+        "overview": "A compression fitting creates a watertight seal by compressing a soft metal ring (the olive or ferrule) against a pipe when the nut is tightened. No soldering required — ideal for retrofits and repairs where heat cannot be applied. Available in straight, elbow, and tee configurations.",
+        "diagramUrl": "/assets/diagrams/compression-fitting-15mm.svg",
+        "compatibleWith": [
+            "copper-pipe-15mm",
+            "stop-valve-15mm",
+            "gate-valve-15mm"
+        ],
+        "materials": [
+            "brass",
+            "copper",
+            "stainless"
+        ],
+        "installationNotes": "Ensure pipe end is cut square and deburred. Slide nut then olive onto pipe before inserting into fitting body. Tighten nut 1.5 turns past hand-tight — do not overtighten.",
+        "tags": [
+            "compression",
+            "pushfit-alternative",
+            "no-solder",
+            "retrofit",
+            "olive"
+        ]
+    },
+    {
+        "id": "push-fit-fitting-22mm",
+        "primaryName": "Push-Fit Fitting",
+        "aliases": [
+            "Speedfit",
+            "SharkBite",
+            "push-to-connect",
+            "push-on fitting",
+            "instant fitting"
+        ],
+        "category": "plumbing",
+        "subCategory": "fittings",
+        "overview": "A push-fit fitting connects pipes with no tools — simply push the pipe end in and internal collet teeth grip it securely. Widely used for quick repairs and for connecting copper, plastic, and CPVC pipes. Most brands are demountable with a release collar.",
+        "diagramUrl": "/assets/diagrams/push-fit-fitting-22mm.svg",
+        "compatibleWith": [
+            "copper-pipe-22mm",
+            "plastic-pipe-22mm"
+        ],
+        "materials": [
+            "plastic (acetal)",
+            "brass internals"
+        ],
+        "installationNotes": "Ensure pipe is cut square; deburr and clean. Push firmly until pipe bottoms out — you'll feel and hear a click. Tug to confirm grip. Use release clip to demount.",
+        "tags": [
+            "push-fit",
+            "no-solder",
+            "speedfit",
+            "sharkbite",
+            "quick-connect",
+            "demountable"
+        ]
+    },
+    {
+        "id": "gate-valve-15mm",
+        "primaryName": "Gate Valve",
+        "aliases": [
+            "sluice valve",
+            "full-bore valve",
+            "fullway valve",
+            "wedge gate valve"
+        ],
+        "category": "plumbing",
+        "subCategory": "valves",
+        "overview": "A gate valve uses a rising or non-rising metal wedge (gate) that moves perpendicular to flow to open or close. When fully open, the bore is completely unobstructed — hence 'full-bore valve'. Not designed for throttling; should be either fully open or fully closed.",
+        "diagramUrl": "/assets/diagrams/gate-valve-15mm.svg",
+        "compatibleWith": [
+            "compression-fitting-15mm",
+            "copper-pipe-15mm"
+        ],
+        "materials": [
+            "brass",
+            "gunmetal",
+            "cast iron"
+        ],
+        "installationNotes": "Install with arrow indicating direction of flow (if marked). Gate valves can be installed in any orientation. Turn clockwise to close (conventional). Do not use for throttling — causes premature seat wear.",
+        "tags": [
+            "gate",
+            "full-bore",
+            "sluice",
+            "isolation",
+            "shut-off"
+        ]
+    },
+    {
+        "id": "ball-valve-22mm",
+        "primaryName": "Ball Valve",
+        "aliases": [
+            "quarter-turn valve",
+            "shut-off valve",
+            "lever valve",
+            "full-bore ball valve"
+        ],
+        "category": "plumbing",
+        "subCategory": "valves",
+        "overview": "A ball valve uses a rotating ball with a through-hole bore to control flow. A quarter-turn (90°) of the handle moves from fully open to fully closed. The lever handle position visually shows the valve state — handle in line with pipe = open, perpendicular = closed.",
+        "diagramUrl": "/assets/diagrams/ball-valve-22mm.svg",
+        "compatibleWith": [
+            "compression-fitting-22mm",
+            "push-fit-fitting-22mm",
+            "copper-pipe-22mm"
+        ],
+        "materials": [
+            "brass",
+            "stainless",
+            "chrome-plated brass"
+        ],
+        "installationNotes": "Install in either direction — ball valves are bidirectional. Lever must have clearance to rotate 90°. Leave valve in open position if used infrequently to prevent the PTFE seat from taking a set.",
+        "tags": [
+            "ball valve",
+            "quarter-turn",
+            "lever valve",
+            "isolation",
+            "shut-off"
+        ]
+    },
+    {
+        "id": "stop-valve-15mm",
+        "primaryName": "Stop Valve",
+        "aliases": [
+            "service valve",
+            "mini valve",
+            "screw-down stop valve",
+            "tap connector valve"
+        ],
+        "category": "plumbing",
+        "subCategory": "valves",
+        "overview": "A stop valve (or service valve) is used to isolate a single appliance — a tap, toilet cistern, or dishwasher — without shutting off the whole system. Operated by a flat-head screwdriver slot on the spindle. Slot in line with pipe = open; slot across pipe = closed.",
+        "diagramUrl": "/assets/diagrams/stop-valve-15mm.svg",
+        "compatibleWith": [
+            "compression-fitting-15mm",
+            "flexible-tap-connector"
+        ],
+        "materials": [
+            "brass",
+            "chrome-plated brass"
+        ],
+        "installationNotes": "Turn clockwise to close. Slot indicator: parallel to pipe = open, perpendicular = closed. Typically installed under basins, WCs, and behind appliances. Use correct size for pipe (most common 15mm).",
+        "tags": [
+            "stop valve",
+            "service valve",
+            "isolation",
+            "appliance valve",
+            "screwdriver slot"
+        ]
+    },
+    {
+        "id": "p-trap-40mm",
+        "primaryName": "P-Trap",
+        "aliases": [
+            "waste trap",
+            "sink trap",
+            "U-bend",
+            "bottle trap",
+            "seal trap"
+        ],
+        "category": "plumbing",
+        "subCategory": "drainage",
+        "overview": "A P-trap is a curved section of waste pipe that retains a water seal after each use, preventing sewer gases and odours from entering the building. The water seal must be at least 50mm deep (per UK building regulations). Used under sinks, basins, and showers.",
+        "diagramUrl": "/assets/diagrams/p-trap-40mm.svg",
+        "compatibleWith": [
+            "waste-pipe-40mm"
+        ],
+        "materials": [
+            "ABS plastic",
+            "polypropylene",
+            "chrome-plated brass"
+        ],
+        "installationNotes": "Install with trap outlet angled slightly downward for drainage. Do not use excessive slope — the water seal can siphon out. Ensure a minimum 50mm water seal depth. Clean-out access should be reachable.",
+        "tags": [
+            "trap",
+            "waste",
+            "sewer gas",
+            "water seal",
+            "U-bend",
+            "drain"
+        ]
+    },
+    {
+        "id": "float-valve-1-2in",
+        "primaryName": "Float Valve",
+        "aliases": [
+            "ball cock",
+            "ballvalve",
+            "toilet fill valve",
+            "ballcock",
+            "float-operated valve"
+        ],
+        "category": "plumbing",
+        "subCategory": "fixtures",
+        "overview": "A float valve is used in cisterns (toilet tanks, cold water storage tanks) to maintain a set water level. As the cistern fills, the float rises with the water surface; when it reaches the set level, the float arm closes the valve. Modern versions use a float cup rather than a large ball float.",
+        "diagramUrl": "/assets/diagrams/float-valve-1-2in.svg",
+        "compatibleWith": [],
+        "materials": [
+            "plastic",
+            "brass"
+        ],
+        "installationNotes": "Adjust water level by changing float arm angle or adjusting the float height on modern cup-type valves. Ensure the bottom-entry or side-entry style matches the cistern. Use a service valve on the supply line for easy maintenance.",
+        "tags": [
+            "float valve",
+            "ball cock",
+            "toilet fill valve",
+            "cistern",
+            "ballcock"
+        ]
+    },
+    {
+        "id": "flexible-tap-connector",
+        "primaryName": "Flexible Tap Connector",
+        "aliases": [
+            "flexi hose",
+            "tap tail",
+            "basin connector",
+            "flexible supply line",
+            "braided hose"
+        ],
+        "category": "plumbing",
+        "subCategory": "fixtures",
+        "overview": "A flexible stainless-braided hose used to connect a tap or appliance to the water supply. The flexible nature accommodates offset tap tails and tight under-sink spaces. Available in various lengths (typically 300–500mm) with standard fittings at each end.",
+        "diagramUrl": "/assets/diagrams/flexible-tap-connector.svg",
+        "compatibleWith": [
+            "stop-valve-15mm"
+        ],
+        "materials": [
+            "EPDM inner, stainless steel braid outer, brass fittings"
+        ],
+        "installationNotes": "Do not over-bend — minimum bend radius applies. Hand-tighten first, then one additional quarter-turn with spanner. Do not use PTFE tape on compression connections. Replace every 5–10 years as a precaution.",
+        "tags": [
+            "flexi hose",
+            "flexible connector",
+            "tap tail",
+            "braided hose",
+            "supply line"
+        ]
+    },
+    {
+        "id": "check-valve-15mm",
+        "primaryName": "Check Valve",
+        "aliases": [
+            "one-way valve",
+            "non-return valve",
+            "NRV",
+            "backflow preventer",
+            "reflux valve"
+        ],
+        "category": "plumbing",
+        "subCategory": "valves",
+        "overview": "A check valve allows flow in one direction only, automatically preventing backflow when flow reverses or pressure drops. The valve contains a spring-loaded or gravity-fed disc or ball that opens under forward pressure and closes under reverse pressure.",
+        "diagramUrl": "/assets/diagrams/check-valve-15mm.svg",
+        "compatibleWith": [
+            "compression-fitting-15mm",
+            "copper-pipe-15mm"
+        ],
+        "materials": [
+            "brass",
+            "stainless",
+            "PVC"
+        ],
+        "installationNotes": "Install with flow direction arrow aligned with intended flow. Most check valves must be horizontal or have the cap pointing upward — check manufacturer guidance. Test function periodically on critical installations (e.g., hot water systems).",
+        "tags": [
+            "check valve",
+            "non-return",
+            "one-way",
+            "NRV",
+            "backflow prevention"
+        ]
+    },
+    {
+        "id": "pipe-elbow-15mm-copper",
+        "primaryName": "Copper Elbow",
+        "aliases": [
+            "street elbow",
+            "sweep elbow",
+            "90 elbow",
+            "bend fitting",
+            "capillary elbow"
+        ],
+        "category": "plumbing",
+        "subCategory": "fittings",
+        "overview": "A copper elbow fitting changes pipe direction by 90° (or 45° in offset elbows). Soldered (capillary) elbows are the most common form in copper installations. The 'street elbow' variant has one male and one female end, eliminating the need for a coupling on one side.",
+        "diagramUrl": "/assets/diagrams/pipe-elbow-15mm-copper.svg",
+        "compatibleWith": [
+            "copper-pipe-15mm"
+        ],
+        "materials": [
+            "copper"
+        ],
+        "installationNotes": "Clean both pipe and fitting bore with wire wool or abrasive cloth. Apply flux to both mating surfaces. Use lead-free solder for potable water systems. Heat fitting evenly; apply solder to joint — not the flame.",
+        "tags": [
+            "elbow",
+            "bend",
+            "capillary",
+            "solder",
+            "copper",
+            "90 degree",
+            "street elbow"
+        ]
+    },
+    {
+        "id": "schrader-valve",
+        "primaryName": "Schrader Valve",
+        "aliases": [
+            "service valve",
+            "charging valve",
+            "AC valve",
+            "refrigerant service port",
+            "Schrader core"
+        ],
+        "category": "hvac",
+        "subCategory": "refrigerant",
+        "overview": "A Schrader valve is the access port used by HVAC technicians to connect gauge manifold sets, charge refrigerant, and take system pressure readings. It contains a spring-loaded pin (the Schrader core) that opens when depressed by a manifold hose fitting. The same design is used in car tire valves.",
+        "diagramUrl": "/assets/diagrams/schrader-valve.svg",
+        "compatibleWith": [
+            "refrigerant-sight-glass",
+            "manifold-gauge-set"
+        ],
+        "materials": [
+            "brass",
+            "stainless core"
+        ],
+        "installationNotes": "Always keep valve caps installed when not in use to prevent contamination and refrigerant loss. Use a Schrader core removal tool to replace worn cores without evacuating the system. Torque to manufacturer specification when installing new cores.",
+        "tags": [
+            "schrader",
+            "service port",
+            "charging valve",
+            "AC service",
+            "refrigerant valve"
+        ]
+    },
+    {
+        "id": "txv-thermostatic-expansion-valve",
+        "primaryName": "Thermostatic Expansion Valve (TXV)",
+        "aliases": [
+            "TEV",
+            "metering device",
+            "expansion valve",
+            "thermal expansion valve",
+            "throttling device"
+        ],
+        "category": "hvac",
+        "subCategory": "refrigerant",
+        "overview": "The TXV regulates the flow of refrigerant entering the evaporator coil by sensing suction line temperature (via a remote bulb) and evaporator pressure. It maintains a constant superheat at the evaporator outlet, maximizing efficiency. The TXV is the most common metering device in split-system air conditioning and heat pumps.",
+        "diagramUrl": "/assets/diagrams/txv.svg",
+        "compatibleWith": [
+            "evaporator-coil",
+            "filter-drier",
+            "schrader-valve"
+        ],
+        "materials": [
+            "brass body",
+            "stainless sensing bulb"
+        ],
+        "installationNotes": "Strap the remote sensing bulb tightly to the suction line at the 4 or 8 o'clock position (not bottom — to avoid oil pooling affecting temperature reading). Insulate the bulb from ambient air. Adjust superheat only after system has reached steady state.",
+        "tags": [
+            "TXV",
+            "TEV",
+            "expansion valve",
+            "metering device",
+            "superheat",
+            "refrigerant control"
+        ]
+    },
+    {
+        "id": "filter-drier",
+        "primaryName": "Filter Drier",
+        "aliases": [
+            "liquid line drier",
+            "moisture indicator",
+            "receiver drier",
+            "bi-flow drier",
+            "refrigerant drier"
+        ],
+        "category": "hvac",
+        "subCategory": "refrigerant",
+        "overview": "A filter drier removes moisture, acid, and particulate contamination from the refrigerant circuit. Installed in the liquid line, it contains a desiccant (silica gel or molecular sieve) that captures moisture before it can reach the TXV or other metering devices where it could freeze and block flow.",
+        "diagramUrl": "/assets/diagrams/filter-drier.svg",
+        "compatibleWith": [
+            "txv-thermostatic-expansion-valve",
+            "refrigerant-sight-glass"
+        ],
+        "materials": [
+            "steel shell",
+            "desiccant core",
+            "brass connections"
+        ],
+        "installationNotes": "Replace after any system open-to-atmosphere event (repair, component replacement). Install with flow direction arrow correct. Always install a new drier when replacing the compressor. Bi-flow driers are used on heat pump reversing systems.",
+        "tags": [
+            "filter drier",
+            "desiccant",
+            "moisture removal",
+            "liquid line",
+            "refrigerant circuit"
+        ]
+    },
+    {
+        "id": "volume-control-damper",
+        "primaryName": "Volume Control Damper",
+        "aliases": [
+            "VCD",
+            "duct damper",
+            "manual damper",
+            "balancing damper",
+            "air damper"
+        ],
+        "category": "hvac",
+        "subCategory": "ductwork",
+        "overview": "A volume control damper is a flat or multi-blade device installed inside ductwork to regulate and balance airflow through a zone or branch. Manual VCDs are adjusted with a handle or screwdriver slot and locked in position; motorized versions are controlled by a building management system or zone controller.",
+        "diagramUrl": "/assets/diagrams/volume-control-damper.svg",
+        "compatibleWith": [
+            "duct-elbow",
+            "duct-reducer",
+            "plenum"
+        ],
+        "materials": [
+            "galvanised steel",
+            "aluminium"
+        ],
+        "installationNotes": "Mark position clearly after balancing (open/closed %). Motorized versions require 24V or 230V actuator. Install with handle accessible for future adjustment. Do not confuse with fire dampers — fire dampers are a life-safety device and require fusible link or actuator reset.",
+        "tags": [
+            "damper",
+            "VCD",
+            "airflow control",
+            "balancing",
+            "ductwork",
+            "zone control"
+        ]
+    },
+    {
+        "id": "condenser-fan-motor",
+        "primaryName": "Condenser Fan Motor",
+        "aliases": [
+            "outdoor fan motor",
+            "OFM",
+            "condenser motor",
+            "fan motor",
+            "propeller fan motor"
+        ],
+        "category": "hvac",
+        "subCategory": "mechanical",
+        "overview": "The condenser fan motor drives the propeller fan on the outdoor unit of a split system, drawing ambient air across the condenser coil to reject heat from the refrigerant. Failure causes high head pressure and compressor cutout. Most models are PSC (permanent split capacitor) motors requiring an external run capacitor.",
+        "diagramUrl": "/assets/diagrams/condenser-fan-motor.svg",
+        "compatibleWith": [
+            "run-capacitor"
+        ],
+        "materials": [
+            "aluminium housing",
+            "copper windings"
+        ],
+        "installationNotes": "Match RPM, horsepower, and rotation direction (typically counterclockwise when viewed from shaft end on outdoor units). Always replace the run capacitor when replacing the motor. Ensure blade pitch is correct after installation.",
+        "tags": [
+            "condenser fan",
+            "OFM",
+            "outdoor unit",
+            "fan motor",
+            "PSC motor",
+            "HVAC motor"
+        ]
+    },
+    {
+        "id": "evaporator-coil",
+        "primaryName": "Evaporator Coil",
+        "aliases": [
+            "indoor coil",
+            "A-coil",
+            "fan coil",
+            "evap coil",
+            "cooling coil"
+        ],
+        "category": "hvac",
+        "subCategory": "refrigerant",
+        "overview": "The evaporator coil is the indoor heat exchanger in a split air conditioning or heat pump system. Low-pressure liquid refrigerant absorbs heat from indoor air as it evaporates, cooling the air. The 'A-coil' shape is the most common configuration, with two sets of fins meeting at a peak to maximize surface area.",
+        "diagramUrl": "/assets/diagrams/evaporator-coil.svg",
+        "compatibleWith": [
+            "txv-thermostatic-expansion-valve",
+            "filter-drier",
+            "air-handler-unit"
+        ],
+        "materials": [
+            "copper tubes",
+            "aluminium fins",
+            "fibreglass drain pan"
+        ],
+        "installationNotes": "Ensure proper refrigerant charge — undercharge causes icing, overcharge causes liquid slugging. Clean coil annually to maintain heat transfer. Drain pan and drain line must be clear to prevent water overflow. Match coil capacity to outdoor unit.",
+        "tags": [
+            "evaporator",
+            "A-coil",
+            "indoor coil",
+            "cooling coil",
+            "heat exchanger",
+            "refrigerant"
+        ]
+    },
+    {
+        "id": "expansion-vessel",
+        "primaryName": "Expansion Vessel",
+        "aliases": [
+            "expansion tank",
+            "pressure vessel",
+            "diaphragm tank",
+            "accumulator tank",
+            "cushion tank"
+        ],
+        "category": "boiler-heating",
+        "subCategory": "system-components",
+        "overview": "An expansion vessel accommodates the increase in water volume when the heating system heats up, preventing the pressure relief valve from opening on every heat cycle. It contains a pre-pressurised nitrogen cushion separated from the system water by a rubber diaphragm. The pre-charge pressure must match the system static pressure.",
+        "diagramUrl": "/assets/diagrams/expansion-vessel.svg",
+        "compatibleWith": [
+            "pressure-relief-valve",
+            "filling-loop"
+        ],
+        "materials": [
+            "steel shell",
+            "EPDM rubber diaphragm"
+        ],
+        "installationNotes": "Check and set pre-charge pressure (nitrogen side) equal to static system height in bar (1 bar per 10m height) when system is cold and depressurised. Install on return pipe, ideally close to circulator pump suction. Vessel must be accessible for pressure checks.",
+        "tags": [
+            "expansion vessel",
+            "expansion tank",
+            "diaphragm tank",
+            "pressure management",
+            "boiler"
+        ]
+    },
+    {
+        "id": "circulator-pump",
+        "primaryName": "Circulator Pump",
+        "aliases": [
+            "heating pump",
+            "zone pump",
+            "wet rotor pump",
+            "central heating pump",
+            "glandless pump"
+        ],
+        "category": "boiler-heating",
+        "subCategory": "circulation",
+        "overview": "A circulator pump moves hot water around the heating system from the boiler to radiators and back. Modern circulators are 'wet rotor' design — the motor rotor runs in the water being pumped, eliminating shaft seals and gland leaks. Most modern models are variable-speed (ECM motor) for energy efficiency.",
+        "diagramUrl": "/assets/diagrams/circulator-pump.svg",
+        "compatibleWith": [
+            "zone-valve",
+            "expansion-vessel",
+            "pressure-relief-valve"
+        ],
+        "materials": [
+            "cast iron or composite body",
+            "stainless impeller",
+            "ceramic shaft"
+        ],
+        "installationNotes": "Install with shaft horizontal for correct bearing lubrication. Arrow on pump body indicates flow direction — install on the return pipe (cold side), pump facing into the boiler. Bleed air from pump via bleed screw on startup. Match pump head to system resistance.",
+        "tags": [
+            "circulator",
+            "heating pump",
+            "wet rotor",
+            "zone pump",
+            "ECM",
+            "central heating"
+        ]
+    },
+    {
+        "id": "pressure-relief-valve",
+        "primaryName": "Pressure Relief Valve",
+        "aliases": [
+            "PRV",
+            "safety valve",
+            "T&P valve",
+            "temperature and pressure relief valve",
+            "safety relief valve"
+        ],
+        "category": "boiler-heating",
+        "subCategory": "safety",
+        "overview": "A pressure relief valve is a safety device that opens automatically if system pressure exceeds its set point (typically 3 bar on domestic heating systems), preventing boiler or vessel rupture. On unvented hot water cylinders, a temperature and pressure (T&P) valve also opens if water temperature exceeds 90–95°C.",
+        "diagramUrl": "/assets/diagrams/pressure-relief-valve.svg",
+        "compatibleWith": [
+            "expansion-vessel",
+            "circulator-pump"
+        ],
+        "materials": [
+            "brass body",
+            "stainless spring"
+        ],
+        "installationNotes": "Discharge pipe must run to a safe location where hot water will not cause injury or property damage — typically outside, low to the ground, with an air break. Never cap or bypass a PRV. Test annually by lifting the lever briefly. Replace if it fails to reseat or continues to drip.",
+        "tags": [
+            "PRV",
+            "safety valve",
+            "T&P valve",
+            "pressure relief",
+            "boiler safety",
+            "SRV"
+        ]
+    },
+    {
+        "id": "zone-valve",
+        "primaryName": "Zone Valve",
+        "aliases": [
+            "motorized valve",
+            "2-port valve",
+            "mid-position valve",
+            "3-port valve",
+            "motorised zone valve"
+        ],
+        "category": "boiler-heating",
+        "subCategory": "controls",
+        "overview": "A zone valve is an electrically actuated valve that opens or closes to direct hot water to a specific heating zone (e.g., upstairs or downstairs circuit, or the hot water cylinder). Two-port zone valves are either open or closed; three-port mid-position valves can direct flow to heating only, hot water only, or both simultaneously.",
+        "diagramUrl": "/assets/diagrams/zone-valve.svg",
+        "compatibleWith": [
+            "circulator-pump",
+            "trv-thermostatic-radiator-valve"
+        ],
+        "materials": [
+            "plastic body",
+            "brass valve",
+            "synchronous motor actuator"
+        ],
+        "installationNotes": "Ensure correct orientation per manufacturer arrow. The microswitch at end-of-travel supplies live to the boiler and pump. Wire to S-plan (2-port) or Y-plan (3-port mid-position) wiring diagram. Allow 2–3 minutes for spring-return on power loss.",
+        "tags": [
+            "zone valve",
+            "motorized valve",
+            "2-port",
+            "3-port",
+            "mid-position",
+            "S-plan",
+            "Y-plan"
+        ]
+    },
+    {
+        "id": "filling-loop",
+        "primaryName": "Filling Loop",
+        "aliases": [
+            "filling link",
+            "bypass link",
+            "system filler",
+            "hose connector",
+            "temporary fill point"
+        ],
+        "category": "boiler-heating",
+        "subCategory": "system-components",
+        "overview": "A filling loop is a short hose or rigid connection used to temporarily connect the cold mains supply to the sealed central heating system to fill or re-pressurise it. It is removed or closed after use to maintain a physical break between the potable water supply and the heating system (a regulations requirement in the UK).",
+        "diagramUrl": "/assets/diagrams/filling-loop.svg",
+        "compatibleWith": [
+            "expansion-vessel",
+            "pressure-relief-valve"
+        ],
+        "materials": [
+            "stainless braided hose",
+            "brass valves"
+        ],
+        "installationNotes": "Open both valves slowly and monitor pressure gauge — target 1–1.5 bar cold fill pressure. Close both valves once filled; disconnect external hose filling loops after each use (Water Regulations requirement). Do not leave permanently connected — this would create a cross-connection to the domestic water supply.",
+        "tags": [
+            "filling loop",
+            "system fill",
+            "boiler pressure",
+            "re-pressurise",
+            "bypass link"
+        ]
+    },
+    {
+        "id": "trv-thermostatic-radiator-valve",
+        "primaryName": "Thermostatic Radiator Valve (TRV)",
+        "aliases": [
+            "rad valve",
+            "room thermostat valve",
+            "TRV",
+            "thermostatic head",
+            "radiator valve"
+        ],
+        "category": "boiler-heating",
+        "subCategory": "controls",
+        "overview": "A TRV controls room temperature by regulating hot water flow into a radiator based on the ambient air temperature sensed by its wax capsule head. As room temperature rises, the wax expands, progressively closing the valve to reduce heat output. The numbered dial (1–5) sets the target temperature.",
+        "diagramUrl": "/assets/diagrams/trv.svg",
+        "compatibleWith": [
+            "lockshield-valve",
+            "zone-valve"
+        ],
+        "materials": [
+            "brass valve body",
+            "wax element in plastic or chrome head"
+        ],
+        "installationNotes": "Install on the flow side of the radiator (supply pipe into radiator). The TRV head must have unrestricted airflow around it — do not cover with curtains or fit behind furniture. Pair with a lockshield valve on the return to enable balancing. One room in the house should have a room stat instead of a TRV to act as the reference zone.",
+        "tags": [
+            "TRV",
+            "thermostatic valve",
+            "radiator valve",
+            "room temperature",
+            "wax capsule",
+            "rad valve"
+        ]
+    },
+    {
+        "id": "lockshield-valve",
+        "primaryName": "Lockshield Valve",
+        "aliases": [
+            "balancing valve",
+            "radiator lockshield",
+            "LSV",
+            "radiator return valve"
+        ],
+        "category": "boiler-heating",
+        "subCategory": "controls",
+        "overview": "A lockshield valve is fitted on the return side of a radiator, opposite the TRV or hand-wheel valve. Its flow rate is set during commissioning to 'balance' the heating system — ensuring each radiator gets the correct water flow. The protective cap prevents casual adjustment, preserving the balance setting.",
+        "diagramUrl": "/assets/diagrams/lockshield-valve.svg",
+        "compatibleWith": [
+            "trv-thermostatic-radiator-valve"
+        ],
+        "materials": [
+            "brass"
+        ],
+        "installationNotes": "Set using a lockshield key or adjustable spanner during commissioning. The number of turns from fully closed varies per radiator based on its distance from the pump. Record turns open for each radiator for future reference. Radiators closest to the pump get more turns closed.",
+        "tags": [
+            "lockshield",
+            "balancing valve",
+            "radiator return",
+            "commissioning",
+            "LSV"
+        ]
+    },
+    {
+        "id": "heat-exchanger-plate",
+        "primaryName": "Plate Heat Exchanger",
+        "aliases": [
+            "PHE",
+            "brazed plate heat exchanger",
+            "BPHE",
+            "flat plate exchanger",
+            "plate-to-plate heat exchanger"
+        ],
+        "category": "boiler-heating",
+        "subCategory": "heat-transfer",
+        "overview": "A plate heat exchanger (PHE) transfers heat between two fluid circuits through a stack of corrugated metal plates, without the fluids mixing. In boilers, it separates the primary heating water from the domestic hot water circuit. Brazed plate types use copper or nickel brazing, making them compact and highly efficient.",
+        "diagramUrl": "/assets/diagrams/heat-exchanger-plate.svg",
+        "compatibleWith": [
+            "circulator-pump",
+            "pressure-relief-valve"
+        ],
+        "materials": [
+            "316L stainless steel plates",
+            "copper or nickel brazing"
+        ],
+        "installationNotes": "Ensure correct primary/secondary flow connections (cross-flow configuration for maximum efficiency). Flush before installation to remove debris. Scale inhibitor in the primary circuit extends PHE life. De-scale with approved chemicals if flow rate drops — do not use mechanical cleaning on brazed plates.",
+        "tags": [
+            "PHE",
+            "plate heat exchanger",
+            "brazed plate",
+            "BPHE",
+            "heat transfer",
+            "combi boiler"
+        ]
+    }
+]

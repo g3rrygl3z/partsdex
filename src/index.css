@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bgGray text-textDark font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  /* Category badge pills */
+  .badge-plumbing {
+    @apply bg-plumbing-light text-plumbing text-xs font-semibold px-3 py-1 rounded-badge;
+  }
+  .badge-hvac {
+    @apply bg-hvac-light text-hvac text-xs font-semibold px-3 py-1 rounded-badge;
+  }
+  .badge-boiler {
+    @apply bg-boiler-light text-boiler text-xs font-semibold px-3 py-1 rounded-badge;
+  }
+
+  /* Primary button */
+  .btn-primary {
+    @apply bg-primary text-white font-semibold px-5 py-3 rounded-lg
+           hover:bg-blue-800 active:scale-95 transition-all duration-150
+           min-h-[44px] min-w-[44px];
+  }
+
+  /* Part card */
+  .part-card {
+    @apply bg-white rounded-xl shadow-sm border border-gray-100
+           hover:shadow-md hover:-translate-y-0.5 transition-all duration-150
+           cursor-pointer;
+  }
+}
