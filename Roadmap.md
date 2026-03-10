@@ -86,9 +86,10 @@ Week 2: Polish & Finalize (Days 8–14)   ████████████ B
 
 ### Day 6 — Filters + Compatible Parts
 
-**Michael (Filter System)**
+**Michael (Filter System & Tests)**
 - [ ] Category filter, material filter, vertical filter — all working on the browse page
 - [ ] Filter logic lives in hooks/utils; Gary's filter panel UI plugs into it
+- [ ] Write automated unit tests for search logic, data hooks, and filters (Vitest)
 
 **Gary (Compatible Parts)**
 - [ ] Compatible parts section on Part Detail page (displays linked parts this part connects with)
