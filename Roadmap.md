@@ -65,6 +65,7 @@ Week 2: Polish & Finalize (Days 8–14)   ████████████ B
 **Gary (Part Detail Page)**
 - [ ] Part header: primary name, category badge, tagline
 - [ ] Diagram viewer component (scales on mobile, remains legible)
+- [ ] Add `react-parallax-tilt` to the diagram viewer for a 3D hover/tilt effect (fake 3D)
 - [ ] Overview section (plain-English description)
 - [ ] Aliases table: two columns — Name/Alias and Context
 
