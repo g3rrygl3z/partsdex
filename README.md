@@ -1,73 +1,40 @@
-# React + TypeScript + Vite
+# PartsDex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Plumbing, HVAC & Boiler Parts Identifier**
 
-Currently, two official plugins are available:
+PartsDex is a mobile-first Progressive Web App (PWA) designed for on-site crews and trade professionals. Built primarily for field use on smartphones, PartsDex helps technicians and apprentices cross-reference industry slang, regional part names, and primary part definitions across three major trades.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application allows you to search by name, alias, part number, or keyword, providing you with a complete profile of a part: what it is, what it does, compatible parts, and installation context.
 
-## React Compiler
+## MVP Features
+- **Global PWA Offline Search:** Instant, indexed fuzzy search (via Fuse.js).
+- **Category Browsing:** Browse by Plumbing, HVAC, and Boiler & Heating verticals.
+- **Glossary:** Full A–Z glossary of trade terminology and aliases.
+- **Installable:** Progressive Web App (PWA) that can be installed to your device home screen and works offline.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+- **Framework:** React 18 / Vite
+- **Styling:** Tailwind CSS v3
+- **Routing:** React Router v6
+- **Cache/Offline:** vite-plugin-pwa (Workbox)
+- **Search:** Fuse.js
+- **Data:** Static JSON
 
-## Expanding the ESLint configuration
+## Project Setup & Development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+First, clear out `node_modules` if you are migrating branches to avoid missing dependency linking, then run:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+```bash
+# Install all dependencies
+npm install
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+# Start the local development server on port 5173
+npm run dev
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Run TypeScript compilation and build for production
+npm run build
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Team Structure & Development Rules
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+PartsDex is developed with isolated feature ownership before the merge. See `TeamRules.md` to review Michael and Gary's file ownership. If you are modifying the foundational structures, review `TechnicalRequirements.md` and the original `PartsDex_PRD.md`.
