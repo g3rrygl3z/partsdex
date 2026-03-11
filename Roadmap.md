@@ -17,20 +17,20 @@ Week 2: Polish & Finalize (Days 8–14)   ████████████ B
 ## Week 1 — Core Build (Days 1–7)
 
 ### Day 1 — Project Setup *(Both)*
-- [ ] Create GitHub repo; set up branches (`michael/data-search`, `gary/ui-pages`)
-- [ ] Initialize Vite + React + Tailwind CSS + vite-plugin-pwa
-- [ ] Configure PWA manifest and service worker (offline baseline)
-- [ ] Deploy pipeline to Vercel (connected to `main` branch)
-- [ ] Confirm both devs can run `npm run dev` locally and see a working app shell
+- [x] Create GitHub repo; set up branches (`michael/data-search`, `gary/ui-pages`)
+- [x] Initialize Vite + React + Tailwind CSS + vite-plugin-pwa
+- [x] Configure PWA manifest and service worker (offline baseline)
+- [x] Deploy pipeline to Vercel (connected to `main` branch)
+- [x] Confirm both devs can run `npm run dev` locally and see a working app shell
 
 ---
 
 ### Day 2 — Data Layer + UI Foundation
 
 **Michael (Data Layer)**
-- [ ] Finalize `parts.json` schema (shared with Gary by end of day so he can code against it)
-- [ ] Seed 25 parts across all 3 verticals (Plumbing, HVAC, Boiler & Heating)
-- [ ] Integrate Fuse.js for fuzzy search; confirm it indexes and returns results from the local JSON
+- [x] Finalize `parts.json` schema (shared with Gary by end of day so he can code against it)
+- [x] Seed 25 parts across all 3 verticals (Plumbing, HVAC, Boiler & Heating)
+- [x] Integrate Fuse.js for fuzzy search; confirm it indexes and returns results from the local JSON
 
 **Gary (UI Foundation)**
 - [ ] Configure Tailwind color system (Primary Blue `#1B4F8A`, Success Green `#2E7D32`, Background Gray `#F5F5F5`, etc.)
