@@ -1,55 +1,37 @@
-import { useState, useMemo, useCallback, useRef } from 'react'
-import type Fuse from 'fuse.js'
-import { buildSearchIndex } from '@/utils/fuseConfig'
-import type { Part } from '@/types'
+import { useState, useMemo, useCallback, useRef } from 'react';
+import { searchParts } from '../utils/search';
+import type { NormalizedPart } from '../utils/search';
 
-const MIN_QUERY_LENGTH = 2
-const DEBOUNCE_MS = 200
-
-interface UseSearchReturn {
-    query: string
-    setQuery: (q: string) => void
-    results: Part[]
-    isSearching: boolean
-}
+const DEBOUNCE_MS = 200;
 
 /**
- * useSearch — fuzzy search hook powered by Fuse.js.
- *
- * - Builds the Fuse index once from the provided parts array.
- * - Debounces input by 200ms before running the search.
- * - Returns an empty array (not an error) when query < 2 chars.
+ * Custom hook for debounced search.
  */
-export function useSearch(parts: Part[]): UseSearchReturn {
-    const [query, setQueryRaw] = useState('')
-    const [results, setResults] = useState<Part[]>([])
-    const [isSearching, setIsSearching] = useState(false)
-    const debounceTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+export function useSearch(initialDebounceMs = DEBOUNCE_MS) {
+  const [query, setQuery] = useState('');
+  const [debouncedQuery, setDebouncedQuery] = useState('');
+  const timeoutId = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-    // Build index once; rebuild only if the parts array reference changes
-    const index: Fuse<Part> = useMemo(() => buildSearchIndex(parts), [parts])
+  const updateQuery = useCallback(
+    (newQuery: string) => {
+      setQuery(newQuery);
+      if (timeoutId.current) clearTimeout(timeoutId.current);
+      timeoutId.current = setTimeout(() => {
+        setDebouncedQuery(newQuery);
+      }, initialDebounceMs);
+    },
+    [initialDebounceMs]
+  );
 
-    const setQuery = useCallback(
-        (q: string) => {
-            setQueryRaw(q)
+  const results = useMemo((): (NormalizedPart & { score?: number; matches?: any })[] => {
+    return searchParts(debouncedQuery);
+  }, [debouncedQuery]);
 
-            if (debounceTimer.current) clearTimeout(debounceTimer.current)
+  const clearSearch = useCallback(() => {
+    setQuery('');
+    setDebouncedQuery('');
+    if (timeoutId.current) clearTimeout(timeoutId.current);
+  }, []);
 
-            if (q.length < MIN_QUERY_LENGTH) {
-                setResults([])
-                setIsSearching(false)
-                return
-            }
-
-            setIsSearching(true)
-            debounceTimer.current = setTimeout(() => {
-                const fuseResults = index.search(q)
-                setResults(fuseResults.map(r => r.item))
-                setIsSearching(false)
-            }, DEBOUNCE_MS)
-        },
-        [index]
-    )
-
-    return { query, setQuery, results, isSearching }
+  return { query, updateQuery, results, clearSearch };
 }

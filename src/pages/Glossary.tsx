@@ -1,170 +1,152 @@
-import { useState, useMemo } from 'react'
-import { Link } from 'react-router-dom'
-import partsData from '@/data/parts.json'
-import categoriesData from '@/data/categories.json'
-import { buildAliasList } from '@/utils/dataHelpers'
-import type { Part, Category, Vertical } from '@/types'
-
-const parts = partsData as Part[]
-const categories = categoriesData as Category[]
-
-const ALPHABET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')
-
-const VERTICAL_LABELS: Record<Vertical, string> = {
-    'plumbing': 'Plumbing',
-    'hvac': 'HVAC',
-    'boiler-heating': 'Boiler & Heating',
-}
-
-const BADGE_CLASS: Record<Vertical, string> = {
-    'plumbing': 'badge-plumbing',
-    'hvac': 'badge-hvac',
-    'boiler-heating': 'badge-boiler',
-}
+import { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
+import { BookOpen } from 'lucide-react';
+import aliasesData from '../data/aliases.json';
+import { getVerticalBadgeClass, getVerticalDisplayName } from '../utils/helpers';
+import { getAllParts } from '../utils/search';
+import type { Vertical } from '../types';
 
 export default function Glossary() {
-    const [verticalFilter, setVerticalFilter] = useState<Vertical | 'all'>('all')
-    const [letterFilter, setLetterFilter] = useState<string | null>(null)
+  const [filter, setFilter] = useState<Vertical | 'all'>('all');
+  const [letterFilter, setLetterFilter] = useState<string | null>(null);
+  
+  const allParts = getAllParts();
 
-    const allAliases = useMemo(() => buildAliasList(parts), [])
+  // Map generic ID to the first specific ID found in parts.json
+  const resolvePartId = (genericId: string) => {
+    const match = allParts.find(p => p.id === genericId || p.id.startsWith(`${genericId}-`));
+    return match ? match.id : genericId;
+  };
 
-    const filtered = useMemo(() => {
-        let list = allAliases
-        if (verticalFilter !== 'all') {
-            list = list.filter(e => e.vertical === verticalFilter)
-        }
-        if (letterFilter) {
-            list = list.filter(e =>
-                e.alias.toUpperCase().startsWith(letterFilter)
-            )
-        }
-        return list
-    }, [allAliases, verticalFilter, letterFilter])
+  // Get unique first letters
+  const letters = useMemo(() => {
+    const set = new Set(aliasesData.map((a) => a.alias[0].toUpperCase()));
+    return Array.from(set).sort();
+  }, []);
 
-    // Group by first letter for display
-    const grouped = useMemo(() => {
-        const map = new Map<string, typeof filtered>()
-        for (const entry of filtered) {
-            const letter = entry.alias[0]?.toUpperCase() ?? '#'
-            if (!map.has(letter)) map.set(letter, [])
-            map.get(letter)!.push(entry)
-        }
-        return map
-    }, [filtered])
+  // Filter aliases
+  const filtered = useMemo(() => {
+    let result = aliasesData as any[];
+    if (filter !== 'all') {
+      result = result.filter((a) => a.vertical === filter);
+    }
+    if (letterFilter) {
+      result = result.filter((a) => a.alias[0].toUpperCase() === letterFilter);
+    }
+    return result;
+  }, [filter, letterFilter]);
 
-    const activeLetters = useMemo(
-        () => new Set(filtered.map(e => e.alias[0]?.toUpperCase())),
-        [filtered]
-    )
+  // Group by letter
+  const grouped = useMemo(() => {
+    const groups: Record<string, any[]> = {};
+    filtered.forEach((alias) => {
+      const letter = alias.alias[0].toUpperCase();
+      if (!groups[letter]) groups[letter] = [];
+      groups[letter].push(alias);
+    });
+    return groups;
+  }, [filtered]);
 
-    return (
-        <div className="min-h-screen bg-bgGray pb-24">
-            {/* Header */}
-            <header className="bg-primary sticky top-0 z-10 shadow-md">
-                <div className="max-w-2xl mx-auto px-4 py-4 flex items-center justify-between">
-                    <Link to="/" className="text-white/70 hover:text-white text-sm transition-colors">
-                        ← PartsDex
-                    </Link>
-                    <h1 className="text-white font-bold text-lg">Trade Term Glossary</h1>
-                    <span className="text-white/70 text-sm">{filtered.length} terms</span>
-                </div>
-            </header>
-
-            <main className="max-w-2xl mx-auto px-4 pt-6 space-y-6">
-                {/* Vertical filter */}
-                <div className="flex flex-wrap gap-2">
-                    <button
-                        id="glossary-filter-all"
-                        onClick={() => setVerticalFilter('all')}
-                        className={`px-4 py-2 rounded-badge text-sm font-semibold transition-colors min-h-[44px] ${verticalFilter === 'all'
-                                ? 'bg-primary text-white'
-                                : 'bg-white text-textMuted border border-gray-200 hover:border-primary'
-                            }`}
-                    >
-                        All
-                    </button>
-                    {categories.map(cat => (
-                        <button
-                            key={cat.id}
-                            id={`glossary-filter-${cat.id}`}
-                            onClick={() => setVerticalFilter(cat.id as Vertical)}
-                            className={`px-4 py-2 rounded-badge text-sm font-semibold transition-colors min-h-[44px] ${verticalFilter === cat.id
-                                    ? 'bg-primary text-white'
-                                    : 'bg-white text-textMuted border border-gray-200 hover:border-primary'
-                                }`}
-                        >
-                            {cat.label}
-                        </button>
-                    ))}
-                </div>
-
-                {/* A–Z bar */}
-                <div className="flex flex-wrap gap-1">
-                    <button
-                        id="glossary-letter-all"
-                        onClick={() => setLetterFilter(null)}
-                        className={`w-9 h-9 rounded text-sm font-semibold transition-colors ${!letterFilter ? 'bg-primary text-white' : 'bg-white text-textMuted hover:bg-gray-100'
-                            }`}
-                    >
-                        All
-                    </button>
-                    {ALPHABET.map(letter => (
-                        <button
-                            key={letter}
-                            id={`glossary-letter-${letter}`}
-                            onClick={() => setLetterFilter(letter)}
-                            disabled={!activeLetters.has(letter)}
-                            className={`w-9 h-9 rounded text-sm font-semibold transition-colors ${letterFilter === letter
-                                    ? 'bg-primary text-white'
-                                    : activeLetters.has(letter)
-                                        ? 'bg-white text-textDark hover:bg-gray-100'
-                                        : 'bg-white text-gray-200 cursor-not-allowed'
-                                }`}
-                        >
-                            {letter}
-                        </button>
-                    ))}
-                </div>
-
-                {/* Results */}
-                {filtered.length === 0 ? (
-                    <div className="text-center py-16 text-textMuted">
-                        <p className="text-xl mb-2">No terms found</p>
-                        <p className="text-sm">Try a different filter or letter</p>
-                    </div>
-                ) : (
-                    Array.from(grouped.entries()).map(([letter, entries]) => (
-                        <section key={letter} id={`glossary-section-${letter}`}>
-                            <h2 className="text-2xl font-bold text-primary mb-3 border-b border-gray-200 pb-1">
-                                {letter}
-                            </h2>
-                            <ul className="space-y-2">
-                                {entries.map((entry, i) => (
-                                    <li key={`${entry.alias}-${i}`}>
-                                        <Link
-                                            to={`/parts/${entry.partId}`}
-                                            id={`glossary-entry-${entry.alias.replace(/\s+/g, '-').toLowerCase()}`}
-                                            className="flex items-center justify-between bg-white rounded-xl px-4 py-3
-                                 border border-gray-100 hover:border-primary hover:shadow-sm
-                                 transition-all duration-150 group"
-                                        >
-                                            <div>
-                                                <span className="font-medium text-textDark group-hover:text-primary transition-colors">
-                                                    {entry.alias}
-                                                </span>
-                                                <span className="text-textMuted text-sm ml-2">→ {entry.primaryName}</span>
-                                            </div>
-                                            <span className={BADGE_CLASS[entry.vertical]}>
-                                                {VERTICAL_LABELS[entry.vertical]}
-                                            </span>
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        </section>
-                    ))
-                )}
-            </main>
+  return (
+    <div className="max-w-4xl mx-auto px-4 py-6 space-y-6">
+      <div>
+        <div className="flex items-center gap-2">
+          <BookOpen className="w-5 h-5 text-blue-400" />
+          <h1 className="text-2xl font-bold text-white">Terminology Glossary</h1>
         </div>
-    )
+        <p className="text-slate-400 text-sm mt-1">
+          All known aliases and trade terms — tap any to see the full part profile
+        </p>
+      </div>
+
+      {/* Vertical Filter */}
+      <div className="flex gap-2 overflow-x-auto scrollbar-hide pb-1">
+        {[
+          { id: 'all', label: 'All' },
+          { id: 'plumbing', label: 'Plumbing' },
+          { id: 'hvac', label: 'HVAC' },
+          { id: 'boiler-heating', label: 'Boiler & Heating' },
+        ].map((v) => (
+          <button
+            key={v.id}
+            onClick={() => setFilter(v.id as any)}
+            className={`shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+              filter === v.id
+                ? 'bg-blue-600 text-white'
+                : 'bg-slate-800 text-slate-400 border border-slate-700 hover:text-white'
+            }`}
+          >
+            {v.label}
+          </button>
+        ))}
+      </div>
+
+      {/* Letter Jump */}
+      <div className="flex gap-1 flex-wrap">
+        <button
+          onClick={() => setLetterFilter(null)}
+          className={`w-8 h-8 rounded-lg text-xs font-medium transition-colors flex items-center justify-center ${
+            !letterFilter ? 'bg-blue-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-white'
+          }`}
+        >
+          All
+        </button>
+        {letters.map((letter) => (
+          <button
+            key={letter}
+            onClick={() => setLetterFilter(letterFilter === letter ? null : letter)}
+            className={`w-8 h-8 rounded-lg text-xs font-medium transition-colors flex items-center justify-center ${
+              letterFilter === letter ? 'bg-blue-600 text-white' : 'bg-slate-800 text-slate-400 hover:text-white'
+            }`}
+          >
+            {letter}
+          </button>
+        ))}
+      </div>
+
+      {/* Glossary List */}
+      <div className="space-y-6">
+        {Object.keys(grouped)
+          .sort()
+          .map((letter) => (
+            <div key={letter}>
+              <h2 className="text-lg font-bold text-blue-400 mb-2 sticky top-16 bg-slate-950 py-1 z-10">
+                {letter}
+              </h2>
+              <div className="space-y-1">
+                {grouped[letter].map((alias, i) => (
+                  <Link
+                    key={`${alias.alias}-${i}`}
+                    to={`/part/${resolvePartId(alias.canonicalPartId)}`}
+                    className="flex items-center justify-between py-3 px-4 rounded-xl bg-slate-800/40 border border-slate-700/30 hover:bg-slate-800 hover:border-slate-600 transition-all group"
+                  >
+                    <div className="flex-1 min-w-0">
+                      <p className="text-sm font-medium text-white group-hover:text-blue-300 transition-colors">
+                        {alias.alias}
+                      </p>
+                      <p className="text-xs text-slate-500 mt-0.5">
+                        → {alias.canonicalPartId.replace(/-/g, ' ')}
+                      </p>
+                    </div>
+                    <span className={`text-[10px] px-2 py-0.5 rounded-full shrink-0 ml-2 ${getVerticalBadgeClass(alias.vertical)}`}>
+                      {getVerticalDisplayName(alias.vertical)}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+      </div>
+
+      {filtered.length === 0 && (
+        <div className="text-center py-12">
+          <p className="text-slate-400">No terms found for this filter.</p>
+        </div>
+      )}
+
+      <p className="text-slate-600 text-xs text-center pb-4">
+        {filtered.length} terms across {Object.keys(grouped).length} letters
+      </p>
+    </div>
+  );
 }

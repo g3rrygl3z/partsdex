@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Wrench } from 'lucide-react';
-import { getVerticalBadgeClass } from '../utils/helpers';
+import { getVerticalBadgeClass, getVerticalDisplayName } from '../utils/helpers';
+import type { NormalizedPart } from '../utils/search';
 
-export default function PartCard({ part }) {
+interface PartCardProps {
+  part: NormalizedPart;
+}
+
+export default function PartCard({ part }: PartCardProps) {
   return (
     <Link
       to={`/part/${part.id}`}
@@ -23,17 +28,17 @@ export default function PartCard({ part }) {
       </div>
 
       {/* Content */}
-      <div className="p-3 flex flex-col gap-1.5">
+      <div className="p-3 flex flex-col gap-1.5 flex-1">
         <div className="flex items-start justify-between gap-2">
           <h3 className="text-sm font-semibold text-white leading-tight line-clamp-2 group-hover:text-blue-300 transition-colors">
             {part.name}
           </h3>
         </div>
         <span className={`self-start text-[10px] px-2 py-0.5 rounded-full font-medium ${getVerticalBadgeClass(part.vertical)}`}>
-          {part.vertical === 'boiler-heating' ? 'Boiler & Heating' : part.vertical === 'hvac' ? 'HVAC' : 'Plumbing'}
+          {getVerticalDisplayName(part.vertical)}
         </span>
         <p className="text-xs text-slate-400 line-clamp-2 leading-relaxed">
-          {part.description?.slice(0, 100)}...
+          {part.description}
         </p>
       </div>
     </Link>

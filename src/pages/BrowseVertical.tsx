@@ -4,16 +4,19 @@ import { getPartsByVertical, getPartsBySubcategory } from '../utils/search';
 import categoriesData from '../data/categories.json';
 import PartCard from '../components/PartCard';
 import { getVerticalDisplayName } from '../utils/helpers';
+import type { Vertical } from '../types';
 
 export default function BrowseVertical() {
-  const { verticalId } = useParams();
+  const { verticalId } = useParams<{ verticalId: string }>();
   const [searchParams, setSearchParams] = useSearchParams();
   const activeSubcategory = searchParams.get('sub');
 
-  const vertical = categoriesData.verticals.find((v) => v.id === verticalId);
+  const vertical = (categoriesData as any).verticals?.find((v: any) => v.id === verticalId) || 
+                   (categoriesData as any).find((v: any) => v.id === verticalId);
+                   
   const parts = activeSubcategory
-    ? getPartsBySubcategory(verticalId, activeSubcategory)
-    : getPartsByVertical(verticalId);
+    ? getPartsBySubcategory(verticalId as Vertical, activeSubcategory)
+    : getPartsByVertical(verticalId as Vertical);
 
   if (!vertical) {
     return (
@@ -23,6 +26,8 @@ export default function BrowseVertical() {
       </div>
     );
   }
+
+  const subcategories = vertical.subcategories || vertical.subCategories || [];
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-6 space-y-6">
@@ -35,7 +40,7 @@ export default function BrowseVertical() {
           <ArrowLeft className="w-4 h-4 text-slate-400" />
         </Link>
         <div>
-          <h1 className="text-2xl font-bold text-white">{getVerticalDisplayName(verticalId)}</h1>
+          <h1 className="text-2xl font-bold text-white">{getVerticalDisplayName(verticalId as Vertical)}</h1>
           <p className="text-slate-400 text-sm">{parts.length} parts</p>
         </div>
       </div>
@@ -52,7 +57,7 @@ export default function BrowseVertical() {
         >
           All
         </button>
-        {vertical.subcategories.map((sub) => (
+        {subcategories.map((sub: any) => (
           <button
             key={sub.id}
             onClick={() => setSearchParams({ sub: sub.id })}
@@ -62,7 +67,7 @@ export default function BrowseVertical() {
                 : 'bg-slate-800 text-slate-400 border border-slate-700 hover:text-white'
             }`}
           >
-            {sub.name}
+            {sub.label || sub.name}
           </button>
         ))}
       </div>

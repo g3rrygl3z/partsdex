@@ -1,7 +1,9 @@
+import type { Vertical } from '../types';
+
 /**
  * Returns the Tailwind badge class for a given vertical.
  */
-export function getVerticalBadgeClass(vertical) {
+export function getVerticalBadgeClass(vertical: Vertical | string): string {
   switch (vertical) {
     case 'plumbing':
       return 'badge-plumbing';
@@ -17,7 +19,7 @@ export function getVerticalBadgeClass(vertical) {
 /**
  * Returns the card background class for a vertical.
  */
-export function getVerticalCardClass(vertical) {
+export function getVerticalCardClass(vertical: Vertical | string): string {
   switch (vertical) {
     case 'plumbing':
       return 'card-plumbing';
@@ -33,7 +35,7 @@ export function getVerticalCardClass(vertical) {
 /**
  * Returns a display-friendly name for a vertical.
  */
-export function getVerticalDisplayName(vertical) {
+export function getVerticalDisplayName(vertical: Vertical | string): string {
   switch (vertical) {
     case 'plumbing':
       return 'Plumbing';
@@ -42,14 +44,14 @@ export function getVerticalDisplayName(vertical) {
     case 'boiler-heating':
       return 'Boiler & Heating';
     default:
-      return vertical;
+      return String(vertical);
   }
 }
 
 /**
  * Returns the accent color hex for a vertical.
  */
-export function getVerticalColor(vertical) {
+export function getVerticalColor(vertical: Vertical | string): string {
   switch (vertical) {
     case 'plumbing':
       return '#3b82f6';

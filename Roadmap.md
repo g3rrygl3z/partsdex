@@ -50,9 +50,9 @@ Week 2: Polish & Finalize (Days 8–14)   ████████████ B
 - [x] Minimum 2-character trigger, 300ms result threshold
 
 **Gary (Home Page)**
-- [ ] Hero section with app name, tagline, and search CTA
-- [ ] 3 industry vertical cards (Plumbing, HVAC, Boiler & Heating) with icons and part counts
-- [ ] Recent / popular parts section (placeholder data fine for now)
+- [x] Hero section with app name, tagline, and search CTA
+- [x] 3 industry vertical cards (Plumbing, HVAC, Boiler & Heating) with icons and part counts
+- [x] Recent / popular parts section (placeholder data fine for now)
 
 ---
 

@@ -7,18 +7,18 @@ import { getVerticalBadgeClass } from '../utils/helpers';
 export default function Header() {
   const { query, updateQuery, results, clearSearch } = useSearch();
   const [isFocused, setIsFocused] = useState(false);
-  const inputRef = useRef(null);
-  const dropdownRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
 
   // Close dropdown when clicking outside
   useEffect(() => {
-    function handleClickOutside(e) {
+    function handleClickOutside(e: MouseEvent) {
       if (
         dropdownRef.current &&
-        !dropdownRef.current.contains(e.target) &&
+        !dropdownRef.current.contains(e.target as Node) &&
         inputRef.current &&
-        !inputRef.current.contains(e.target)
+        !inputRef.current.contains(e.target as Node)
       ) {
         setIsFocused(false);
       }
@@ -27,7 +27,7 @@ export default function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  function handleSubmit(e) {
+  function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (query.trim().length >= 2) {
       setIsFocused(false);
@@ -45,7 +45,7 @@ export default function Header() {
       <div className="max-w-4xl mx-auto px-4 py-3">
         {/* Logo + Search Row */}
         <div className="flex items-center gap-3">
-          <Link to="/" className="flex items-center gap-2 shrink-0">
+          <Link to="/" className="flex items-center gap-2 border border-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-lg shrink-0">
             <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
               <Wrench className="w-4 h-4 text-white" />
             </div>
