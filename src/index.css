@@ -1,44 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   body {
-    @apply bg-bgGray text-textDark font-sans;
+    @apply bg-slate-950 text-slate-100 font-sans selection:bg-primary/30;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
-  * {
-    box-sizing: border-box;
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Safe area padding for mobile PWA */
+  body {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
   }
 }
 
 @layer components {
-  /* Category badge pills */
+  /* Premium typography helpers */
+  .heading-xl { @apply text-3xl font-extrabold tracking-tight text-white sm:text-4xl; }
+  .heading-lg { @apply text-2xl font-bold tracking-tight text-white mb-2; }
+  .text-subtle { @apply text-slate-400 text-sm leading-relaxed; }
+
+  /* Vertical badge colors - consistent across app */
   .badge-plumbing {
-    @apply bg-plumbing-light text-plumbing text-xs font-semibold px-3 py-1 rounded-badge;
+    @apply bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-0.5 rounded-full text-[10px] font-semibold;
   }
   .badge-hvac {
-    @apply bg-hvac-light text-hvac text-xs font-semibold px-3 py-1 rounded-badge;
+    @apply bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded-full text-[10px] font-semibold;
   }
-  .badge-boiler {
-    @apply bg-boiler-light text-boiler text-xs font-semibold px-3 py-1 rounded-badge;
+  .badge-boiler-heating {
+    @apply bg-amber-500/10 text-amber-400 border border-amber-500/20 px-2 py-0.5 rounded-full text-[10px] font-semibold;
   }
 
-  /* Primary button */
+  /* Glassmorphism card - uniform UI */
+  .glass-card {
+    @apply bg-slate-900/40 backdrop-blur-sm border border-white/5 rounded-2xl transition-all duration-300;
+  }
+  .glass-card-hover {
+    @apply hover:bg-slate-900/60 hover:border-white/10 hover:shadow-xl hover:shadow-black/20;
+  }
+
+  /* Interactive elements */
   .btn-primary {
-    @apply bg-primary text-white font-semibold px-5 py-3 rounded-lg
-           hover:bg-blue-800 active:scale-95 transition-all duration-150
-           min-h-[44px] min-w-[44px];
+    @apply bg-primary hover:bg-primary-light text-white font-bold py-3 px-6 rounded-xl transition-all shadow-lg shadow-primary/20 active:scale-95 flex items-center justify-center gap-2;
   }
+}
 
-  /* Part card */
-  .part-card {
-    @apply bg-white rounded-xl shadow-sm border border-gray-100
-           hover:shadow-md hover:-translate-y-0.5 transition-all duration-150
-           cursor-pointer;
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
   }
 }

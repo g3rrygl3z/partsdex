@@ -2,18 +2,36 @@ import { Link } from 'react-router-dom';
 import { Droplets, Wind, Flame, ChevronRight } from 'lucide-react';
 import type { Vertical } from '../types';
 
-const verticals: { id: Vertical; name: string; icon: any; color: string; count?: number }[] = [
-  { id: 'plumbing', name: 'Plumbing', icon: Droplets, color: 'text-blue-400' },
-  { id: 'hvac', name: 'HVAC', icon: Wind, color: 'text-emerald-400' },
-  { id: 'boiler-heating', name: 'Boiler & Heating', icon: Flame, color: 'text-amber-400' },
+const verticals: { id: Vertical; name: string; icon: any; color: string; desc: string }[] = [
+  { 
+    id: 'plumbing', 
+    name: 'Plumbing', 
+    icon: Droplets, 
+    color: 'text-blue-400',
+    desc: 'Pipes, fittings, drainage, valves and water supply components.'
+  },
+  { 
+    id: 'hvac', 
+    name: 'HVAC', 
+    icon: Wind, 
+    color: 'text-emerald-400',
+    desc: 'Air handling, ductwork, heating, cooling and ventilation.'
+  },
+  { 
+    id: 'boiler-heating', 
+    name: 'Boiler & Heating', 
+    icon: Flame, 
+    color: 'text-amber-400',
+    desc: 'Boiler components, expansion tanks, pumps and radiators.'
+  },
 ];
 
 export default function Browse() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-6 space-y-8">
-      <div>
-        <h1 className="text-2xl font-bold text-white">Browse Library</h1>
-        <p className="text-slate-400 text-sm mt-1">Select an industry to explore parts and components</p>
+    <div className="space-y-10 animate-in fade-in slide-in-from-bottom-2 duration-700">
+      <div className="space-y-2">
+        <h1 className="heading-xl">Library Browser</h1>
+        <p className="text-subtle">Explore our database of trade components organized by industry vertical</p>
       </div>
 
       <div className="grid gap-4">
@@ -23,20 +41,28 @@ export default function Browse() {
             <Link
               key={v.id}
               to={`/browse/${v.id}`}
-              className="flex items-center justify-between p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:bg-slate-800 hover:border-slate-600 transition-all group"
+              className="flex items-center justify-between p-6 glass-card glass-card-hover group relative overflow-hidden"
             >
-              <div className="flex items-center gap-4">
-                <div className={`w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center`}>
-                  <Icon className={`w-6 h-6 ${v.color}`} />
+              {/* Decorative accent */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-2xl rounded-full translate-x-1/2 -translate-y-1/2 group-hover:bg-primary/10 transition-colors" />
+
+              <div className="flex items-center gap-6 relative z-10">
+                <div className={`w-16 h-16 rounded-2xl bg-white/5 border border-white/5 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-500 shadow-inner`}>
+                  <Icon className={`w-8 h-8 ${v.color}`} />
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white group-hover:text-blue-300 transition-colors">
+                <div className="space-y-1">
+                  <h3 className="text-xl font-bold text-white group-hover:text-primary-light transition-colors">
                     {v.name}
                   </h3>
-                  <p className="text-slate-500 text-xs">Explore all {v.name.toLowerCase()} parts</p>
+                  <p className="text-xs text-slate-500 font-medium max-w-sm">
+                    {v.desc}
+                  </p>
                 </div>
               </div>
-              <ChevronRight className="w-5 h-5 text-slate-600 group-hover:text-white transition-colors" />
+              <div className="flex items-center gap-3">
+                 <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest hidden sm:inline">Explore</span>
+                 <ChevronRight className="w-6 h-6 text-slate-600 group-hover:text-white group-hover:translate-x-1 transition-all" />
+              </div>
             </Link>
           );
         })}

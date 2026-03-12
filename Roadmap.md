@@ -123,9 +123,9 @@ Week 2: Polish & Finalize (Days 8–14)   ████████████ B
 *Both developers work together across all files from here on.*
 
 ### Day 8 — UI Polish
-- [ ] Consistent spacing, color, and typography across all pages
-- [ ] Diagram and image styling finalized
-- [ ] Category badge colors consistent; part card layout uniform
+- [x] Consistent spacing, color, and typography across all pages
+- [x] Diagram and image styling finalized
+- [x] Category badge colors consistent; part card layout uniform
 
 ### Day 9 — PWA & Mobile Finalize
 - [ ] Full mobile audit on every page

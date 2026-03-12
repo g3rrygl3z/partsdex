@@ -1,7 +1,8 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Wrench, Tag, Layers, CheckCircle2, Info, BookOpen } from 'lucide-react';
+import { ArrowLeft, Tag, CheckCircle2, Info, BookOpen } from 'lucide-react';
 import { getPartById } from '../utils/search';
 import { getVerticalBadgeClass, getVerticalDisplayName } from '../utils/helpers';
+import DiagramViewer from '../components/DiagramViewer';
 import React from 'react';
 
 export default function PartDetail() {
@@ -9,123 +10,148 @@ export default function PartDetail() {
   const navigate = useNavigate();
   const part = getPartById(partId);
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [partId]);
+
   if (!part) {
     return (
-      <div className="max-w-4xl mx-auto px-4 py-12 text-center">
-        <p className="text-slate-400 text-lg">Part not found.</p>
+      <div className="text-center py-20 px-4">
+        <h2 className="heading-lg">Part not found</h2>
+        <p className="text-subtle mb-6">The part ID you are looking for does not exist in our library.</p>
         <button 
           onClick={() => navigate('/')} 
-          className="text-blue-400 mt-2 inline-block hover:text-blue-300"
+          className="btn-primary inline-flex"
         >
-          ← Back to Home
+          <ArrowLeft className="w-4 h-4" />
+          Back to Home
         </button>
       </div>
     );
   }
 
   return (
-    <div className="max-w-4xl mx-auto px-4 py-6 space-y-6">
+    <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
       {/* Back button */}
       <button
         onClick={() => navigate(-1)}
-        className="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm"
+        className="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm font-medium"
       >
         <ArrowLeft className="w-4 h-4" />
-        Back
+        Back to Results
       </button>
 
-      {/* Hero */}
-      <div className="bg-slate-800/60 border border-slate-700/50 rounded-2xl overflow-hidden">
-        {/* Diagram placeholder */}
-        <div className="aspect-video bg-slate-700/30 flex items-center justify-center">
-          <div className="text-center space-y-2">
-            <Wrench className="w-16 h-16 text-slate-500 mx-auto" />
-            <p className="text-slate-500 text-xs">Technical diagram coming soon</p>
-          </div>
-        </div>
+      {/* Hero Section - Diagram & Main Info */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        {/* Left: Diagram */}
+        <DiagramViewer 
+          url={part.diagramUrl} 
+          name={part.name} 
+        />
 
-        {/* Title area */}
-        <div className="p-5 space-y-3">
-          <div className="flex items-start justify-between gap-3">
-            <h1 className="text-2xl font-bold text-white leading-tight">{part.name}</h1>
-            <span className={`shrink-0 text-xs px-3 py-1 rounded-full font-medium ${getVerticalBadgeClass(part.vertical)}`}>
-              {getVerticalDisplayName(part.vertical)}
-            </span>
+        {/* Right: Core Identity */}
+        <div className="space-y-6">
+          <div className="space-y-4">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className={getVerticalBadgeClass(part.vertical)}>
+                {getVerticalDisplayName(part.vertical)}
+              </span>
+              <span className="text-[10px] bg-white/10 text-white/50 px-2 py-0.5 rounded-full font-bold uppercase tracking-widest">
+                {part.subcategory}
+              </span>
+            </div>
+            
+            <h1 className="heading-xl leading-tight">{part.name}</h1>
+            
+            <div className="p-4 bg-primary/10 border border-primary/20 rounded-2xl">
+               <p className="text-sm text-blue-200/80 leading-relaxed font-medium">
+                 {part.description}
+               </p>
+            </div>
           </div>
-          <p className="text-slate-300 text-sm leading-relaxed">{part.description}</p>
+
+          {/* Quick Stats Grid */}
+          <div className="grid grid-cols-2 gap-3">
+             <div className="p-3 glass-card bg-slate-800/20">
+                <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Materials</p>
+                <p className="text-xs text-white font-medium">{part.materials.join(', ')}</p>
+             </div>
+             <div className="p-3 glass-card bg-slate-800/20">
+                <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Part ID</p>
+                <p className="text-xs text-white font-mono opacity-60">{part.id}</p>
+             </div>
+          </div>
         </div>
       </div>
 
-      {/* Aliases Table */}
-      {part.aliases && part.aliases.length > 0 && (
-        <Section icon={Tag} title="Also Known As" subtitle="Names and aliases used across the trade">
-          <div className="divide-y divide-slate-700/50">
-            {/* Primary name */}
-            <div className="flex items-center justify-between py-3 px-1">
-              <span className="text-white font-medium text-sm">{part.name}</span>
-              <span className="text-xs text-blue-400 bg-blue-500/15 px-2 py-0.5 rounded-full">Primary name</span>
-            </div>
-            {part.aliases.map((alias: string, i: number) => (
-              <div key={i} className="flex items-center justify-between py-3 px-1 gap-3">
-                <span className="text-slate-200 text-sm">{alias}</span>
-                <span className="text-slate-500 text-xs text-right shrink-0 max-w-[50%]">General trade term</span>
+      {/* Detailed Content Sections */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Center: Also Known As (Aliases) */}
+        <div className="lg:col-span-2 space-y-6">
+          {part.aliases && part.aliases.length > 0 && (
+            <Section icon={Tag} title="Trade Terminology & Aliases" subtitle="Regional names used by professionals on the job">
+              <div className="divide-y divide-white/5 bg-slate-900/40 rounded-2xl overflow-hidden border border-white/5">
+                {/* Primary name row */}
+                <div className="flex items-center justify-between p-4 bg-primary/5">
+                  <span className="text-white font-bold text-sm">{part.name}</span>
+                  <span className="text-[10px] text-primary-light font-bold uppercase tracking-widest bg-primary/10 px-2 py-1 rounded-md border border-primary/20">
+                    Primary Name
+                  </span>
+                </div>
+                {/* Alias rows */}
+                {part.aliases.map((alias: string, i: number) => (
+                  <div key={i} className="flex items-center justify-between p-4 hover:bg-white/5 transition-colors">
+                    <span className="text-slate-300 text-sm font-medium">{alias}</span>
+                    <span className="text-slate-500 text-[10px] font-bold uppercase">General Alias</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            </Section>
+          )}
+
+          {/* Installation Notes */}
+          {part.installationNotes && (
+            <Section icon={BookOpen} title="Installation & Use Context">
+              <div className="p-5 glass-card bg-slate-900/60 border-l-4 border-l-primary leading-relaxed">
+                <p className="text-slate-300 text-sm">{part.installationNotes}</p>
+              </div>
+            </Section>
+          )}
+        </div>
+
+        {/* Sidebar: Compatibility & Extras */}
+        <div className="space-y-6">
+          {part.compatibleWith && part.compatibleWith.length > 0 && (
+            <Section icon={CheckCircle2} title="Compatible With">
+              <div className="flex flex-col gap-2">
+                {part.compatibleWith.map((item: string, i: number) => (
+                  <div key={i} className="flex items-center gap-3 p-3 glass-card bg-slate-900/60 group">
+                    <div className="w-6 h-6 rounded-full bg-success/20 flex items-center justify-center shrink-0">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-success" />
+                    </div>
+                    <span className="text-xs text-slate-300 font-semibold group-hover:text-white transition-colors">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </Section>
+          )}
+
+          <div className="p-6 glass-card bg-gradient-to-br from-primary/10 to-transparent border-primary/20">
+             <h4 className="text-white font-bold text-sm mb-2 flex items-center gap-2">
+               <Info className="w-4 h-4 text-primary-light" />
+               Need a Diagram?
+             </h4>
+             <p className="text-xs text-slate-400 leading-normal">
+               Use the search bar or camera (Phase 2) to quickly identify similar components on site.
+             </p>
           </div>
-        </Section>
-      )}
-
-      {/* Materials & Sizes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        {part.materials && part.materials.length > 0 && (
-          <Section icon={Layers} title="Materials">
-            <div className="flex flex-wrap gap-2">
-              {part.materials.map((mat: string, i: number) => (
-                <span key={i} className="text-xs bg-slate-700/60 text-slate-300 px-3 py-1.5 rounded-lg">
-                  {mat}
-                </span>
-              ))}
-            </div>
-          </Section>
-        )}
-        {(part as any).sizes && (part as any).sizes.length > 0 && (
-          <Section icon={Info} title="Available Sizes">
-            <div className="flex flex-wrap gap-2">
-              {(part as any).sizes.map((size: string, i: number) => (
-                <span key={i} className="text-xs bg-slate-700/60 text-slate-300 px-3 py-1.5 rounded-lg">
-                  {size}
-                </span>
-              ))}
-            </div>
-          </Section>
-        )}
+        </div>
       </div>
-
-      {/* Compatibility */}
-      {part.compatibleWith && part.compatibleWith.length > 0 && (
-        <Section icon={CheckCircle2} title="Compatible With">
-          <ul className="space-y-2">
-            {part.compatibleWith.map((item: string, i: number) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
-                <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                {item}
-              </li>
-            ))}
-          </ul>
-        </Section>
-      )}
-
-      {/* Installation Notes */}
-      {part.installationNotes && (
-        <Section icon={BookOpen} title="Installation Notes">
-          <p className="text-slate-300 text-sm leading-relaxed">{part.installationNotes}</p>
-        </Section>
-      )}
     </div>
   );
 }
 
-/** Reusable section wrapper */
+/** Reusable section wrapper for uniform detail page structure */
 interface SectionProps {
   icon: any;
   title: string;
@@ -135,13 +161,17 @@ interface SectionProps {
 
 function Section({ icon: Icon, title, subtitle, children }: SectionProps) {
   return (
-    <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-5 space-y-3">
-      <div className="flex items-center gap-2">
-        <Icon className="w-4 h-4 text-slate-400" />
-        <h2 className="text-base font-semibold text-white">{title}</h2>
+    <div className="space-y-4">
+      <div className="flex flex-col gap-1">
+        <div className="flex items-center gap-2">
+          <Icon className="w-5 h-5 text-primary-light" />
+          <h2 className="text-lg font-bold text-white tracking-tight">{title}</h2>
+        </div>
+        {subtitle && <p className="text-slate-500 text-xs font-medium pl-7">{subtitle}</p>}
       </div>
-      {subtitle && <p className="text-slate-500 text-xs -mt-1">{subtitle}</p>}
-      {children}
+      <div className="animate-in fade-in slide-in-from-top-2 duration-500">
+        {children}
+      </div>
     </div>
   );
 }
