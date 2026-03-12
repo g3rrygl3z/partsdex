@@ -8,9 +8,18 @@ export default function PartCard({ part }) {
       to={`/part/${part.id}`}
       className="group flex flex-col bg-slate-800/60 border border-slate-700/50 rounded-2xl overflow-hidden hover:border-slate-600 hover:bg-slate-800 transition-all duration-200"
     >
-      {/* Thumbnail placeholder */}
-      <div className="aspect-square bg-slate-700/40 flex items-center justify-center">
-        <Wrench className="w-10 h-10 text-slate-500 group-hover:text-slate-400 transition-colors" />
+      {/* Thumbnail */}
+      <div className="aspect-square bg-slate-700/40 flex items-center justify-center overflow-hidden">
+        {part.images && part.images.length > 0 ? (
+          <img
+            src={part.images[0]}
+            alt={part.name}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            loading="lazy"
+          />
+        ) : (
+          <Wrench className="w-10 h-10 text-slate-500 group-hover:text-slate-400 transition-colors" />
+        )}
       </div>
 
       {/* Content */}

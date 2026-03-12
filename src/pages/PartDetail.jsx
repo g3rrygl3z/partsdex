@@ -1,11 +1,13 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Wrench, Tag, Layers, CheckCircle2, Lightbulb, Info, BookOpen } from 'lucide-react';
+import { ArrowLeft, Wrench, Tag, Layers, CheckCircle2, Lightbulb, Info, BookOpen, Camera, ChevronLeft, ChevronRight } from 'lucide-react';
 import { getPartById } from '../utils/search';
 import { getVerticalBadgeClass, getVerticalDisplayName } from '../utils/helpers';
 
 export default function PartDetail() {
   const { partId } = useParams();
   const part = getPartById(partId);
+  const [selectedImage, setSelectedImage] = useState(0);
 
   if (!part) {
     return (
@@ -17,6 +19,8 @@ export default function PartDetail() {
       </div>
     );
   }
+
+  const hasImages = part.images && part.images.length > 0;
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-6 space-y-6">
@@ -35,13 +39,68 @@ export default function PartDetail() {
 
       {/* Hero */}
       <div className="bg-slate-800/60 border border-slate-700/50 rounded-2xl overflow-hidden">
-        {/* Diagram placeholder */}
-        <div className="aspect-video bg-slate-700/30 flex items-center justify-center">
-          <div className="text-center space-y-2">
-            <Wrench className="w-16 h-16 text-slate-500 mx-auto" />
-            <p className="text-slate-500 text-xs">Technical diagram coming soon</p>
+        {/* Image Gallery / Placeholder */}
+        {hasImages ? (
+          <div className="relative">
+            {/* Main Image */}
+            <div className="aspect-video bg-slate-900 flex items-center justify-center overflow-hidden">
+              <img
+                src={part.images[selectedImage]}
+                alt={`${part.name} — view ${selectedImage + 1}`}
+                className="w-full h-full object-contain"
+              />
+            </div>
+
+            {/* Image Navigation Arrows */}
+            {part.images.length > 1 && (
+              <>
+                <button
+                  onClick={() => setSelectedImage((prev) => (prev === 0 ? part.images.length - 1 : prev - 1))}
+                  className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white/70 hover:text-white hover:bg-black/70 transition-all"
+                >
+                  <ChevronLeft className="w-5 h-5" />
+                </button>
+                <button
+                  onClick={() => setSelectedImage((prev) => (prev === part.images.length - 1 ? 0 : prev + 1))}
+                  className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/50 backdrop-blur-sm flex items-center justify-center text-white/70 hover:text-white hover:bg-black/70 transition-all"
+                >
+                  <ChevronRight className="w-5 h-5" />
+                </button>
+              </>
+            )}
+
+            {/* Image Counter */}
+            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-1.5 bg-black/50 backdrop-blur-sm rounded-full px-3 py-1">
+              <Camera className="w-3 h-3 text-white/70" />
+              <span className="text-xs text-white/70">{selectedImage + 1} / {part.images.length}</span>
+            </div>
+
+            {/* Thumbnail Strip */}
+            {part.images.length > 1 && (
+              <div className="flex gap-1 p-2 bg-slate-800/80 overflow-x-auto">
+                {part.images.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setSelectedImage(i)}
+                    className={`shrink-0 w-14 h-14 rounded-lg overflow-hidden border-2 transition-all ${i === selectedImage
+                        ? 'border-blue-400 opacity-100'
+                        : 'border-transparent opacity-50 hover:opacity-80'
+                      }`}
+                  >
+                    <img src={img} alt={`Thumbnail ${i + 1}`} className="w-full h-full object-cover" />
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
-        </div>
+        ) : (
+          <div className="aspect-video bg-slate-700/30 flex items-center justify-center">
+            <div className="text-center space-y-2">
+              <Wrench className="w-16 h-16 text-slate-500 mx-auto" />
+              <p className="text-slate-500 text-xs">Technical diagram coming soon</p>
+            </div>
+          </div>
+        )}
 
         {/* Title area */}
         <div className="p-5 space-y-3">
