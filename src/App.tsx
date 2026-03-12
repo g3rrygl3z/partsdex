@@ -4,11 +4,14 @@ import Browse from '@/pages/Browse'
 import PartDetail from '@/pages/PartDetail'
 import Glossary from '@/pages/Glossary'
 
+import SearchResults from '@/pages/SearchResults'
+
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/search" element={<SearchResults />} />
         <Route path="/browse" element={<Browse />} />
         <Route path="/browse/:vertical" element={<Browse />} />
         <Route path="/parts/:id" element={<PartDetail />} />

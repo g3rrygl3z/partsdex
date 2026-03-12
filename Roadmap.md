@@ -43,11 +43,11 @@ Week 2: Polish & Finalize (Days 8–14)   ████████████ B
 ### Day 3 — Search Feature + Home Page
 
 **Michael (Search Feature)**
-- [ ] Build `SearchBar` component wired to Fuse.js logic
-- [ ] Search results page renders part cards from search output
-- [ ] Fuzzy matching confirmed: partial matches (e.g., "comp" → compression fitting)
-- [ ] Alias matching confirmed: e.g., "olive" → compression ring
-- [ ] Minimum 2-character trigger, 300ms result threshold
+- [x] Build `SearchBar` component wired to Fuse.js logic
+- [x] Search results page renders part cards from search output
+- [x] Fuzzy matching confirmed: partial matches (e.g., "comp" → compression fitting)
+- [x] Alias matching confirmed: e.g., "olive" → compression ring
+- [x] Minimum 2-character trigger, 300ms result threshold
 
 **Gary (Home Page)**
 - [ ] Hero section with app name, tagline, and search CTA

@@ -39,10 +39,9 @@ export default function SearchBar() {
     }
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if (e.key === 'Enter' && results.length > 0) {
-            // Navigate to top result if they just hit enter
-            handleResultClick()
-            navigate(`/parts/${results[0].id}`)
+        if (e.key === 'Enter' && query.trim().length > 0) {
+            setIsOpen(false)
+            navigate(`/search?q=${encodeURIComponent(query)}`)
         }
     }
 
