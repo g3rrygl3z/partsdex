@@ -56,11 +56,12 @@ Week 2: Polish & Finalize (Days 8–14)   ████████████ B
 
 ---
 
-### Day 4 — Part Detail Page + Data Expansion
+### Day 4 — Part Detail Page + API Data Expansion
 
-**Michael (Data Expansion)**
+**Michael (Data Expansion & AI API)**
 - [ ] Expand `parts.json` to 60 total parts
 - [ ] Source or create diagrams/images for the first 25 parts; place in `src/assets/diagrams/`
+- [ ] Implement Gemini API integration (via Nano Banana 2 / Firebase AI plugin) to dynamically pull visualization data for Expansion Tanks, Booster Pumps, and Heating Units
 
 **Gary (Part Detail Page)**
 - [ ] Part header: primary name, category badge, tagline
