@@ -55,7 +55,7 @@ export default function Home() {
   const featuredParts = allParts.slice(0, 6);
 
   return (
-    <div className="space-y-12 animate-in fade-in duration-1000">
+    <div className="space-y-12 pb-10 animate-in fade-in duration-1000">
       {/* Hero Section */}
       <section className="text-center space-y-6 py-10 relative">
         {/* Abstract background glow */}
@@ -132,7 +132,7 @@ export default function Home() {
             View full library →
           </Link>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {featuredParts.map((part) => (
             <PartCard key={part.id} part={part} />
           ))}

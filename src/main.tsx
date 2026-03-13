@@ -3,6 +3,10 @@ import { createRoot } from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.tsx'
+import { registerPWA } from './pwa'
+
+// Initialize PWA Service Worker
+registerPWA()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

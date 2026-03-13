@@ -3,16 +3,38 @@ import { ArrowLeft, Tag, CheckCircle2, Info, BookOpen } from 'lucide-react';
 import { getPartById } from '../utils/search';
 import { getVerticalBadgeClass, getVerticalDisplayName } from '../utils/helpers';
 import DiagramViewer from '../components/DiagramViewer';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { fetchNanoBananaVisualizationData, type VisualizationData } from '../utils/nanoBananaService';
+import { Activity, Layers, Droplets, Zap } from 'lucide-react';
 
 export default function PartDetail() {
   const { partId } = useParams<{ partId: string }>();
   const navigate = useNavigate();
   const part = getPartById(partId);
 
+  const [aiData, setAiData] = useState<VisualizationData | null>(null);
+  const [loadingAi, setLoadingAi] = useState(false);
+
   React.useEffect(() => {
     window.scrollTo(0, 0);
-  }, [partId]);
+    
+    if (part) {
+      const loadAiData = async () => {
+        setLoadingAi(true);
+        try {
+          const data = await fetchNanoBananaVisualizationData(part.name);
+          setAiData(data);
+        } catch (err) {
+          console.error("Failed to load AI visualization:", err);
+        } finally {
+          setLoadingAi(false);
+        }
+      };
+      loadAiData();
+    } else {
+      setAiData(null);
+    }
+  }, [partId, part]);
 
   if (!part) {
     return (
@@ -86,8 +108,59 @@ export default function PartDetail() {
 
       {/* Detailed Content Sections */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Center: Also Known As (Aliases) */}
-        <div className="lg:col-span-2 space-y-6">
+        {/* Center: Also Known As (Aliases) & AI Visualization */}
+        <div className="lg:col-span-2 space-y-8">
+          {/* AI-Generated Visualization Insights (Experimental) */}
+          {aiData && (
+            <div className="p-6 rounded-2xl bg-slate-900/60 border border-primary/30 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <Zap className="w-12 h-12 text-primary-light" />
+              </div>
+              
+              <div className="flex items-center gap-2 mb-4">
+                <Activity className="w-5 h-5 text-primary-light animate-pulse" />
+                <h2 className="text-sm font-bold text-white uppercase tracking-widest">AI Visualization Insights</h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div>
+                    <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Internal Flow Logic</p>
+                    <div className="flex items-center gap-2 text-primary-light">
+                      <Droplets className="w-4 h-4" />
+                      <span className="text-sm font-semibold capitalize">{aiData.flowDirection} flow pattern</span>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Visual Rendering Hints</p>
+                    <p className="text-xs text-slate-300 italic leading-relaxed">
+                      "{aiData.visualizationNotes}"
+                    </p>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Critical Connection Points</p>
+                  <div className="flex flex-wrap gap-2">
+                    {aiData.criticalConnections.map((conn, i) => (
+                      <span key={i} className="px-2 py-1 bg-white/5 border border-white/10 rounded-md text-[10px] text-slate-300 font-medium">
+                        {conn}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {loadingAi && (
+            <div className="p-12 glass-card bg-slate-900/20 flex flex-col items-center justify-center gap-3 border-dashed border-white/10">
+              <Activity className="w-6 h-6 text-primary-light animate-spin" />
+              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Generating Technical Model...</p>
+            </div>
+          )}
+
           {part.aliases && part.aliases.length > 0 && (
             <Section icon={Tag} title="Trade Terminology & Aliases" subtitle="Regional names used by professionals on the job">
               <div className="divide-y divide-white/5 bg-slate-900/40 rounded-2xl overflow-hidden border border-white/5">

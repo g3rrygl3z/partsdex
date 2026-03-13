@@ -33,7 +33,7 @@ export default function SearchResults() {
       </div>
 
       {/* Results Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {(query ? results : allParts).map((part) => (
           <PartCard key={part.id} part={part} />
         ))}
