@@ -14,6 +14,7 @@ interface DiagramViewerProps {
  */
 export default function DiagramViewer({ url, name }: DiagramViewerProps) {
   const [hasError, setHasError] = React.useState(false);
+    const [imgLoading, setImgLoading] = React.useState(true);
 
   return (
     <div className="relative group perspective-1000">
@@ -31,6 +32,9 @@ export default function DiagramViewer({ url, name }: DiagramViewerProps) {
           
           {/* Image / Fallback Container */}
           <div className="absolute inset-0 flex items-center justify-center p-6">
+              {imgLoading && url && !hasError && (
+                <div className="text-center animate-pulse text-blue-400">Loading diagram...</div>
+              )}
             {!url || hasError ? (
               <div className="text-center space-y-4 animate-in fade-in duration-700">
                 <div className="w-20 h-20 bg-slate-800 rounded-full flex items-center justify-center mx-auto border border-white/5 shadow-inner">
@@ -51,6 +55,8 @@ export default function DiagramViewer({ url, name }: DiagramViewerProps) {
                 alt={`Technical diagram for ${name}`}
                 className="max-w-full max-h-full object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] transition-transform duration-500 group-hover:scale-105"
                 onError={() => setHasError(true)}
+                  onLoad={() => setImgLoading(false)}
+                  style={{ display: imgLoading ? 'none' : 'block' }}
               />
             )}
           </div>

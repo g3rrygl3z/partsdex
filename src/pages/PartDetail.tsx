@@ -1,11 +1,11 @@
+
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Tag, CheckCircle2, Info, BookOpen } from 'lucide-react';
+import { ArrowLeft, Tag, CheckCircle2, Info, BookOpen, Activity, Droplets, Zap } from 'lucide-react';
 import { getPartById } from '../utils/search';
 import { getVerticalBadgeClass, getVerticalDisplayName } from '../utils/helpers';
 import DiagramViewer from '../components/DiagramViewer';
 import React, { useState, useEffect } from 'react';
 import { fetchNanoBananaVisualizationData, type VisualizationData } from '../utils/nanoBananaService';
-import { Activity, Layers, Droplets, Zap } from 'lucide-react';
 
 export default function PartDetail() {
   const { partId } = useParams<{ partId: string }>();
@@ -15,9 +15,8 @@ export default function PartDetail() {
   const [aiData, setAiData] = useState<VisualizationData | null>(null);
   const [loadingAi, setLoadingAi] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
-    
     if (part) {
       const loadAiData = async () => {
         setLoadingAi(true);
@@ -54,23 +53,10 @@ export default function PartDetail() {
 
   return (
     <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
-      {/* Back button */}
-      <button
-        onClick={() => navigate(-1)}
-        className="inline-flex items-center gap-2 text-slate-400 hover:text-white transition-colors text-sm font-medium"
-      >
-        <ArrowLeft className="w-4 h-4" />
-        Back to Results
-      </button>
-
       {/* Hero Section - Diagram & Main Info */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         {/* Left: Diagram */}
-        <DiagramViewer 
-          url={part.diagramUrl} 
-          name={part.name} 
-        />
-
+        <DiagramViewer url={part.diagramUrl} name={part.name} />
         {/* Right: Core Identity */}
         <div className="space-y-6">
           <div className="space-y-4">
@@ -82,30 +68,26 @@ export default function PartDetail() {
                 {part.subcategory}
               </span>
             </div>
-            
             <h1 className="heading-xl leading-tight">{part.name}</h1>
-            
             <div className="p-4 bg-primary/10 border border-primary/20 rounded-2xl">
-               <p className="text-sm text-blue-200/80 leading-relaxed font-medium">
-                 {part.description}
-               </p>
+              <p className="text-sm text-blue-200/80 leading-relaxed font-medium">
+                {part.description}
+              </p>
             </div>
           </div>
-
           {/* Quick Stats Grid */}
           <div className="grid grid-cols-2 gap-3">
-             <div className="p-3 glass-card bg-slate-800/20">
-                <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Materials</p>
-                <p className="text-xs text-white font-medium">{part.materials.join(', ')}</p>
-             </div>
-             <div className="p-3 glass-card bg-slate-800/20">
-                <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Part ID</p>
-                <p className="text-xs text-white font-mono opacity-60">{part.id}</p>
-             </div>
+            <div className="p-3 glass-card bg-slate-800/20">
+              <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Materials</p>
+              <p className="text-xs text-white font-medium">{part.materials.join(', ')}</p>
+            </div>
+            <div className="p-3 glass-card bg-slate-800/20">
+              <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Part ID</p>
+              <p className="text-xs text-white font-mono opacity-60">{part.id}</p>
+            </div>
           </div>
         </div>
       </div>
-
       {/* Detailed Content Sections */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Center: Also Known As (Aliases) & AI Visualization */}
@@ -116,12 +98,10 @@ export default function PartDetail() {
               <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                 <Zap className="w-12 h-12 text-primary-light" />
               </div>
-              
               <div className="flex items-center gap-2 mb-4">
                 <Activity className="w-5 h-5 text-primary-light animate-pulse" />
                 <h2 className="text-sm font-bold text-white uppercase tracking-widest">AI Visualization Insights</h2>
               </div>
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <div>
@@ -131,7 +111,6 @@ export default function PartDetail() {
                       <span className="text-sm font-semibold capitalize">{aiData.flowDirection} flow pattern</span>
                     </div>
                   </div>
-                  
                   <div>
                     <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Visual Rendering Hints</p>
                     <p className="text-xs text-slate-300 italic leading-relaxed">
@@ -139,7 +118,6 @@ export default function PartDetail() {
                     </p>
                   </div>
                 </div>
-
                 <div className="space-y-4">
                   <p className="text-[10px] text-slate-500 font-bold uppercase mb-1">Critical Connection Points</p>
                   <div className="flex flex-wrap gap-2">
@@ -153,14 +131,12 @@ export default function PartDetail() {
               </div>
             </div>
           )}
-
           {loadingAi && (
             <div className="p-12 glass-card bg-slate-900/20 flex flex-col items-center justify-center gap-3 border-dashed border-white/10">
               <Activity className="w-6 h-6 text-primary-light animate-spin" />
               <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Generating Technical Model...</p>
             </div>
           )}
-
           {part.aliases && part.aliases.length > 0 && (
             <Section icon={Tag} title="Trade Terminology & Aliases" subtitle="Regional names used by professionals on the job">
               <div className="divide-y divide-white/5 bg-slate-900/40 rounded-2xl overflow-hidden border border-white/5">
@@ -181,7 +157,6 @@ export default function PartDetail() {
               </div>
             </Section>
           )}
-
           {/* Installation Notes */}
           {part.installationNotes && (
             <Section icon={BookOpen} title="Installation & Use Context">
@@ -191,7 +166,6 @@ export default function PartDetail() {
             </Section>
           )}
         </div>
-
         {/* Sidebar: Compatibility & Extras */}
         <div className="space-y-6">
           {part.compatibleWith && part.compatibleWith.length > 0 && (
@@ -208,15 +182,14 @@ export default function PartDetail() {
               </div>
             </Section>
           )}
-
           <div className="p-6 glass-card bg-gradient-to-br from-primary/10 to-transparent border-primary/20">
-             <h4 className="text-white font-bold text-sm mb-2 flex items-center gap-2">
-               <Info className="w-4 h-4 text-primary-light" />
-               Need a Diagram?
-             </h4>
-             <p className="text-xs text-slate-400 leading-normal">
-               Use the search bar or camera (Phase 2) to quickly identify similar components on site.
-             </p>
+            <h4 className="text-white font-bold text-sm mb-2 flex items-center gap-2">
+              <Info className="w-4 h-4 text-primary-light" />
+              Need a Diagram?
+            </h4>
+            <p className="text-xs text-slate-400 leading-normal">
+              Use the search bar or camera (Phase 2) to quickly identify similar components on site.
+            </p>
           </div>
         </div>
       </div>
@@ -224,9 +197,17 @@ export default function PartDetail() {
   );
 }
 
-/** Reusable section wrapper for uniform detail page structure */
 interface SectionProps {
-  icon: any;
+  icon: React.ElementType;
+  title: string;
+  subtitle?: string;
+  children: React.ReactNode;
+}
+
+
+// Section component and SectionProps interface
+interface SectionProps {
+  icon: React.ElementType;
   title: string;
   subtitle?: string;
   children: React.ReactNode;

@@ -28,6 +28,15 @@
                 "id": "supply",
                 "label": "Supply"
             }
+            ,
+            {
+                "id": "consumables",
+                "label": "Consumables"
+            },
+            {
+                "id": "mechanical",
+                "label": "Mechanical"
+            }
         ]
     },
     {
@@ -54,6 +63,10 @@
             {
                 "id": "air-quality",
                 "label": "Air Quality / Filtration"
+            },
+            {
+                "id": "electrical",
+                "label": "Electrical"
             }
         ]
     },
@@ -81,6 +94,14 @@
             {
                 "id": "heat-transfer",
                 "label": "Heat Transfer"
+            },
+            {
+                "id": "heat-generation",
+                "label": "Heat Generation"
+            },
+            {
+                "id": "mechanical",
+                "label": "Mechanical"
             }
         ]
     }

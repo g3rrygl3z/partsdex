@@ -8,6 +8,7 @@ import Header from './Header';
 export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col bg-slate-950 font-sans selection:bg-primary/30">
+      <div style={{color: 'yellow', background: 'black', padding: 8, fontWeight: 'bold'}}>DEBUG: Layout component rendered</div>
       <Header />
       
       <main className="flex-1 w-full max-w-4xl mx-auto px-4 py-8 pb-32">

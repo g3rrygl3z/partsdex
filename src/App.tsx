@@ -6,6 +6,7 @@ import BrowseVertical from './pages/BrowseVertical';
 import PartDetail from './pages/PartDetail';
 import Glossary from './pages/Glossary';
 import SearchResults from './pages/SearchResults';
+import FilterTestPage from './pages/FilterTestPage';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="part/:partId" element={<PartDetail />} />
         <Route path="glossary" element={<Glossary />} />
         <Route path="search" element={<SearchResults />} />
+        <Route path="filter-test" element={<FilterTestPage />} />
       </Route>
     </Routes>
   );

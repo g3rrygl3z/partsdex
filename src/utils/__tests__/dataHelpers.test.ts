@@ -1,10 +1,11 @@
 import { describe, it, expect } from 'vitest';
 import { getPartById, getPartsByVertical, getPartsBySubCategory, filterByMaterial, sortByName, buildAliasList } from '../dataHelpers';
 
+import type { Vertical } from '../../types';
 const sampleParts = [
-  { id: 'a', primaryName: 'Alpha', aliases: ['A'], category: 'plumbing', subCategory: 'pipes', materials: ['copper'], compatibleWith: [], overview: '', installationNotes: '', tags: [] },
-  { id: 'b', primaryName: 'Beta', aliases: ['B'], category: 'hvac', subCategory: 'ducts', materials: ['steel'], compatibleWith: [], overview: '', installationNotes: '', tags: [] },
-  { id: 'c', primaryName: 'Gamma', aliases: ['G'], category: 'plumbing', subCategory: 'fittings', materials: ['plastic'], compatibleWith: [], overview: '', installationNotes: '', tags: [] },
+  { id: 'a', primaryName: 'Alpha', aliases: ['A'], category: 'plumbing' as Vertical, subCategory: 'pipes', materials: ['copper'], compatibleWith: [], overview: '', installationNotes: '', tags: [], diagramUrl: '' },
+  { id: 'b', primaryName: 'Beta', aliases: ['B'], category: 'hvac' as Vertical, subCategory: 'ducts', materials: ['steel'], compatibleWith: [], overview: '', installationNotes: '', tags: [], diagramUrl: '' },
+  { id: 'c', primaryName: 'Gamma', aliases: ['G'], category: 'plumbing' as Vertical, subCategory: 'fittings', materials: ['plastic'], compatibleWith: [], overview: '', installationNotes: '', tags: [], diagramUrl: '' },
 ];
 
 describe('dataHelpers', () => {
