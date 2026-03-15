@@ -15,6 +15,7 @@ export interface Part {
     materials: string[]      // e.g. ["copper", "brass", "PVC", "stainless"]
     installationNotes: string
     tags: string[]           // Free-form search tags e.g. ["compression", "push-fit"]
+    manufacturer?: string    // Optional manufacturer name, e.g. "NIBCO"
 }
 
 export interface AliasEntry {

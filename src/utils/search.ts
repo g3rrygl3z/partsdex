@@ -17,13 +17,15 @@ const partsData: NormalizedPart[] = (rawPartsData as any[]).map(part => ({
   name: part.primaryName,
   vertical: part.category,
   description: part.overview,
-  subcategory: part.subCategory
+  subcategory: part.subCategory,
+  manufacturer: part.manufacturer
 }));
 
 const fuseOptions = {
   keys: [
     { name: 'name', weight: 0.35 },
     { name: 'aliases', weight: 0.25 },
+    { name: 'manufacturer', weight: 0.20 },
     { name: 'description', weight: 0.15 },
     { name: 'subcategory', weight: 0.1 },
     { name: 'vertical', weight: 0.05 },
