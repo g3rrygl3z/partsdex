@@ -7,30 +7,34 @@ export default {
   theme: {
     extend: {
       colors: {
-        // PartsDex brand colors — professional trade-tool aesthetic
-        brand: {
-          50:  '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-          950: '#0f172a',
+        // PartsDex brand colors — updated to PRD specs
+        primary: {
+          DEFAULT: '#1B4F8A', // PRD Primary Blue
+          dark: '#143d6b',
+          light: '#2567b5',
         },
-        // Vertical accent colors
-        plumbing:  { DEFAULT: '#3b82f6', light: '#dbeafe' },  // Blue
-        hvac:      { DEFAULT: '#10b981', light: '#d1fae5' },  // Green
-        boiler:    { DEFAULT: '#f59e0b', light: '#fef3c7' },  // Amber
+        success: {
+          DEFAULT: '#2E7D32', // PRD Success Green
+        },
+        bgGray: '#F5F5F5',    // PRD Background Gray
+        textDark: '#1A1A2E',  // PRD Text Dark
+        textMuted: '#555555', // PRD Text Muted
+        
+        // Industry vertical specific accents (tailored for dark/premium theme)
+        plumbing:  { DEFAULT: '#3b82f6', light: '#93c5fd' }, 
+        hvac:      { DEFAULT: '#10b981', light: '#6ee7b7' },  
+        'boiler-heating': { DEFAULT: '#f59e0b', light: '#fbbf24' },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        // Modern typography per developer guidelines
+        sans: ['Outfit', 'Inter', 'system-ui', 'sans-serif'],
       },
       screens: {
-        'xs': '375px',  // iPhone SE — primary design target
+        'xs': '375px', // iPhone SE — primary design target per PRD
+      },
+      spacing: {
+        'safe-top': 'env(safe-area-inset-top)',
+        'safe-bottom': 'env(safe-area-inset-bottom)',
       },
     },
   },
