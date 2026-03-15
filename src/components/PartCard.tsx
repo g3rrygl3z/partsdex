@@ -22,7 +22,27 @@ export default function PartCard({ part }: PartCardProps) {
         {/* Subtle background glow on hover */}
         <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/5 transition-colors duration-500" />
         
-        <Wrench className="w-10 h-10 text-slate-500 group-hover:text-primary/60 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
+        {(part.images && part.images.length > 0) ? (
+          <img
+            src={part.images[0]}
+            alt={part.name}
+            className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
+          />
+        ) : part.diagramUrl ? (
+          <img
+            src={part.diagramUrl}
+            alt={part.name}
+            className="w-full h-full object-contain p-4 group-hover:scale-110 transition-transform duration-500"
+            onError={(e) => {
+              (e.target as HTMLImageElement).style.display = 'none';
+            }}
+          />
+        ) : (
+          <Wrench className="w-10 h-10 text-slate-500 group-hover:text-primary/60 group-hover:scale-110 group-hover:rotate-12 transition-all duration-500" />
+        )}
         
         {/* Industry badge overlay */}
         <div className="absolute top-2 left-2 z-10">

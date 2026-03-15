@@ -19,6 +19,7 @@ export default function App() {
         <Route path="glossary" element={<Glossary />} />
         <Route path="search" element={<SearchResults />} />
         <Route path="filter-test" element={<FilterTestPage />} />
+        <Route path="filter-test/:verticalId" element={<FilterTestPage />} />
       </Route>
     </Routes>
   );

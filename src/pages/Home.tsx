@@ -56,7 +56,6 @@ export default function Home() {
 
   return (
     <div className="space-y-12 pb-10 animate-in fade-in duration-1000">
-      <div style={{color: 'lime', background: 'black', padding: 8, fontWeight: 'bold'}}>DEBUG: Home component rendered</div>
       {/* Hero Section */}
       <section className="text-center space-y-6 py-10 relative">
         {/* Abstract background glow */}

@@ -10,6 +10,9 @@ export interface NormalizedPart extends Part {
   vertical: Vertical;  // alias for category
   description: string; // alias for overview
   subcategory: string; // alias for subCategory (lowercase)
+  modelNumber?: string;
+  applications?: string[];
+  connectionType?: string;
 }
 
 const partsData: NormalizedPart[] = (rawPartsData as any[]).map(part => ({
@@ -18,7 +21,11 @@ const partsData: NormalizedPart[] = (rawPartsData as any[]).map(part => ({
   vertical: part.category,
   description: part.overview,
   subcategory: part.subCategory,
-  manufacturer: part.manufacturer
+  manufacturer: part.manufacturer,
+  images: part.images,
+  modelNumber: part.modelNumber,
+  applications: part.applications,
+  connectionType: part.connectionType
 }));
 
 const fuseOptions = {

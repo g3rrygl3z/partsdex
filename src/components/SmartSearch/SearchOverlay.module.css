@@ -1,0 +1,117 @@
+/* src/components/SmartSearch/SearchOverlay.module.css */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+  animation: fadeIn 0.15s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.panel {
+  background: #ffffff;
+  width: 100%;
+  max-width: 640px;
+  min-height: 100dvh;
+  padding: 0;
+  animation: slideDown 0.18s ease-out;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-12px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+/* On wider screens, show as a centered floating card */
+@media (min-width: 640px) {
+  .overlay { align-items: flex-start; padding-top: 80px; }
+  .panel {
+    min-height: auto;
+    max-height: 80vh;
+    border-radius: 16px;
+    box-shadow: 0 24px 64px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 18px 12px;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1B4F8A;
+  letter-spacing: -0.02em;
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  color: #374151;
+  transition: background 0.12s;
+}
+
+.closeBtn:hover { background: #e5e7eb; }
+
+/* Search wrap */
+.searchWrap { padding: 14px 16px; }
+
+/* Hint pills */
+.hints {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 0 16px 16px;
+}
+
+.hintLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+}
+
+.hintPill {
+  font-size: 12px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #f9fafb;
+  color: #374151;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.1s, border-color 0.1s;
+}
+
+.hintPill:hover {
+  background: #EFF6FF;
+  border-color: #BFDBFE;
+  color: #1B4F8A;
+}

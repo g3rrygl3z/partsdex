@@ -11,11 +11,15 @@ export interface Part {
     subCategory: string      // e.g. "fittings", "valves", "ductwork", "controls"
     overview: string         // Plain-English: what it is, what it does, typical applications
     diagramUrl: string       // Path to diagram asset, e.g. "/assets/diagrams/compression-fitting-15mm.svg"
+    images?: string[]        // Optional collection of product images
     compatibleWith: string[] // Part IDs this connects to
     materials: string[]      // e.g. ["copper", "brass", "PVC", "stainless"]
     installationNotes: string
     tags: string[]           // Free-form search tags e.g. ["compression", "push-fit"]
     manufacturer?: string    // Optional manufacturer name, e.g. "NIBCO"
+    modelNumber?: string     // Optional manufacturer-specific SKU/number
+    applications?: string[]  // Optional specific use cases
+    connectionType?: string  // Optional, e.g. "Push", "Compression", "Press"
 }
 
 export interface AliasEntry {

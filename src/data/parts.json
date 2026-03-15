@@ -6481,7 +6481,8 @@
         "primaryName": "Coupling Push \u00d7 Push",
         "category": "plumbing",
         "overview": "Lead-free brass push-to-connect coupling for joining two pipes without solder, glue, or special tools. Push the pipe in until it clicks and it locks permanently via an internal 316 stainless steel grip ring and EPDM O-ring seal. Compatible with hard drawn copper (K, L, M), PEX (with stiffeners), and CPVC. The fastest way to make a coupling connection on a job site \u2014 no flame, no fittings, no waiting.",
-        "subCategory": "fittings"
+        "subCategory": "fittings",
+        "diagramUrl": "/images/parts/P700-LF.jpg"
     },
     {
         "id": "nibco-p701-lf-repair-coupling",
@@ -6834,7 +6835,8 @@
         "primaryName": "Cap Push",
         "category": "plumbing",
         "overview": "A push-to-connect end cap for sealing off open pipe ends without soldering. Just push the pipe in and it locks. Used to cap dead ends, test pipe sections, or temporarily seal future connection points during construction. Available from \u00bc\" to 1\".",
-        "subCategory": "fittings"
+        "subCategory": "fittings",
+        "diagramUrl": "/images/parts/P717-LF.jpg"
     },
     {
         "id": "nibco-p717d-lf-cap-drain",
@@ -7082,7 +7084,8 @@
         "primaryName": "90\u00b0 Elbow Push \u00d7 Female (FNPT)",
         "category": "plumbing",
         "overview": "A 90-degree elbow with one push-to-connect end and one female NPT threaded end. Used when a push-fit piping run needs to make a 90\u00b0 turn and terminate into a female-threaded valve or fixture at the same time. Eliminates a separate elbow plus adapter combination.",
-        "subCategory": "fittings"
+        "subCategory": "fittings",
+        "diagramUrl": "/images/parts/P707-3-LF.jpg"
     },
     {
         "id": "nibco-p707-4-lf-90elbow-pxm",
@@ -7168,7 +7171,8 @@
         "primaryName": "90\u00b0 Elbow Push \u00d7 Male (MNPT)",
         "category": "plumbing",
         "overview": "A 90-degree elbow with one push-to-connect end and one male NPT threaded end. Combines a direction change and a threaded transition in one fitting \u2014 used to turn a push-fit run and plug into a female-threaded valve, port, or fixture without extra fittings.",
-        "subCategory": "fittings"
+        "subCategory": "fittings",
+        "diagramUrl": "/images/parts/P707-4-LF.jpg"
     },
     {
         "id": "nibco-p707-5-lf-drop-elbow-pxp",
@@ -7243,7 +7247,8 @@
         "primaryName": "90\u00b0 Drop Elbow Push \u00d7 Push",
         "category": "plumbing",
         "overview": "A 90-degree push-to-connect drop (ear) elbow with mounting ears for screwing directly to a wall stud or backing plate. Used to terminate a supply run at a wall and provide a fixed stub-out point for a faucet, shower valve, or washing machine connection. Both ends are push-to-connect.",
-        "subCategory": "fittings"
+        "subCategory": "fittings",
+        "diagramUrl": "/images/parts/P707-5-LF.jpg"
     },
     {
         "id": "nibco-p707-3-5-lf-drop-elbow-pxf",
@@ -7329,7 +7334,8 @@
         "primaryName": "90\u00b0 Drop Elbow Push \u00d7 Female (FNPT)",
         "category": "plumbing",
         "overview": "A 90-degree drop elbow with mounting ears, one push-to-connect end, and one female NPT threaded end. Allows a supply run to terminate at the wall with a female-threaded stub-out for direct connection to a male-threaded faucet supply or valve \u2014 no additional adapter needed.",
-        "subCategory": "fittings"
+        "subCategory": "fittings",
+        "diagramUrl": "/images/parts/P707-3-5-LF.jpg"
     },
     {
         "id": "nibco-p711-lf-tee-pxpxp",
@@ -7475,7 +7481,8 @@
         "primaryName": "Tee Push \u00d7 Push \u00d7 Push",
         "category": "plumbing",
         "overview": "A three-way push-to-connect tee with push ends on all three outlets. Used to create branch lines in potable water supply systems without soldering. Available in equal and reducing configurations across \u00bc\" to 1\". The fastest way to add a branch to an existing run \u2014 no flame, no glue, no tools.",
-        "subCategory": "fittings"
+        "subCategory": "fittings",
+        "diagramUrl": "/images/parts/P711-LF.jpg"
     },
     {
         "id": "nibco-pfp200a-lf-ball-valve",
@@ -7574,7 +7581,8 @@
         "primaryName": "Ball Valve Push \u00d7 Push",
         "category": "plumbing",
         "overview": "A full-bore lead-free brass ball valve with push-to-connect ends on both sides. Installs without solder or special tools \u2014 push the pipe in and the valve is ready to operate. Quarter-turn handle gives instant open/close for isolation. Used as a shut-off valve at fixtures, appliances, and branches in residential and commercial potable water systems.",
-        "subCategory": "valves"
+        "subCategory": "valves",
+        "diagramUrl": "/images/parts/PFP200A-LF.jpg"
     },
     {
         "id": "nibco-pfp200d-lf-ball-valve-drain",
@@ -7668,7 +7676,8 @@
         "primaryName": "Ball Valve with Drain Push \u00d7 Push",
         "category": "plumbing",
         "overview": "A push-to-connect ball valve with a built-in side drain port that allows the downstream piping to be drained after shutting off flow. Combines a full-bore shut-off valve with a drain point in one fitting \u2014 ideal for outdoor supply lines, seasonal systems, and anywhere convenient drainage is needed without cutting pipe.",
-        "subCategory": "valves"
+        "subCategory": "valves",
+        "diagramUrl": "/images/parts/P-FP-200-D-LF.jpg"
     },
     {
         "id": "nibco-pfp200s-lf-slip-ball-valve",
@@ -7843,7 +7852,8 @@
         "primaryName": "Ball Valve Push \u00d7 FPT",
         "category": "plumbing",
         "overview": "A ball valve with one push-to-connect end and one female NPT threaded end. Used to add an isolation valve at the transition point between a push-fit piping run and a threaded pipe or equipment connection. One fitting replaces a valve plus a separate adapter.",
-        "subCategory": "valves"
+        "subCategory": "valves",
+        "diagramUrl": "/images/parts/TP-FP-200-LF.jpg"
     },
     {
         "id": "nibco-p480w-lf-check-valve",
@@ -7927,7 +7937,8 @@
         "primaryName": "Check Valve Inline Push \u00d7 Push",
         "category": "plumbing",
         "overview": "An inline spring-loaded check valve with push-to-connect ends on both sides. Allows flow in one direction only \u2014 automatically closes if flow reverses, preventing backflow and cross-contamination. Installed in push-fit piping without any soldering or tools. Used wherever backflow prevention is needed in potable water systems.",
-        "subCategory": "valves"
+        "subCategory": "valves",
+        "diagramUrl": "/images/parts/P480W-LF.jpg"
     },
     {
         "id": "nibco-p7185fx-lf-angle-stop-fip",
@@ -8013,7 +8024,8 @@
         "primaryName": "Angle Stop Push \u00d7 FIP (Supply Stop Valve)",
         "category": "plumbing",
         "overview": "A lead-free push-to-connect angle supply stop valve with an integrated braided stainless steel supply hose. The push end connects to the supply pipe coming out of the wall; the FIP end at the outlet connects to the faucet or toilet supply inlet. Quarter-turn ball valve gives instant shut-off. Available as a 20\" faucet supply line or 12\" toilet supply line configuration.",
-        "subCategory": "valves"
+        "subCategory": "valves",
+        "diagramUrl": "/images/parts/P7185FX-LF.jpg"
     },
     {
         "id": "nibco-p7180fx-lf-straight-stop-fip",
@@ -8095,7 +8107,8 @@
         "primaryName": "Straight Stop Push \u00d7 FIP (Supply Stop Valve)",
         "category": "plumbing",
         "overview": "A lead-free push-to-connect straight supply stop valve with integrated braided stainless steel supply hose. Unlike the angle stop, the inlet and outlet are inline (straight through) rather than at 90\u00b0. Used where the supply pipe comes straight out of the floor or wall and connects directly inline to a faucet or toilet supply. Quarter-turn ball valve for instant shut-off.",
-        "subCategory": "valves"
+        "subCategory": "valves",
+        "diagramUrl": "/images/parts/P7180FX-LF.jpg"
     },
     {
         "id": "nibco-p7185-lf-angle-supply-stop-comp",
@@ -8168,7 +8181,8 @@
         "primaryName": "Angle Supply Stop Push \u00d7 Compression",
         "category": "plumbing",
         "overview": "An angle supply stop with a push-to-connect supply inlet and a compression outlet. The compression end accepts a standard 3/8\" compression fitting for connecting to faucet supply tubes or other compression-fitted components. Push end connects directly to \u00bd\" supply pipe. Used when the fixture side connection uses a compression fitting rather than a braided hose.",
-        "subCategory": "valves"
+        "subCategory": "valves",
+        "diagramUrl": "/images/parts/P7185-LF.jpg"
     },
     {
         "id": "nibco-p7180-lf-straight-supply-stop-comp",
@@ -8314,7 +8328,8 @@
         "primaryName": "Washing Machine Ball Valve Push \u00d7 MHT",
         "category": "plumbing",
         "overview": "A washing machine supply valve with a push-to-connect supply inlet and a male hose thread (MHT) outlet for standard washing machine supply hose connections. Features a dual-color handle \u2014 red for hot, blue for cold \u2014 for instant identification. Quarter-turn ball valve. Designed to replace soldered hose bibbs and supply stops at washing machine connections.",
-        "subCategory": "valves"
+        "subCategory": "valves",
+        "diagramUrl": "/images/parts/PWMV-LF.jpg"
     },
     {
         "id": "nibco-pflex18fip-water-heater-connector",
@@ -8391,7 +8406,8 @@
         "primaryName": "Water Heater Connector Push \u00d7 FIP",
         "category": "plumbing",
         "overview": "An 18-inch braided stainless steel flexible connector with a push-to-connect end for the supply pipe and a female iron pipe (FIP) threaded end for the water heater inlet or outlet port. Installs without soldering \u2014 push the pipe end in, thread the FIP end onto the heater nipple. Available in \u00bd\" \u00d7 \u00be\" and \u00be\" \u00d7 \u00be\" configurations.",
-        "subCategory": "flexible connectors"
+        "subCategory": "flexible connectors",
+        "diagramUrl": "/images/parts/P-FLEX18FIP.jpg"
     },
     {
         "id": "nibco-pfp-flex18fip-ball-valve-connector",
@@ -8468,7 +8484,8 @@
         "primaryName": "Water Heater Connector with Ball Valve Push \u00d7 FIP",
         "category": "plumbing",
         "overview": "An 18-inch braided stainless steel flexible water heater connector with an integrated push-to-connect ball valve at the supply end. The valve allows the water heater to be isolated without shutting off the whole building supply. The FIP end threads onto the water heater inlet or outlet port. One fitting replaces a separate shut-off valve plus a water heater connector.",
-        "subCategory": "flexible connectors"
+        "subCategory": "flexible connectors",
+        "diagramUrl": "/images/parts/PFP-FLEX18FIP.jpg"
     },
     {
         "id": "nibco-pflex18-repair-connector",
@@ -8544,7 +8561,8 @@
         "primaryName": "Repair Connector Push \u00d7 Push",
         "category": "plumbing",
         "overview": "An 18-inch braided stainless steel flexible connector with push-to-connect ends on both sides. Used for pipe repairs where a rigid coupling cannot be easily installed, or where flexibility is needed to connect two fixed pipe ends that are slightly misaligned. Available in \u00bd\" and \u00be\".",
-        "subCategory": "flexible connectors"
+        "subCategory": "flexible connectors",
+        "diagramUrl": "/images/parts/P-FLEX18.jpg"
     },
     {
         "id": "nibco-pflex24fip-water-softener-connector",
@@ -8616,7 +8634,8 @@
         "primaryName": "Water Softener Connector Push \u00d7 FIP",
         "category": "plumbing",
         "overview": "A 24-inch braided stainless steel flexible connector with a push-to-connect end and a female iron pipe (FIP) threaded end. Specifically sized for water softener bypass and inlet connections where the longer 24\" length accommodates the wider spacing of water softener cabinet connections. Available in \u00be\" \u00d7 1\".",
-        "subCategory": "flexible connectors"
+        "subCategory": "flexible connectors",
+        "diagramUrl": "/images/parts/P-FLEX24FIP.jpg"
     },
     {
         "id": "nibco-push-removal-tool",

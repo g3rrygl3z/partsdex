@@ -56,7 +56,10 @@ export default function PartDetail() {
       {/* Hero Section - Diagram & Main Info */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         {/* Left: Diagram */}
-        <DiagramViewer url={part.diagramUrl} name={part.name} />
+        <DiagramViewer 
+          url={(part.images && part.images.length > 0) ? part.images[0] : part.diagramUrl} 
+          name={part.name} 
+        />
         {/* Right: Core Identity */}
         <div className="space-y-6">
           <div className="space-y-4">

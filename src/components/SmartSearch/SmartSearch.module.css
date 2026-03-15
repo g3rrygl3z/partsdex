@@ -1,0 +1,359 @@
+/* src/components/SmartSearch/SmartSearch.module.css */
+/* ─────────────────────────────────────────────────────────────────────────────
+   PartsDex Smart Search — Industrial field-tech aesthetic
+   Clean, high-contrast, legible at arms length on a phone in a bright room
+   ───────────────────────────────────────────────────────────────────────────── */
+
+/* ── Root ──────────────────────────────────────────────────────────────────── */
+.root {
+  position: relative;
+  width: 100%;
+  font-family: 'DM Sans', 'Nunito', system-ui, sans-serif;
+}
+
+/* ── Input wrapper ─────────────────────────────────────────────────────────── */
+.inputWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  border: 1.5px solid #1B4F8A;
+  border-radius: 12px;
+  padding: 0 14px;
+  height: 52px;
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+
+.inputWrap:focus-within {
+  box-shadow: 0 0 0 3px rgba(27, 79, 138, 0.15);
+  border-color: #1B4F8A;
+}
+
+.searchIcon {
+  color: #1B4F8A;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: #1a1a2e;
+  font-family: inherit;
+  letter-spacing: -0.01em;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* ── Spinner (AI loading) ──────────────────────────────────────────────────── */
+.spinner {
+  display: flex;
+  align-items: center;
+  color: #1B4F8A;
+  animation: spin 0.9s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* ── Mode badge ────────────────────────────────────────────────────────────── */
+.modeBadge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: #1B4F8A;
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+/* ── Clear button ──────────────────────────────────────────────────────────── */
+.clearBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f0f0f0;
+  border: none;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  color: #666;
+  flex-shrink: 0;
+  transition: background 0.12s;
+}
+
+.clearBtn:hover { background: #e0e0e0; }
+
+/* ── Dropdown ──────────────────────────────────────────────────────────────── */
+.dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0,0,0,0.06);
+  z-index: 1000;
+  overflow: hidden;
+  animation: dropIn 0.14s ease-out;
+}
+
+@keyframes dropIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── AI explanation bar ────────────────────────────────────────────────────── */
+.aiBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background: #EFF6FF;
+  border-bottom: 1px solid #DBEAFE;
+  font-size: 12px;
+  color: #1e40af;
+  line-height: 1.4;
+}
+
+.aiBarPulse {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3b82f6;
+  flex-shrink: 0;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+
+.aiBarText { flex: 1; }
+
+/* ── Confidence dot ────────────────────────────────────────────────────────── */
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.dotHigh { background: #16a34a; }
+.dotMed  { background: #d97706; }
+.dotLow  { background: #dc2626; }
+
+/* ── Error bar ─────────────────────────────────────────────────────────────── */
+.errorBar {
+  padding: 9px 14px;
+  background: #FEF2F2;
+  border-bottom: 1px solid #FECACA;
+  font-size: 12px;
+  color: #b91c1c;
+}
+
+/* ── Part row ──────────────────────────────────────────────────────────────── */
+.partRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 10px 14px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f3f4f6;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.1s;
+}
+
+.partRow:last-of-type { border-bottom: none; }
+.partRow:hover { background: #F8FAFF; }
+.partRow:active { background: #EFF6FF; }
+
+/* ── Part row image ────────────────────────────────────────────────────────── */
+.partRowImg {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f5f5f5;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partRowImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.partRowImgFallback {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+}
+
+/* ── Part row body ─────────────────────────────────────────────────────────── */
+.partRowBody { flex: 1; min-width: 0; }
+
+.partRowTop {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 3px;
+}
+
+.partRowName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -0.01em;
+}
+
+.aiTag {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  background: #1B4F8A;
+  color: #fff;
+  padding: 1px 5px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.partRowMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+.sku {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 11px;
+  background: #E6F1FB;
+  color: #0C447C;
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.alias {
+  display: inline-block;
+  font-size: 11px;
+  color: #6b7280;
+  margin-right: 6px;
+}
+
+.alias::before { content: "· "; }
+
+/* ── Category badges ───────────────────────────────────────────────────────── */
+.badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 999px;
+  letter-spacing: 0.01em;
+}
+
+.badgePlumbing { background: #E6F1FB; color: #0C447C; }
+.badgeHeating  { background: #FAEEDA; color: #633806; }
+.badgeHvac     { background: #E1F5EE; color: #085041; }
+
+/* ── Arrow ─────────────────────────────────────────────────────────────────── */
+.partRowArrow {
+  color: #d1d5db;
+  font-size: 18px;
+  flex-shrink: 0;
+  transition: color 0.1s, transform 0.1s;
+}
+
+.partRow:hover .partRowArrow {
+  color: #1B4F8A;
+  transform: translateX(2px);
+}
+
+/* ── Empty state ───────────────────────────────────────────────────────────── */
+.emptyState {
+  padding: 28px 20px;
+  text-align: center;
+}
+
+.emptyIcon {
+  color: #d1d5db;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.emptyTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.emptyHint {
+  font-size: 12px;
+  color: #9ca3af;
+  line-height: 1.5;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* ── Footer ────────────────────────────────────────────────────────────────── */
+.dropdownFooter {
+  padding: 8px 14px;
+  font-size: 11px;
+  color: #9ca3af;
+  background: #fafafa;
+  border-top: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dropdownFooter kbd {
+  font-family: inherit;
+  font-size: 10px;
+  background: #e5e7eb;
+  color: #374151;
+  padding: 1px 5px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+}
+
+/* ── Mobile adjustments ────────────────────────────────────────────────────── */
+@media (max-width: 480px) {
+  .inputWrap { height: 48px; padding: 0 12px; }
+  .input { font-size: 16px; } /* prevents iOS zoom on focus */
+  .dropdown { border-radius: 12px; }
+  .partRow { padding: 10px 12px; gap: 10px; }
+  .partRowImg { width: 40px; height: 40px; }
+  .partRowName { font-size: 13px; }
+  .alias { display: none; } /* too crowded on small screens */
+}
