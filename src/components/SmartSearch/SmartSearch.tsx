@@ -1,6 +1,8 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { useNavigate }       from "react-router-dom";
+import { Camera }            from "lucide-react";
 import { useSmartSearch }    from "../../hooks/useSmartSearch";
+import PhotoIdentify         from "../PhotoIdentify/PhotoIdentify";
 import type { NormalizedPart } from "../../utils/search";
 import styles                from "./SmartSearch.module.css";
 
@@ -185,6 +187,7 @@ export default function SmartSearch({ autoFocus = false, onClose }: SmartSearchP
   const navigate = useNavigate();
   const inputRef  = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const [isPhotoIdOpen, setIsPhotoIdOpen] = useState(false);
 
   const {
     query, setQuery,
@@ -267,6 +270,18 @@ export default function SmartSearch({ autoFocus = false, onClose }: SmartSearchP
           spellCheck="false"
         />
 
+        {/* Camera trigger */}
+        {!query && (
+          <button 
+            className={styles.cameraBtn} 
+            onClick={() => setIsPhotoIdOpen(true)}
+            title="Identify part by photo"
+            aria-label="Toggle photo identification"
+          >
+            <Camera className="w-5 h-5" />
+          </button>
+        )}
+
         {/* AI loading spinner */}
         {isAiLoading && (
           <span className={styles.spinner} aria-label="AI searching">
@@ -330,6 +345,15 @@ export default function SmartSearch({ autoFocus = false, onClose }: SmartSearchP
               <kbd>Esc</kbd> to close
             </div>
           )}
+        </div>
+      )}
+
+      {/* Photo ID Modal Overlay */}
+      {isPhotoIdOpen && (
+        <div className={styles.overlay} onClick={(e) => e.target === e.currentTarget && setIsPhotoIdOpen(false)}>
+          <div className={styles.overlayInner}>
+            <PhotoIdentify onClose={() => setIsPhotoIdOpen(false)} />
+          </div>
         </div>
       )}
     </div>
