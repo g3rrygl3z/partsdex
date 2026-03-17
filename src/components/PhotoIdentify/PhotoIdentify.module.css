@@ -177,6 +177,13 @@
   border-radius: 999px;
   white-space: nowrap;
   font-family: 'DM Sans', system-ui, sans-serif;
+  max-width: 80%;
+  text-align: center;
+}
+
+.cameraErrorTxt {
+  color: #f87171;
+  font-weight: 500;
 }
 
 /* Camera controls bar */

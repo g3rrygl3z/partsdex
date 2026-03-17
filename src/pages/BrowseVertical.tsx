@@ -1,17 +1,16 @@
 import { useParams, useSearchParams, Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ArrowRight, CornerDownRight, GitBranch, BetweenHorizontalEnd, Settings2, Minus, Shuffle, Link2, Disc, Layers, Pipette, Droplets, ArrowUpRight } from 'lucide-react';
 import { getPartsByVertical, getPartsBySubcategory, getAllParts } from '../utils/search';
 import categoriesData from '../data/categories.json';
 import PartCard from '../components/PartCard';
 import { getVerticalDisplayName } from '../utils/helpers';
 import type { Vertical } from '../types';
-import { useMemo, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 export default function BrowseVertical() {
   const { verticalId } = useParams<{ verticalId: string }>();
   const [searchParams, setSearchParams] = useSearchParams();
   const activeSubcategory = searchParams.get('sub');
-  const material = searchParams.get('material') || '';
   const prevSubcategory = useRef(activeSubcategory);
 
   // Auto-reset material filter if subcategory changes
@@ -31,20 +30,8 @@ export default function BrowseVertical() {
     ? getPartsBySubcategory(verticalId as Vertical, activeSubcategory)
     : getPartsByVertical(verticalId as Vertical);
 
-  // Get all unique materials for this vertical (and subcategory if set)
+  // Filter by material removed for this grouped view logic
   const allParts = getAllParts();
-  const materialOptions = useMemo(() => {
-    let pool = allParts.filter(p => p.vertical === verticalId);
-    if (activeSubcategory) pool = pool.filter(p => p.subcategory === activeSubcategory);
-    const set = new Set<string>();
-    pool.forEach(p => p.materials?.forEach(m => set.add(m)));
-    return Array.from(set).sort();
-  }, [allParts, verticalId, activeSubcategory]);
-
-  // Filter by material if set
-  if (material) {
-    filteredParts = filteredParts.filter(p => p.materials && p.materials.some(m => m === material));
-  }
 
   if (!vertical) {
     return (
@@ -61,6 +48,31 @@ export default function BrowseVertical() {
 
   const subcategories = vertical.subCategories || [];
 
+  // Group helpers
+  const getSubcategoryCount = (subId: string) => {
+    return allParts.filter(p => p.vertical === verticalId && p.subCategory === subId).length;
+  };
+
+  const GroupIcon = ({ id, className }: { id: string, className?: string }) => {
+    const icons: Record<string, any> = {
+      elbows: CornerDownRight,
+      tees: GitBranch,
+      couplings: BetweenHorizontalEnd,
+      valves: Settings2,
+      nipples: Minus,
+      adapters: Shuffle,
+      unions: Link2,
+      caps: Disc,
+      pipes: Layers,
+      fixtures: Pipette,
+      drainage: Droplets,
+      supply: ArrowUpRight,
+      fittings: Layers
+    };
+    const Comp = icons[id] || Layers;
+    return <Comp className={className} />;
+  };
+
   return (
     <div className="space-y-8 animate-in fade-in slide-in-from-bottom-2 duration-700">
       {/* Header */}
@@ -75,73 +87,84 @@ export default function BrowseVertical() {
           </Link>
           <div className="space-y-1">
             <h1 className="heading-xl">{getVerticalDisplayName(verticalId as Vertical)}</h1>
-            <p className="text-subtle font-medium">{filteredParts.length} components identified in library</p>
+            <p className="text-subtle font-medium">
+              {activeSubcategory 
+                ? `${filteredParts.length} components found in ${subcategories.find((s:any) => s.id === activeSubcategory)?.label || activeSubcategory}`
+                : `${allParts.filter(p => p.vertical === verticalId).length} total components organized into ${subcategories.length} groups`}
+            </p>
           </div>
         </div>
       </div>
 
-      {/* Subcategory Filters - Premium Horizontal Scroll */}
-      <div className="flex items-center gap-3 overflow-x-auto scrollbar-hide pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 relative">
-        {/* Horizontal scroll fade indicator */}
-        <div className="pointer-events-none absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-slate-950/80 to-transparent z-10" aria-hidden="true" />
-        <button
-          onClick={() => setSearchParams({})}
-          className={`shrink-0 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 border ${
-            !activeSubcategory
-              ? 'bg-primary text-white border-primary shadow-lg shadow-primary/20'
-              : 'bg-slate-900/60 text-slate-500 border-white/5 hover:text-white hover:border-white/20'
-          }`}
-          aria-label="Show all components"
-        >
-          All Components
-        </button>
-        {subcategories.map((sub: any) => (
-          <button
-            key={sub.id}
-            onClick={() => setSearchParams({ sub: sub.id })}
-            className={`shrink-0 px-6 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 border ${
-              activeSubcategory === sub.id
-                ? 'bg-primary text-white border-primary shadow-lg shadow-primary/20'
-                : 'bg-slate-900/60 text-slate-500 border-white/5 hover:text-white hover:border-white/20'
-            }`}
-            aria-label={`Filter by ${sub.label || sub.name}`}
-          >
-            {sub.label || sub.name}
-          </button>
-        ))}
-        {/* Material Filter Dropdown */}
-        {materialOptions.length > 0 && (
-          <select
-            value={material}
-            onChange={e => {
-              const val = e.target.value;
-              const params: any = {};
-              if (activeSubcategory) params.sub = activeSubcategory;
-              if (val) params.material = val;
-              setSearchParams(params);
-            }}
-            className="ml-4 px-4 py-2 rounded-xl border border-white/10 bg-slate-900/60 text-white text-xs font-bold uppercase tracking-wider focus:border-primary focus:ring-1 focus:ring-primary"
-            style={{ minWidth: 120 }}
-            aria-label="Filter by material"
-          >
-            <option value="">All Materials</option>
-            {materialOptions.map(opt => (
-              <option key={opt} value={opt}>{opt}</option>
-            ))}
-          </select>
-        )}
-      </div>
-
-      {/* Parts Grid */}
-      {filteredParts.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredParts.map((part) => (
-            <PartCard key={part.id} part={part} />
-          ))}
+      {/* Subcategory Navigation / Selection */}
+      {!activeSubcategory ? (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          {subcategories.map((sub: any) => {
+            const count = getSubcategoryCount(sub.id);
+            if (count === 0 && verticalId === 'plumbing') return null; // Hide empty groups for plumbing
+            
+            return (
+              <button
+                key={sub.id}
+                onClick={() => setSearchParams({ sub: sub.id })}
+                className="group relative flex flex-col items-center justify-center p-6 glass-card glass-card-hover text-center gap-4 border border-white/5"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-500">
+                  <GroupIcon id={sub.id} className="w-7 h-7 text-primary-light" />
+                </div>
+                <div className="space-y-1">
+                  <div className="text-sm font-bold text-white group-hover:text-primary-light transition-colors">
+                    {sub.label || sub.name}
+                  </div>
+                  <div className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">
+                    {count} Parts
+                  </div>
+                </div>
+                <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <ArrowRight className="w-3 h-3 text-primary-light" />
+                </div>
+              </button>
+            );
+          })}
         </div>
       ) : (
-        <div className="glass-card p-12 text-center bg-slate-900/20">
-          <p className="text-slate-500 font-medium">No components found for the selected filters.</p>
+        <div className="space-y-6">
+          {/* Subcategory Filters - Compact version when inside a category */}
+          <div className="flex items-center gap-3 overflow-x-auto scrollbar-hide pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 relative mb-4">
+            <button
+              onClick={() => setSearchParams({})}
+              className="shrink-0 px-4 py-2 rounded-xl bg-slate-900/60 text-slate-500 border border-white/5 hover:text-white text-[10px] font-black uppercase tracking-widest transition-all"
+            >
+              ← Back to Groups
+            </button>
+            {subcategories.map((sub: any) => (
+              <button
+                key={sub.id}
+                onClick={() => setSearchParams({ sub: sub.id })}
+                className={`shrink-0 px-5 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all border ${
+                  activeSubcategory === sub.id
+                    ? 'bg-primary text-white border-primary shadow-lg shadow-primary/20'
+                    : 'bg-slate-900/60 text-slate-500 border-white/5 hover:text-white'
+                }`}
+              >
+                {sub.label || sub.name}
+              </button>
+            ))}
+          </div>
+
+          {/* Parts Grid */}
+          {filteredParts.length > 0 ? (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {filteredParts.map((part) => (
+                <PartCard key={part.id} part={part} />
+              ))}
+            </div>
+          ) : (
+            <div className="glass-card p-12 text-center bg-slate-900/20">
+              <p className="text-slate-500 font-medium">No components found for the selected filters.</p>
+              <button onClick={() => setSearchParams({})} className="mt-4 text-primary text-sm font-bold">Show all groups</button>
+            </div>
+          )}
         </div>
       )}
     </div>

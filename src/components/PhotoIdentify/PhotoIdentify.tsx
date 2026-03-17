@@ -100,6 +100,7 @@ function CameraView({ onCapture, onClose }: CameraViewProps) {
   const streamRef  = useRef<MediaStream | null>(null);
   const [ready, setReady] = useState(false);
   const [facingMode, setFacingMode] = useState<"environment" | "user">("environment");
+  const [error, setError] = useState<string | null>(null);
 
   const startCamera = useCallback(async (facing: "environment" | "user") => {
     if (streamRef.current) {
@@ -115,10 +116,20 @@ function CameraView({ onCapture, onClose }: CameraViewProps) {
         videoRef.current.srcObject = stream;
         videoRef.current.onloadedmetadata = () => setReady(true);
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error("Camera error:", err);
+      const isSecurityError = err.name === "NotAllowedError" || err.name === "SecurityError";
+      setError(
+        isSecurityError
+          ? "Camera access denied. Please check site permissions."
+          : "Could not start camera. Using native fallback..."
+      );
+      // Auto-fallback if it's a security/hardware error
+      if (!isSecurityError) {
+        setTimeout(() => onClose(), 2000);
+      }
     }
-  }, []);
+  }, [onClose]);
 
   useEffect(() => {
     startCamera(facingMode);
@@ -172,7 +183,11 @@ function CameraView({ onCapture, onClose }: CameraViewProps) {
       </div>
 
       <div className={styles.cameraHint}>
-        Center the part in the frame
+        {error ? (
+          <span className={styles.cameraErrorTxt}>{error}</span>
+        ) : (
+          "Center the part in the frame"
+        )}
       </div>
 
       <div className={styles.cameraControls}>
@@ -232,7 +247,7 @@ export default function PhotoIdentify({ onClose }: { onClose?: () => void }) {
   const [cameraOpen, setCameraOpen] = useState(false);
 
   const {
-    status, preview, matches, visualDesc, idNotes,
+    preview, matches, visualDesc, idNotes,
     isConfident, error,
     handleFileInput, handleCapture, reset,
     isProcessing, isSuccess, isError,
@@ -360,7 +375,14 @@ export default function PhotoIdentify({ onClose }: { onClose?: () => void }) {
 
       <button
         className={styles.cameraLaunchBtn}
-        onClick={() => setCameraOpen(true)}
+        onClick={() => {
+          if (window.isSecureContext) {
+            setCameraOpen(true);
+          } else {
+            // Fallback to native OS camera via hidden file input
+            fileRef.current?.click();
+          }
+        }}
       >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="20" height="20">
           <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>

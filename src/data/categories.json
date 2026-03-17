@@ -4,39 +4,19 @@
         "label": "Plumbing",
         "icon": "Droplets",
         "subCategories": [
-            {
-                "id": "fittings",
-                "label": "Fittings"
-            },
-            {
-                "id": "valves",
-                "label": "Valves"
-            },
-            {
-                "id": "pipes",
-                "label": "Pipes"
-            },
-            {
-                "id": "fixtures",
-                "label": "Fixtures"
-            },
-            {
-                "id": "drainage",
-                "label": "Drainage"
-            },
-            {
-                "id": "supply",
-                "label": "Supply"
-            }
-            ,
-            {
-                "id": "consumables",
-                "label": "Consumables"
-            },
-            {
-                "id": "mechanical",
-                "label": "Mechanical"
-            }
+            { "id": "elbows", "label": "Elbows" },
+            { "id": "tees", "label": "Tees" },
+            { "id": "couplings", "label": "Couplings" },
+            { "id": "valves", "label": "Valves" },
+            { "id": "nipples", "label": "Nipples" },
+            { "id": "adapters", "label": "Adapters" },
+            { "id": "unions", "label": "Unions" },
+            { "id": "caps", "label": "Caps" },
+            { "id": "pipes", "label": "Pipes" },
+            { "id": "fixtures", "label": "Fixtures" },
+            { "id": "drainage", "label": "Drainage" },
+            { "id": "supply", "label": "Supply" },
+            { "id": "consumables", "label": "Consumables" }
         ]
     },
     {

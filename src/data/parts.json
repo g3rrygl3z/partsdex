@@ -11,7 +11,7 @@
         ],
         "category": "plumbing",
         "subCategory": "fittings",
-        "overview": "A compression fitting creates a watertight seal by compressing a soft metal ring (the olive or ferrule) against a pipe when the nut is tightened. No soldering required \u2014 ideal for retrofits and repairs where heat cannot be applied. Available in straight, elbow, and tee configurations.",
+        "overview": "A compression fitting creates a watertight seal by compressing a soft metal ring (the olive or ferrule) against a pipe when the nut is tightened. No soldering required — ideal for retrofits and repairs where heat cannot be applied. Available in straight, elbow, and tee configurations.",
         "diagramUrl": "/assets/diagrams/compression-fitting-15mm.svg",
         "compatibleWith": [
             "copper-pipe-15mm",
@@ -23,7 +23,7 @@
             "copper",
             "stainless"
         ],
-        "installationNotes": "Ensure pipe end is cut square and deburred. Slide nut then olive onto pipe before inserting into fitting body. Tighten nut 1.5 turns past hand-tight \u2014 do not overtighten.",
+        "installationNotes": "Ensure pipe end is cut square and deburred. Slide nut then olive onto pipe before inserting into fitting body. Tighten nut 1.5 turns past hand-tight — do not overtighten.",
         "tags": [
             "compression",
             "pushfit-alternative",
@@ -44,7 +44,7 @@
         ],
         "category": "plumbing",
         "subCategory": "fittings",
-        "overview": "A push-fit fitting connects pipes with no tools \u2014 simply push the pipe end in and internal collet teeth grip it securely. Widely used for quick repairs and for connecting copper, plastic, and CPVC pipes. Most brands are demountable with a release collar.",
+        "overview": "A push-fit fitting connects pipes with no tools — simply push the pipe end in and internal collet teeth grip it securely. Widely used for quick repairs and for connecting copper, plastic, and CPVC pipes. Most brands are demountable with a release collar.",
         "diagramUrl": "/assets/diagrams/push-fit-fitting-22mm.svg",
         "compatibleWith": [
             "copper-pipe-22mm",
@@ -54,7 +54,7 @@
             "plastic (acetal)",
             "brass internals"
         ],
-        "installationNotes": "Ensure pipe is cut square; deburr and clean. Push firmly until pipe bottoms out \u2014 you'll feel and hear a click. Tug to confirm grip. Use release clip to demount.",
+        "installationNotes": "Ensure pipe is cut square; deburr and clean. Push firmly until pipe bottoms out — you'll feel and hear a click. Tug to confirm grip. Use release clip to demount.",
         "tags": [
             "push-fit",
             "no-solder",
@@ -75,7 +75,7 @@
         ],
         "category": "plumbing",
         "subCategory": "valves",
-        "overview": "A gate valve uses a rising or non-rising metal wedge (gate) that moves perpendicular to flow to open or close. When fully open, the bore is completely unobstructed \u2014 hence 'full-bore valve'. Not designed for throttling; should be either fully open or fully closed.",
+        "overview": "A gate valve uses a rising or non-rising metal wedge (gate) that moves perpendicular to flow to open or close. When fully open, the bore is completely unobstructed — hence 'full-bore valve'. Not designed for throttling; should be either fully open or fully closed.",
         "diagramUrl": "/assets/diagrams/gate-valve-15mm.svg",
         "compatibleWith": [
             "compression-fitting-15mm",
@@ -86,7 +86,7 @@
             "gunmetal",
             "cast iron"
         ],
-        "installationNotes": "Install with arrow indicating direction of flow (if marked). Gate valves can be installed in any orientation. Turn clockwise to close (conventional). Do not use for throttling \u2014 causes premature seat wear.",
+        "installationNotes": "Install with arrow indicating direction of flow (if marked). Gate valves can be installed in any orientation. Turn clockwise to close (conventional). Do not use for throttling — causes premature seat wear.",
         "tags": [
             "gate",
             "full-bore",
@@ -106,7 +106,7 @@
         ],
         "category": "plumbing",
         "subCategory": "valves",
-        "overview": "A ball valve uses a rotating ball with a through-hole bore to control flow. A quarter-turn (90\u00b0) of the handle moves from fully open to fully closed. The lever handle position visually shows the valve state \u2014 handle in line with pipe = open, perpendicular = closed.",
+        "overview": "A ball valve uses a rotating ball with a through-hole bore to control flow. A quarter-turn (90°) of the handle moves from fully open to fully closed. The lever handle position visually shows the valve state — handle in line with pipe = open, perpendicular = closed.",
         "diagramUrl": "/assets/diagrams/ball-valve-22mm.svg",
         "compatibleWith": [
             "compression-fitting-22mm",
@@ -118,7 +118,7 @@
             "stainless",
             "chrome-plated brass"
         ],
-        "installationNotes": "Install in either direction \u2014 ball valves are bidirectional. Lever must have clearance to rotate 90\u00b0. Leave valve in open position if used infrequently to prevent the PTFE seat from taking a set.",
+        "installationNotes": "Install in either direction — ball valves are bidirectional. Lever must have clearance to rotate 90°. Leave valve in open position if used infrequently to prevent the PTFE seat from taking a set.",
         "tags": [
             "ball valve",
             "quarter-turn",
@@ -138,7 +138,7 @@
         ],
         "category": "plumbing",
         "subCategory": "valves",
-        "overview": "A stop valve (or service valve) is used to isolate a single appliance \u2014 a tap, toilet cistern, or dishwasher \u2014 without shutting off the whole system. Operated by a flat-head screwdriver slot on the spindle. Slot in line with pipe = open; slot across pipe = closed.",
+        "overview": "A stop valve (or service valve) is used to isolate a single appliance — a tap, toilet cistern, or dishwasher — without shutting off the whole system. Operated by a flat-head screwdriver slot on the spindle. Slot in line with pipe = open; slot across pipe = closed.",
         "diagramUrl": "/assets/diagrams/stop-valve-15mm.svg",
         "compatibleWith": [
             "compression-fitting-15mm",
@@ -179,7 +179,7 @@
             "polypropylene",
             "chrome-plated brass"
         ],
-        "installationNotes": "Install with trap outlet angled slightly downward for drainage. Do not use excessive slope \u2014 the water seal can siphon out. Ensure a minimum 50mm water seal depth. Clean-out access should be reachable.",
+        "installationNotes": "Install with trap outlet angled slightly downward for drainage. Do not use excessive slope — the water seal can siphon out. Ensure a minimum 50mm water seal depth. Clean-out access should be reachable.",
         "tags": [
             "trap",
             "waste",
@@ -229,7 +229,7 @@
         ],
         "category": "plumbing",
         "subCategory": "fixtures",
-        "overview": "A flexible stainless-braided hose used to connect a tap or appliance to the water supply. The flexible nature accommodates offset tap tails and tight under-sink spaces. Available in various lengths (typically 300\u2013500mm) with standard fittings at each end.",
+        "overview": "A flexible stainless-braided hose used to connect a tap or appliance to the water supply. The flexible nature accommodates offset tap tails and tight under-sink spaces. Available in various lengths (typically 300–500mm) with standard fittings at each end.",
         "diagramUrl": "/assets/diagrams/flexible-tap-connector.svg",
         "compatibleWith": [
             "stop-valve-15mm"
@@ -237,7 +237,7 @@
         "materials": [
             "EPDM inner, stainless steel braid outer, brass fittings"
         ],
-        "installationNotes": "Do not over-bend \u2014 minimum bend radius applies. Hand-tighten first, then one additional quarter-turn with spanner. Do not use PTFE tape on compression connections. Replace every 5\u201310 years as a precaution.",
+        "installationNotes": "Do not over-bend — minimum bend radius applies. Hand-tighten first, then one additional quarter-turn with spanner. Do not use PTFE tape on compression connections. Replace every 5–10 years as a precaution.",
         "tags": [
             "flexi hose",
             "flexible connector",
@@ -269,7 +269,7 @@
             "stainless",
             "PVC"
         ],
-        "installationNotes": "Install with flow direction arrow aligned with intended flow. Most check valves must be horizontal or have the cap pointing upward \u2014 check manufacturer guidance. Test function periodically on critical installations (e.g., hot water systems).",
+        "installationNotes": "Install with flow direction arrow aligned with intended flow. Most check valves must be horizontal or have the cap pointing upward — check manufacturer guidance. Test function periodically on critical installations (e.g., hot water systems).",
         "tags": [
             "check valve",
             "non-return",
@@ -289,8 +289,8 @@
             "capillary elbow"
         ],
         "category": "plumbing",
-        "subCategory": "fittings",
-        "overview": "A copper elbow fitting changes pipe direction by 90\u00b0 (or 45\u00b0 in offset elbows). Soldered (capillary) elbows are the most common form in copper installations. The 'street elbow' variant has one male and one female end, eliminating the need for a coupling on one side.",
+        "subCategory": "elbows",
+        "overview": "A copper elbow fitting changes pipe direction by 90° (or 45° in offset elbows). Soldered (capillary) elbows are the most common form in copper installations. The 'street elbow' variant has one male and one female end, eliminating the need for a coupling on one side.",
         "diagramUrl": "/assets/diagrams/pipe-elbow-15mm-copper.svg",
         "compatibleWith": [
             "copper-pipe-15mm"
@@ -298,7 +298,7 @@
         "materials": [
             "copper"
         ],
-        "installationNotes": "Clean both pipe and fitting bore with wire wool or abrasive cloth. Apply flux to both mating surfaces. Use lead-free solder for potable water systems. Heat fitting evenly; apply solder to joint \u2014 not the flame.",
+        "installationNotes": "Clean both pipe and fitting bore with wire wool or abrasive cloth. Apply flux to both mating surfaces. Use lead-free solder for potable water systems. Heat fitting evenly; apply solder to joint — not the flame.",
         "tags": [
             "elbow",
             "bend",
@@ -363,7 +363,7 @@
             "brass body",
             "stainless sensing bulb"
         ],
-        "installationNotes": "Strap the remote sensing bulb tightly to the suction line at the 4 or 8 o'clock position (not bottom \u2014 to avoid oil pooling affecting temperature reading). Insulate the bulb from ambient air. Adjust superheat only after system has reached steady state.",
+        "installationNotes": "Strap the remote sensing bulb tightly to the suction line at the 4 or 8 o'clock position (not bottom — to avoid oil pooling affecting temperature reading). Insulate the bulb from ambient air. Adjust superheat only after system has reached steady state.",
         "tags": [
             "TXV",
             "TEV",
@@ -428,7 +428,7 @@
             "galvanised steel",
             "aluminium"
         ],
-        "installationNotes": "Mark position clearly after balancing (open/closed %). Motorized versions require 24V or 230V actuator. Install with handle accessible for future adjustment. Do not confuse with fire dampers \u2014 fire dampers are a life-safety device and require fusible link or actuator reset.",
+        "installationNotes": "Mark position clearly after balancing (open/closed %). Motorized versions require 24V or 230V actuator. Install with handle accessible for future adjustment. Do not confuse with fire dampers — fire dampers are a life-safety device and require fusible link or actuator reset.",
         "tags": [
             "damper",
             "VCD",
@@ -493,7 +493,7 @@
             "aluminium fins",
             "fibreglass drain pan"
         ],
-        "installationNotes": "Ensure proper refrigerant charge \u2014 undercharge causes icing, overcharge causes liquid slugging. Clean coil annually to maintain heat transfer. Drain pan and drain line must be clear to prevent water overflow. Match coil capacity to outdoor unit.",
+        "installationNotes": "Ensure proper refrigerant charge — undercharge causes icing, overcharge causes liquid slugging. Clean coil annually to maintain heat transfer. Drain pan and drain line must be clear to prevent water overflow. Match coil capacity to outdoor unit.",
         "tags": [
             "evaporator",
             "A-coil",
@@ -546,7 +546,7 @@
         ],
         "category": "boiler-heating",
         "subCategory": "circulation",
-        "overview": "A circulator pump moves hot water around the heating system from the boiler to radiators and back. Modern circulators are 'wet rotor' design \u2014 the motor rotor runs in the water being pumped, eliminating shaft seals and gland leaks. Most modern models are variable-speed (ECM motor) for energy efficiency.",
+        "overview": "A circulator pump moves hot water around the heating system from the boiler to radiators and back. Modern circulators are 'wet rotor' design — the motor rotor runs in the water being pumped, eliminating shaft seals and gland leaks. Most modern models are variable-speed (ECM motor) for energy efficiency.",
         "diagramUrl": "/assets/diagrams/circulator-pump.svg",
         "compatibleWith": [
             "zone-valve",
@@ -558,7 +558,7 @@
             "stainless impeller",
             "ceramic shaft"
         ],
-        "installationNotes": "Install with shaft horizontal for correct bearing lubrication. Arrow on pump body indicates flow direction \u2014 install on the return pipe (cold side), pump facing into the boiler. Bleed air from pump via bleed screw on startup. Match pump head to system resistance.",
+        "installationNotes": "Install with shaft horizontal for correct bearing lubrication. Arrow on pump body indicates flow direction — install on the return pipe (cold side), pump facing into the boiler. Bleed air from pump via bleed screw on startup. Match pump head to system resistance.",
         "tags": [
             "circulator",
             "heating pump",
@@ -580,7 +580,7 @@
         ],
         "category": "boiler-heating",
         "subCategory": "safety",
-        "overview": "A pressure relief valve is a safety device that opens automatically if system pressure exceeds its set point (typically 3 bar on domestic heating systems), preventing boiler or vessel rupture. On unvented hot water cylinders, a temperature and pressure (T&P) valve also opens if water temperature exceeds 90\u201395\u00b0C.",
+        "overview": "A pressure relief valve is a safety device that opens automatically if system pressure exceeds its set point (typically 3 bar on domestic heating systems), preventing boiler or vessel rupture. On unvented hot water cylinders, a temperature and pressure (T&P) valve also opens if water temperature exceeds 90–95°C.",
         "diagramUrl": "/assets/diagrams/pressure-relief-valve.svg",
         "compatibleWith": [
             "expansion-vessel",
@@ -590,7 +590,7 @@
             "brass body",
             "stainless spring"
         ],
-        "installationNotes": "Discharge pipe must run to a safe location where hot water will not cause injury or property damage \u2014 typically outside, low to the ground, with an air break. Never cap or bypass a PRV. Test annually by lifting the lever briefly. Replace if it fails to reseat or continues to drip.",
+        "installationNotes": "Discharge pipe must run to a safe location where hot water will not cause injury or property damage — typically outside, low to the ground, with an air break. Never cap or bypass a PRV. Test annually by lifting the lever briefly. Replace if it fails to reseat or continues to drip.",
         "tags": [
             "PRV",
             "safety valve",
@@ -623,7 +623,7 @@
             "brass valve",
             "synchronous motor actuator"
         ],
-        "installationNotes": "Ensure correct orientation per manufacturer arrow. The microswitch at end-of-travel supplies live to the boiler and pump. Wire to S-plan (2-port) or Y-plan (3-port mid-position) wiring diagram. Allow 2\u20133 minutes for spring-return on power loss.",
+        "installationNotes": "Ensure correct orientation per manufacturer arrow. The microswitch at end-of-travel supplies live to the boiler and pump. Wire to S-plan (2-port) or Y-plan (3-port mid-position) wiring diagram. Allow 2–3 minutes for spring-return on power loss.",
         "tags": [
             "zone valve",
             "motorized valve",
@@ -656,7 +656,7 @@
             "stainless braided hose",
             "brass valves"
         ],
-        "installationNotes": "Open both valves slowly and monitor pressure gauge \u2014 target 1\u20131.5 bar cold fill pressure. Close both valves once filled; disconnect external hose filling loops after each use (Water Regulations requirement). Do not leave permanently connected \u2014 this would create a cross-connection to the domestic water supply.",
+        "installationNotes": "Open both valves slowly and monitor pressure gauge — target 1–1.5 bar cold fill pressure. Close both valves once filled; disconnect external hose filling loops after each use (Water Regulations requirement). Do not leave permanently connected — this would create a cross-connection to the domestic water supply.",
         "tags": [
             "filling loop",
             "system fill",
@@ -677,7 +677,7 @@
         ],
         "category": "boiler-heating",
         "subCategory": "controls",
-        "overview": "A TRV controls room temperature by regulating hot water flow into a radiator based on the ambient air temperature sensed by its wax capsule head. As room temperature rises, the wax expands, progressively closing the valve to reduce heat output. The numbered dial (1\u20135) sets the target temperature.",
+        "overview": "A TRV controls room temperature by regulating hot water flow into a radiator based on the ambient air temperature sensed by its wax capsule head. As room temperature rises, the wax expands, progressively closing the valve to reduce heat output. The numbered dial (1–5) sets the target temperature.",
         "diagramUrl": "/assets/diagrams/trv.svg",
         "compatibleWith": [
             "lockshield-valve",
@@ -687,7 +687,7 @@
             "brass valve body",
             "wax element in plastic or chrome head"
         ],
-        "installationNotes": "Install on the flow side of the radiator (supply pipe into radiator). The TRV head must have unrestricted airflow around it \u2014 do not cover with curtains or fit behind furniture. Pair with a lockshield valve on the return to enable balancing. One room in the house should have a room stat instead of a TRV to act as the reference zone.",
+        "installationNotes": "Install on the flow side of the radiator (supply pipe into radiator). The TRV head must have unrestricted airflow around it — do not cover with curtains or fit behind furniture. Pair with a lockshield valve on the return to enable balancing. One room in the house should have a room stat instead of a TRV to act as the reference zone.",
         "tags": [
             "TRV",
             "thermostatic valve",
@@ -708,7 +708,7 @@
         ],
         "category": "boiler-heating",
         "subCategory": "controls",
-        "overview": "A lockshield valve is fitted on the return side of a radiator, opposite the TRV or hand-wheel valve. Its flow rate is set during commissioning to 'balance' the heating system \u2014 ensuring each radiator gets the correct water flow. The protective cap prevents casual adjustment, preserving the balance setting.",
+        "overview": "A lockshield valve is fitted on the return side of a radiator, opposite the TRV or hand-wheel valve. Its flow rate is set during commissioning to 'balance' the heating system — ensuring each radiator gets the correct water flow. The protective cap prevents casual adjustment, preserving the balance setting.",
         "diagramUrl": "/assets/diagrams/lockshield-valve.svg",
         "compatibleWith": [
             "trv-thermostatic-radiator-valve"
@@ -747,7 +747,7 @@
             "316L stainless steel plates",
             "copper or nickel brazing"
         ],
-        "installationNotes": "Ensure correct primary/secondary flow connections (cross-flow configuration for maximum efficiency). Flush before installation to remove debris. Scale inhibitor in the primary circuit extends PHE life. De-scale with approved chemicals if flow rate drops \u2014 do not use mechanical cleaning on brazed plates.",
+        "installationNotes": "Ensure correct primary/secondary flow connections (cross-flow configuration for maximum efficiency). Flush before installation to remove debris. Scale inhibitor in the primary circuit extends PHE life. De-scale with approved chemicals if flow rate drops — do not use mechanical cleaning on brazed plates.",
         "tags": [
             "PHE",
             "plate heat exchanger",
@@ -824,7 +824,7 @@
             "pipe joiner"
         ],
         "category": "plumbing",
-        "subCategory": "fittings",
+        "subCategory": "couplings",
         "overview": "A simple fitting used to join two lengths of 15mm pipe in a straight line. Available in solder, compression, and push-fit versions.",
         "diagramUrl": "/assets/diagrams/coupler.svg",
         "compatibleWith": [
@@ -1059,7 +1059,7 @@
             "T-connector"
         ],
         "category": "plumbing",
-        "subCategory": "fittings",
+        "subCategory": "tees",
         "overview": "A T-shaped fitting for joining three 15mm pipes.",
         "diagramUrl": "/assets/diagrams/pipe-tee-15mm.svg",
         "compatibleWith": [
@@ -1158,7 +1158,7 @@
         ],
         "category": "hvac",
         "subCategory": "ductwork",
-        "overview": "A 90\u00b0 bend for changing direction in ductwork.",
+        "overview": "A 90° bend for changing direction in ductwork.",
         "diagramUrl": "/assets/diagrams/duct-elbow.svg",
         "compatibleWith": [
             "volume-control-damper"
@@ -1453,7 +1453,7 @@
             "Connecting to valves and fixtures",
             "Repairs where soldering is not possible (e.g., near timber or insulation)"
         ],
-        "installationNotes": "Do not overtighten \u2014 typically 1 to 1.25 turns past hand-tight. Use PTFE tape or jointing compound on the olive for extra security. Always use pipe inserts when connecting to plastic pipe.",
+        "installationNotes": "Do not overtighten — typically 1 to 1.25 turns past hand-tight. Use PTFE tape or jointing compound on the olive for extra security. Always use pipe inserts when connecting to plastic pipe.",
         "diagram": "compression-fitting.svg",
         "primaryName": "Compression Fitting",
         "category": "plumbing",
@@ -1493,7 +1493,7 @@
             "Tight spaces where a wrench can't reach",
             "Temporary repairs on job sites"
         ],
-        "installationNotes": "Ensure pipe is cut square and deburred. Push pipe in until it hits the internal stop \u2014 mark the insertion depth on the pipe first. Pipe inserts are required for plastic pipes. To disconnect, push the release collar toward the fitting and pull the pipe out.",
+        "installationNotes": "Ensure pipe is cut square and deburred. Push pipe in until it hits the internal stop — mark the insertion depth on the pipe first. Pipe inserts are required for plastic pipes. To disconnect, push the release collar toward the fitting and pull the pipe out.",
         "diagram": "push-fit-fitting.svg",
         "primaryName": "Push-Fit Fitting",
         "category": "plumbing",
@@ -1536,7 +1536,7 @@
         "diagram": "gate-valve.svg",
         "primaryName": "Gate Valve",
         "category": "plumbing",
-        "overview": "A valve that controls flow by raising or lowering an internal gate (wedge) via a handwheel. When fully open, provides unrestricted full-bore flow. Designed for fully open or fully closed positions \u2014 not for throttling or regulating flow.",
+        "overview": "A valve that controls flow by raising or lowering an internal gate (wedge) via a handwheel. When fully open, provides unrestricted full-bore flow. Designed for fully open or fully closed positions — not for throttling or regulating flow.",
         "subCategory": "valves"
     },
     {
@@ -1571,11 +1571,11 @@
             "Main shut-off valve",
             "Gas line shut-off (yellow handle, gas-rated models only)"
         ],
-        "installationNotes": "Red or blue handles indicate hot/cold water. Yellow handles indicate gas-rated valves \u2014 never use a water-rated ball valve on gas. Lever should be parallel to pipe when open, perpendicular when closed.",
+        "installationNotes": "Red or blue handles indicate hot/cold water. Yellow handles indicate gas-rated valves — never use a water-rated ball valve on gas. Lever should be parallel to pipe when open, perpendicular when closed.",
         "diagram": "ball-valve.svg",
         "primaryName": "Ball Valve",
         "category": "plumbing",
-        "overview": "A valve with a hollow, perforated ball inside that pivots 90\u00b0 to open or close flow. The lever handle makes operation fast \u2014 a quarter turn from fully open to fully closed. Offers reliable, tight shut-off and is widely used as the modern replacement for gate valves.",
+        "overview": "A valve with a hollow, perforated ball inside that pivots 90° to open or close flow. The lever handle makes operation fast — a quarter turn from fully open to fully closed. Offers reliable, tight shut-off and is widely used as the modern replacement for gate valves.",
         "subCategory": "valves"
     },
     {
@@ -1605,7 +1605,7 @@
             "Main stopcock for a domestic property",
             "Under-sink shut-off"
         ],
-        "installationNotes": "The washer inside will wear over time and can be replaced without removing the valve body. Arrow on the body indicates flow direction \u2014 install accordingly. The main stopcock is typically located where the mains supply enters the building.",
+        "installationNotes": "The washer inside will wear over time and can be replaced without removing the valve body. Arrow on the body indicates flow direction — install accordingly. The main stopcock is typically located where the mains supply enters the building.",
         "diagram": "stop-valve.svg",
         "primaryName": "Stop Valve",
         "category": "plumbing",
@@ -1641,7 +1641,7 @@
             "Connecting fixtures to the waste drainage system",
             "Preventing sewer gas entry into occupied spaces"
         ],
-        "installationNotes": "Ensure the trap is properly filled with water after installation \u2014 run the tap. If a fixture is unused for long periods, the water seal can evaporate (pour water in periodically). The trap depth (water seal) should be at least 50mm. Clean regularly to prevent blockages.",
+        "installationNotes": "Ensure the trap is properly filled with water after installation — run the tap. If a fixture is unused for long periods, the water seal can evaporate (pour water in periodically). The trap depth (water seal) should be at least 50mm. Clean regularly to prevent blockages.",
         "diagram": "p-trap.svg",
         "primaryName": "P-Trap",
         "category": "plumbing",
@@ -1663,8 +1663,8 @@
             "Plastic float"
         ],
         "sizes": [
-            "15mm (\u00bd\" BSP)",
-            "22mm (\u00be\" BSP)"
+            "15mm (½\" BSP)",
+            "22mm (¾\" BSP)"
         ],
         "connectionType": "Threaded BSP",
         "compatibility": [
@@ -1677,7 +1677,7 @@
             "Maintaining water level in loft storage tanks",
             "Feed and expansion tank for heating systems"
         ],
-        "installationNotes": "Adjust the float arm or screw to set the correct water level \u2014 water should be about 25mm below the overflow. Part 1 valves are for high-pressure mains; Part 2 valves are for low-pressure tank-fed systems. Check the washer if the valve drips or doesn't shut off fully.",
+        "installationNotes": "Adjust the float arm or screw to set the correct water level — water should be about 25mm below the overflow. Part 1 valves are for high-pressure mains; Part 2 valves are for low-pressure tank-fed systems. Check the washer if the valve drips or doesn't shut off fully.",
         "diagram": "float-valve.svg",
         "primaryName": "Float Valve",
         "category": "plumbing",
@@ -1754,7 +1754,7 @@
             "Supporting horizontal pipe runs to prevent sagging",
             "Fixing pipes in place before plastering or boxing in"
         ],
-        "installationNotes": "Space clips at recommended intervals: 1.2m for horizontal 15mm copper, 1.8m for vertical. Use the correct size \u2014 a loose clip won't support the pipe. Allow for thermal expansion on long runs of plastic pipe (use slide clips, not fixed). Use plastic clips on plastic pipe to avoid damage.",
+        "installationNotes": "Space clips at recommended intervals: 1.2m for horizontal 15mm copper, 1.8m for vertical. Use the correct size — a loose clip won't support the pipe. Allow for thermal expansion on long runs of plastic pipe (use slide clips, not fixed). Use plastic clips on plastic pipe to avoid damage.",
         "diagram": "pipe-clip.svg",
         "primaryName": "Pipe Clip",
         "category": "plumbing",
@@ -1791,7 +1791,7 @@
         "diagram": "isolation-valve.svg",
         "primaryName": "Isolation Valve",
         "category": "plumbing",
-        "overview": "A small inline valve used to isolate the water supply to an individual fixture or appliance without shutting off the entire system. Operated by turning the slotted head 90\u00b0 with a screwdriver or coin \u2014 no handwheel required.",
+        "overview": "A small inline valve used to isolate the water supply to an individual fixture or appliance without shutting off the entire system. Operated by turning the slotted head 90° with a screwdriver or coin — no handwheel required.",
         "subCategory": "valves"
     },
     {
@@ -1830,8 +1830,8 @@
         ],
         "primaryName": "Copper Elbow",
         "category": "plumbing",
-        "overview": "A fitting that changes the direction of a pipe run by 90\u00b0 (or 45\u00b0 in angled variants). Available as end-feed (requires solder), solder-ring (pre-loaded solder), or compression types. One of the most commonly used fittings in domestic plumbing.",
-        "subCategory": "fittings"
+        "overview": "A fitting that changes the direction of a pipe run by 90° (or 45° in angled variants). Available as end-feed (requires solder), solder-ring (pre-loaded solder), or compression types. One of the most commonly used fittings in domestic plumbing.",
+        "subCategory": "elbows"
     },
     {
         "id": "tee-fitting",
@@ -1850,7 +1850,7 @@
             "15mm",
             "22mm",
             "28mm",
-            "15mm \u00d7 15mm \u00d7 22mm (reducing)"
+            "15mm × 15mm × 22mm (reducing)"
         ],
         "connectionType": "Solder / Compression / Push-fit",
         "compatibility": [
@@ -1862,12 +1862,12 @@
             "Creating distribution manifolds",
             "Splitting flow for multiple radiators"
         ],
-        "installationNotes": "When soldering, feed all three joints at once \u2014 heat the fitting body, not the pipe. On a live system, use a compression or push-fit tee to avoid draining down. Ensure flow direction is correct on reducing tees.",
+        "installationNotes": "When soldering, feed all three joints at once — heat the fitting body, not the pipe. On a live system, use a compression or push-fit tee to avoid draining down. Ensure flow direction is correct on reducing tees.",
         "diagram": "tee-fitting.svg",
         "primaryName": "Tee Fitting",
         "category": "plumbing",
         "overview": "A T-shaped fitting that creates a branch connection from a main pipe run. Used to split or combine flow. Available as equal tees (all ports same size) or reducing tees (branch is a smaller diameter). Available in solder, compression, and push-fit types.",
-        "subCategory": "fittings"
+        "subCategory": "tees"
     },
     {
         "id": "pipe-reducer",
@@ -1902,7 +1902,7 @@
         "primaryName": "Pipe Reducer",
         "category": "plumbing",
         "overview": "A fitting that connects two pipes of different diameters, allowing a transition between pipe sizes. Concentric reducers keep the centerline aligned; eccentric reducers offset the centerline (used to prevent air pockets in horizontal runs).",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "txv",
@@ -1935,7 +1935,7 @@
             "Heat pump systems",
             "Refrigeration units"
         ],
-        "installationNotes": "Mount the sensing bulb at 10 or 2 o'clock on the suction line (never at the bottom \u2014 oil collects there). Insulate the bulb to prevent false readings from ambient air. Superheat adjustment screw: clockwise = more superheat (less refrigerant), counterclockwise = less superheat.",
+        "installationNotes": "Mount the sensing bulb at 10 or 2 o'clock on the suction line (never at the bottom — oil collects there). Insulate the bulb to prevent false readings from ambient air. Superheat adjustment screw: clockwise = more superheat (less refrigerant), counterclockwise = less superheat.",
         "diagram": "txv.svg",
         "primaryName": "Thermostatic Expansion Valve (TXV)",
         "category": "hvac",
@@ -2014,7 +2014,7 @@
             "Zone control in multi-zone systems",
             "Fire safety in commercial ductwork penetrations"
         ],
-        "installationNotes": "Manual dampers: lever parallel to duct = open, perpendicular = closed. Fire dampers must be accessible for inspection \u2014 install access doors. Motorized dampers need 24V power and control signal from thermostat or BAS. Label all dampers clearly for future technicians.",
+        "installationNotes": "Manual dampers: lever parallel to duct = open, perpendicular = closed. Fire dampers must be accessible for inspection — install access doors. Motorized dampers need 24V power and control signal from thermostat or BAS. Label all dampers clearly for future technicians.",
         "diagram": "damper.svg",
         "primaryName": "Damper",
         "category": "hvac",
@@ -2046,11 +2046,11 @@
             "Secondary circuit (DHW in combi boilers)"
         ],
         "useCases": [
-            "Core component of every boiler \u2014 transfers combustion heat to water",
+            "Core component of every boiler — transfers combustion heat to water",
             "Secondary DHW heating in combi boilers",
             "External plate heat exchangers for system separation"
         ],
-        "installationNotes": "Scaling and sludge are the main enemies \u2014 a clean system with inhibitor protects the heat exchanger. Kettling noise (rumbling/banging) usually indicates scale buildup on the heat exchanger. Flushing the system with a powerflush machine can restore performance. Replacement is model-specific and often requires significant boiler disassembly.",
+        "installationNotes": "Scaling and sludge are the main enemies — a clean system with inhibitor protects the heat exchanger. Kettling noise (rumbling/banging) usually indicates scale buildup on the heat exchanger. Flushing the system with a powerflush machine can restore performance. Replacement is model-specific and often requires significant boiler disassembly.",
         "diagram": "heat-exchanger.svg",
         "primaryName": "Heat Exchanger",
         "category": "boiler-heating",
@@ -2078,18 +2078,18 @@
         "connectionType": "Compression",
         "compatibility": [
             "Radiators and towel rails",
-            "Standard M30 \u00d7 1.5 head connection (most European brands)"
+            "Standard M30 × 1.5 head connection (most European brands)"
         ],
         "useCases": [
             "Individual room temperature control",
-            "Energy saving \u2014 reduces flow to radiators in warm rooms",
+            "Energy saving — reduces flow to radiators in warm rooms",
             "Required by building regulations on most radiators in new installations"
         ],
-        "installationNotes": "Do NOT fit a TRV in the same room as the room thermostat \u2014 they will conflict. Fit on the flow side of the radiator (lockshield on the return). Keep the TRV head away from heat sources and curtains that could give false readings. Smart TRV heads are available that replace the mechanical head with app-controlled versions.",
+        "installationNotes": "Do NOT fit a TRV in the same room as the room thermostat — they will conflict. Fit on the flow side of the radiator (lockshield on the return). Keep the TRV head away from heat sources and curtains that could give false readings. Smart TRV heads are available that replace the mechanical head with app-controlled versions.",
         "diagram": "trv.svg",
         "primaryName": "Thermostatic Radiator Valve (TRV)",
         "category": "boiler-heating",
-        "overview": "A self-regulating valve fitted to a radiator that controls room temperature by adjusting water flow based on the surrounding air temperature. A wax or liquid-filled sensor in the valve head expands and contracts to open or close the valve pin \u2014 no electrical power needed.",
+        "overview": "A self-regulating valve fitted to a radiator that controls room temperature by adjusting water flow based on the surrounding air temperature. A wax or liquid-filled sensor in the valve head expands and contracts to open or close the valve pin — no electrical power needed.",
         "subCategory": "controls-heating"
     },
     {
@@ -2105,7 +2105,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Socket (Slip) \u2014 Solvent Weld",
+        "connectionType": "Socket (Slip) — Solvent Weld",
         "compatibility": [
             "1/2\" PVC Schedule 40 pipe",
             "1/2\" PVC Schedule 80 pipe"
@@ -2125,8 +2125,8 @@
         ],
         "primaryName": "1/2\" PVC Schedule 40 Cap",
         "category": "plumbing",
-        "overview": "A Charlotte Pipe PVC Schedule 40 pressure cap that fits over the end of a 1/2\" PVC pipe to seal it. Socket (slip) connection \u2014 glued onto the pipe end using PVC cement. Used to terminate unused pipe runs or for pressure testing.",
-        "subCategory": "fittings"
+        "overview": "A Charlotte Pipe PVC Schedule 40 pressure cap that fits over the end of a 1/2\" PVC pipe to seal it. Socket (slip) connection — glued onto the pipe end using PVC cement. Used to terminate unused pipe runs or for pressure testing.",
+        "subCategory": "caps"
     },
     {
         "id": "pvc-tee-half",
@@ -2141,7 +2141,7 @@
         "sizes": [
             "1/2\" SxSxFPT"
         ],
-        "connectionType": "Socket (Slip) \u00d7 Female Pipe Thread",
+        "connectionType": "Socket (Slip) × Female Pipe Thread",
         "compatibility": [
             "1/2\" PVC Schedule 40 pipe",
             "1/2\" MPT threaded fittings and valves"
@@ -2151,7 +2151,7 @@
             "Creating distribution points in irrigation systems",
             "Connecting threaded accessories to a PVC pipe run"
         ],
-        "installationNotes": "Solvent weld the socket ends. Use PTFE tape on any threaded connections. Do not overtighten threaded joints in PVC \u2014 plastic threads are more fragile than metal.",
+        "installationNotes": "Solvent weld the socket ends. Use PTFE tape on any threaded connections. Do not overtighten threaded joints in PVC — plastic threads are more fragile than metal.",
         "images": [
             "/images/parts/20260309_182303.jpg",
             "/images/parts/20260309_182311.jpg",
@@ -2161,7 +2161,7 @@
         "primaryName": "1/2\" PVC Schedule 40 Tee SxSxFPT",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 tee fitting with two socket (slip) ends and one female pipe thread (FPT) branch. Allows branching a pipe run and connecting to a threaded component on the branch outlet.",
-        "subCategory": "fittings"
+        "subCategory": "tees"
     },
     {
         "id": "pvc-cap-three-quarter",
@@ -2175,7 +2175,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Socket (Slip) \u2014 Solvent Weld",
+        "connectionType": "Socket (Slip) — Solvent Weld",
         "compatibility": [
             "3/4\" PVC Schedule 40 pipe"
         ],
@@ -2193,8 +2193,8 @@
         ],
         "primaryName": "3/4\" PVC Schedule 40 Cap",
         "category": "plumbing",
-        "overview": "A Charlotte Pipe PVC Schedule 40 pressure cap that fits over the end of a 3/4\" PVC pipe to seal it. Socket (slip) connection \u2014 glued onto the pipe end using PVC cement.",
-        "subCategory": "fittings"
+        "overview": "A Charlotte Pipe PVC Schedule 40 pressure cap that fits over the end of a 3/4\" PVC pipe to seal it. Socket (slip) connection — glued onto the pipe end using PVC cement.",
+        "subCategory": "caps"
     },
     {
         "id": "pvc-plug-three-quarter",
@@ -2218,7 +2218,7 @@
             "Temporary closures during construction",
             "Test plugs for pressure testing"
         ],
-        "installationNotes": "Apply PTFE tape to the male threads before screwing in. Hand-tighten plus one turn with a wrench \u2014 do not overtighten PVC threads.",
+        "installationNotes": "Apply PTFE tape to the male threads before screwing in. Hand-tighten plus one turn with a wrench — do not overtighten PVC threads.",
         "images": [
             "/images/parts/20260309_182435.jpg",
             "/images/parts/20260309_182633.jpg",
@@ -2227,22 +2227,22 @@
         "primaryName": "3/4\" PVC Schedule 40 Plug MPT",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 plug with male pipe thread (MPT). Screws into a female-threaded fitting to seal the opening. Used to cap off threaded outlets in PVC piping systems.",
-        "subCategory": "fittings"
+        "subCategory": "caps"
     },
     {
         "id": "pvc-reducer-bushing",
         "aliases": [
             "Reducing bushing",
             "Bushing reducer",
-            "Spigot \u00d7 socket bushing"
+            "Spigot × socket bushing"
         ],
         "materials": [
             "PVC (Schedule 40)"
         ],
         "sizes": [
-            "3/4\" \u00d7 1/2\""
+            "3/4\" × 1/2\""
         ],
-        "connectionType": "Spigot \u00d7 Socket \u2014 Solvent Weld",
+        "connectionType": "Spigot × Socket — Solvent Weld",
         "compatibility": [
             "3/4\" PVC fittings (on the outside)",
             "1/2\" PVC pipe (on the inside)"
@@ -2259,17 +2259,17 @@
             "/images/parts/20260309_182503.jpg",
             "/images/parts/20260309_182516.jpg"
         ],
-        "primaryName": "3/4\" \u00d7 1/2\" PVC Reducer Bushing",
+        "primaryName": "3/4\" × 1/2\" PVC Reducer Bushing",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 reducer bushing that steps down from 3/4\" to 1/2\". The spigot end fits into a 3/4\" fitting socket, and the internal socket accepts a 1/2\" pipe. Allows transition between pipe sizes within a fitting.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "pvc-male-adapter",
         "aliases": [
             "Male adapter",
             "MPT adapter",
-            "Socket \u00d7 MPT adapter"
+            "Socket × MPT adapter"
         ],
         "materials": [
             "PVC (Schedule 40)"
@@ -2277,7 +2277,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Socket (Slip) \u00d7 Male Pipe Thread (MPT)",
+        "connectionType": "Socket (Slip) × Male Pipe Thread (MPT)",
         "compatibility": [
             "3/4\" PVC pipe (socket end)",
             "3/4\" FPT fittings and valves (threaded end)"
@@ -2296,7 +2296,7 @@
         "primaryName": "3/4\" PVC Schedule 40 Male Adapter",
         "category": "plumbing",
         "overview": "A PVC Schedule 40 male adapter with a socket (slip) end and a male pipe thread (MPT) end. Allows transitioning from a solvent-weld PVC system to a threaded connection for valves, metal fittings, or equipment.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "propress-cap-half",
@@ -2320,13 +2320,13 @@
             "Terminating boiler piping runs",
             "Quick repairs without soldering near combustible materials"
         ],
-        "installationNotes": "Mark the insertion depth on the pipe. Clean and deburr the pipe end. Insert pipe fully into the fitting and press with the appropriate jaw size. A green dot on Viega fittings indicates it has NOT been pressed \u2014 the dot disappears after pressing.",
+        "installationNotes": "Mark the insertion depth on the pipe. Clean and deburr the pipe end. Insert pipe fully into the fitting and press with the appropriate jaw size. A green dot on Viega fittings indicates it has NOT been pressed — the dot disappears after pressing.",
         "images": [
             "/images/parts/20260309_185307.jpg"
         ],
         "primaryName": "1/2\" Viega ProPress Cap",
         "category": "boiler-heating",
-        "overview": "A Viega ProPress 1/2\" copper cap (CA-01) for sealing the end of a copper pipe run using press-fit technology. No soldering required \u2014 crimped onto the pipe with a pressing tool for a permanent, watertight seal.",
+        "overview": "A Viega ProPress 1/2\" copper cap (CA-01) for sealing the end of a copper pipe run using press-fit technology. No soldering required — crimped onto the pipe with a pressing tool for a permanent, watertight seal.",
         "subCategory": "boiler-components"
     },
     {
@@ -2365,7 +2365,7 @@
     {
         "id": "propress-adapter-three-quarter",
         "aliases": [
-            "Press \u00d7 male adapter",
+            "Press × male adapter",
             "ProPress male adapter",
             "Press to thread adapter"
         ],
@@ -2374,9 +2374,9 @@
             "Brass (threaded end)"
         ],
         "sizes": [
-            "3/4\" Press \u00d7 3/4\" M NPT"
+            "3/4\" Press × 3/4\" M NPT"
         ],
-        "connectionType": "Press-fit \u00d7 Male NPT Thread",
+        "connectionType": "Press-fit × Male NPT Thread",
         "compatibility": [
             "3/4\" copper pipe (press end)",
             "3/4\" FPT fittings, valves, and equipment (threaded end)"
@@ -2408,23 +2408,23 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Sweat (Solder) \u2014 CxC",
+        "connectionType": "Sweat (Solder) — CxC",
         "compatibility": [
             "1/2\" copper pipe (Type K, L, or M)"
         ],
         "useCases": [
             "Gradual direction changes in copper piping",
-            "Routing around obstacles with less flow restriction than a 90\u00b0",
+            "Routing around obstacles with less flow restriction than a 90°",
             "Water supply and drainage vent piping"
         ],
-        "installationNotes": "Clean pipe and fitting interior with emery cloth. Apply flux, assemble, and solder. The gentler angle creates less friction loss than a 90\u00b0 elbow.",
+        "installationNotes": "Clean pipe and fitting interior with emery cloth. Apply flux, assemble, and solder. The gentler angle creates less friction loss than a 90° elbow.",
         "images": [
             "/images/parts/20260309_192401.jpg"
         ],
-        "primaryName": "1/2\" Copper 45\u00b0 Elbow CxC",
+        "primaryName": "1/2\" Copper 45° Elbow CxC",
         "category": "plumbing",
-        "overview": "An Everbilt 1/2\" copper 45\u00b0 elbow with CxC (cup \u00d7 cup / sweat \u00d7 sweat) connections. Changes pipe direction by 45 degrees with a gentler turn than a 90\u00b0 elbow, reducing flow restriction. Joined by soldering.",
-        "subCategory": "fittings"
+        "overview": "An Everbilt 1/2\" copper 45° elbow with CxC (cup × cup / sweat × sweat) connections. Changes pipe direction by 45 degrees with a gentler turn than a 90° elbow, reducing flow restriction. Joined by soldering.",
+        "subCategory": "elbows"
     },
     {
         "id": "copper-90-street-elbow",
@@ -2439,7 +2439,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Sweat \u2014 Cup \u00d7 Fitting (C\u00d7FTG)",
+        "connectionType": "Sweat — Cup × Fitting (C×FTG)",
         "compatibility": [
             "1/2\" copper pipe (cup end)",
             "1/2\" copper fittings (FTG end inserts directly)"
@@ -2449,21 +2449,21 @@
             "Connecting directly into another fitting (e.g., tee, valve)",
             "Reducing the number of solder joints in a run"
         ],
-        "installationNotes": "The FTG end inserts directly into a fitting socket \u2014 no pipe stub needed. Clean and flux both ends. Useful for compact manifold assemblies.",
+        "installationNotes": "The FTG end inserts directly into a fitting socket — no pipe stub needed. Clean and flux both ends. Useful for compact manifold assemblies.",
         "images": [
             "/images/parts/20260309_192407.jpg"
         ],
-        "primaryName": "1/2\" Copper 90\u00b0 Street Elbow C\u00d7FTG",
+        "primaryName": "1/2\" Copper 90° Street Elbow C×FTG",
         "category": "plumbing",
-        "overview": "An Everbilt 1/2\" copper 90\u00b0 street elbow with one cup (female/sweat) end and one FTG (male/fitting) end. The male end fits directly into another fitting socket without requiring an additional piece of pipe, saving space and materials.",
-        "subCategory": "fittings"
+        "overview": "An Everbilt 1/2\" copper 90° street elbow with one cup (female/sweat) end and one FTG (male/fitting) end. The male end fits directly into another fitting socket without requiring an additional piece of pipe, saving space and materials.",
+        "subCategory": "elbows"
     },
     {
         "id": "pvc-female-adapter-half",
         "aliases": [
             "Female adapter",
             "FPT adapter",
-            "Socket \u00d7 FPT adapter"
+            "Socket × FPT adapter"
         ],
         "materials": [
             "PVC (Schedule 40)"
@@ -2471,7 +2471,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Socket (Slip) \u00d7 Female Pipe Thread (FPT)",
+        "connectionType": "Socket (Slip) × Female Pipe Thread (FPT)",
         "compatibility": [
             "1/2\" PVC pipe (socket end)",
             "1/2\" MPT fittings and valves (threaded end)"
@@ -2492,7 +2492,7 @@
         "primaryName": "1/2\" PVC Schedule 40 Female Adapter",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 female adapter with a socket (slip) end and a female pipe thread (FPT) end. Allows transitioning from a solvent-weld PVC system to accept a male-threaded fitting or pipe.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "pvc-90-elbow-three-quarter",
@@ -2507,7 +2507,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Socket (Slip) \u00d7 Socket (Slip) \u2014 Solvent Weld",
+        "connectionType": "Socket (Slip) × Socket (Slip) — Solvent Weld",
         "compatibility": [
             "3/4\" PVC Schedule 40 pipe"
         ],
@@ -2525,25 +2525,25 @@
             "/images/parts/20260309_182805.jpg",
             "/images/parts/20260309_182809.jpg"
         ],
-        "primaryName": "3/4\" PVC Schedule 40 90\u00b0 Elbow SxS",
+        "primaryName": "3/4\" PVC Schedule 40 90° Elbow SxS",
         "category": "plumbing",
-        "overview": "A Charlotte Pipe PVC Schedule 40 90-degree elbow with socket \u00d7 socket (SxS) connections. Changes pipe direction by 90 degrees. Joined by solvent welding with PVC primer and cement.",
-        "subCategory": "fittings"
+        "overview": "A Charlotte Pipe PVC Schedule 40 90-degree elbow with socket × socket (SxS) connections. Changes pipe direction by 90 degrees. Joined by solvent welding with PVC primer and cement.",
+        "subCategory": "elbows"
     },
     {
         "id": "pvc-reducer-bushing-1x3quarter",
         "aliases": [
             "Reducer bushing",
             "PVC bushing",
-            "SPG \u00d7 SPG bushing"
+            "SPG × SPG bushing"
         ],
         "materials": [
             "PVC (Schedule 40)"
         ],
         "sizes": [
-            "1\" \u00d7 3/4\""
+            "1\" × 3/4\""
         ],
-        "connectionType": "Spigot \u00d7 Socket \u2014 Solvent Weld",
+        "connectionType": "Spigot × Socket — Solvent Weld",
         "compatibility": [
             "1\" PVC fittings (spigot end)",
             "3/4\" PVC pipe (socket end)"
@@ -2561,10 +2561,10 @@
             "/images/parts/20260309_183001.jpg",
             "/images/parts/20260309_183014.jpg"
         ],
-        "primaryName": "1\" \u00d7 3/4\" PVC Schedule 40 Reducer Bushing",
+        "primaryName": "1\" × 3/4\" PVC Schedule 40 Reducer Bushing",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 reducer bushing that steps down from 1\" to 3/4\". The hex-shaped body allows wrench grip for installation. Fits into a 1\" fitting socket (spigot end) and accepts a 3/4\" pipe (socket end).",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "pvc-coupling-half-fpt",
@@ -2579,7 +2579,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Female Pipe Thread \u00d7 Female Pipe Thread",
+        "connectionType": "Female Pipe Thread × Female Pipe Thread",
         "compatibility": [
             "1/2\" MPT threaded pipe and fittings"
         ],
@@ -2599,8 +2599,8 @@
         ],
         "primaryName": "1/2\" PVC Schedule 40 Coupling FPTxFPT",
         "category": "plumbing",
-        "overview": "A Charlotte Pipe PVC Schedule 40 coupling with female pipe thread (FPT) on both ends. Joins two male-threaded pipes or fittings together. No solvent welding \u2014 threaded connections only.",
-        "subCategory": "fittings"
+        "overview": "A Charlotte Pipe PVC Schedule 40 coupling with female pipe thread (FPT) on both ends. Joins two male-threaded pipes or fittings together. No solvent welding — threaded connections only.",
+        "subCategory": "couplings"
     },
     {
         "id": "pvc-coupling-half-sxs",
@@ -2615,7 +2615,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Socket (Slip) \u00d7 Socket (Slip) \u2014 Solvent Weld",
+        "connectionType": "Socket (Slip) × Socket (Slip) — Solvent Weld",
         "compatibility": [
             "1/2\" PVC Schedule 40 pipe"
         ],
@@ -2634,7 +2634,7 @@
         "primaryName": "1/2\" PVC Schedule 40 Coupling SxS",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 coupling with socket (slip) connections on both ends. Joins two pieces of PVC pipe in a straight line using solvent welding.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "pvc-90-elbow-half",
@@ -2649,7 +2649,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Socket (Slip) \u00d7 Socket (Slip) \u2014 Solvent Weld",
+        "connectionType": "Socket (Slip) × Socket (Slip) — Solvent Weld",
         "compatibility": [
             "1/2\" PVC Schedule 40 pipe"
         ],
@@ -2666,10 +2666,10 @@
             "/images/parts/20260309_183240.jpg",
             "/images/parts/20260309_183251.jpg"
         ],
-        "primaryName": "1/2\" PVC Schedule 40 90\u00b0 Elbow SxS",
+        "primaryName": "1/2\" PVC Schedule 40 90° Elbow SxS",
         "category": "plumbing",
-        "overview": "A Charlotte Pipe PVC Schedule 40 90-degree elbow with socket \u00d7 socket (SxS) connections in 1/2\" size. Standard fitting for changing pipe direction by 90 degrees.",
-        "subCategory": "fittings"
+        "overview": "A Charlotte Pipe PVC Schedule 40 90-degree elbow with socket × socket (SxS) connections in 1/2\" size. Standard fitting for changing pipe direction by 90 degrees.",
+        "subCategory": "elbows"
     },
     {
         "id": "pvc-45-elbow-three-quarter",
@@ -2684,7 +2684,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Socket (Slip) \u00d7 Socket (Slip) \u2014 Solvent Weld",
+        "connectionType": "Socket (Slip) × Socket (Slip) — Solvent Weld",
         "compatibility": [
             "3/4\" PVC Schedule 40 pipe"
         ],
@@ -2693,15 +2693,15 @@
             "Offset piping around minor obstacles",
             "Drainage vent piping where gentle bends are needed"
         ],
-        "installationNotes": "Apply PVC primer and cement. A 45\u00b0 elbow causes less friction loss than a 90\u00b0 elbow.",
+        "installationNotes": "Apply PVC primer and cement. A 45° elbow causes less friction loss than a 90° elbow.",
         "images": [
             "/images/parts/20260309_183245.jpg",
             "/images/parts/20260309_183247.jpg"
         ],
-        "primaryName": "3/4\" PVC Schedule 40 45\u00b0 Elbow SxS",
+        "primaryName": "3/4\" PVC Schedule 40 45° Elbow SxS",
         "category": "plumbing",
-        "overview": "A Charlotte Pipe PVC Schedule 40 45-degree elbow with socket \u00d7 socket (SxS) connections. Creates a gentler direction change than a 90\u00b0 elbow, reducing flow restriction.",
-        "subCategory": "fittings"
+        "overview": "A Charlotte Pipe PVC Schedule 40 45-degree elbow with socket × socket (SxS) connections. Creates a gentler direction change than a 90° elbow, reducing flow restriction.",
+        "subCategory": "elbows"
     },
     {
         "id": "pvc-coupling-three-quarter-sxs",
@@ -2716,7 +2716,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Socket (Slip) \u00d7 Socket (Slip) \u2014 Solvent Weld",
+        "connectionType": "Socket (Slip) × Socket (Slip) — Solvent Weld",
         "compatibility": [
             "3/4\" PVC Schedule 40 pipe"
         ],
@@ -2733,14 +2733,14 @@
         "primaryName": "3/4\" PVC Schedule 40 Coupling SxS",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 coupling with socket (slip) connections on both ends in 3/4\" size. Joins two pieces of 3/4\" PVC pipe in a straight line using solvent welding.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "pvc-riser-extension-half",
         "aliases": [
             "Riser extension",
             "Riser ext",
-            "MPT \u00d7 FPT riser"
+            "MPT × FPT riser"
         ],
         "materials": [
             "PVC (Schedule 40)"
@@ -2748,7 +2748,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Male Pipe Thread (MPT) \u00d7 Female Pipe Thread (FPT)",
+        "connectionType": "Male Pipe Thread (MPT) × Female Pipe Thread (FPT)",
         "compatibility": [
             "1/2\" FPT fittings (MPT end)",
             "1/2\" MPT fittings (FPT end)"
@@ -2783,9 +2783,9 @@
             "PVC (Schedule 40)"
         ],
         "sizes": [
-            "1-1/2\" \u00d7 1/2\""
+            "1-1/2\" × 1/2\""
         ],
-        "connectionType": "Spigot \u00d7 Socket \u2014 Solvent Weld",
+        "connectionType": "Spigot × Socket — Solvent Weld",
         "compatibility": [
             "1-1/2\" PVC fittings (spigot end)",
             "1/2\" PVC pipe (socket end)"
@@ -2802,17 +2802,17 @@
             "/images/parts/20260309_183549.jpg",
             "/images/parts/20260309_183554.jpg"
         ],
-        "primaryName": "1-1/2\" \u00d7 1/2\" PVC Schedule 40 Reducer Bushing",
+        "primaryName": "1-1/2\" × 1/2\" PVC Schedule 40 Reducer Bushing",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 reducer bushing that steps down from 1-1/2\" to 1/2\". The hex-shaped body allows wrench grip for installation. Fits into a 1-1/2\" fitting socket (spigot end) and accepts a 1/2\" pipe (socket end).",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "pvc-male-adapter-1quarter",
         "aliases": [
             "Male adapter",
             "MPT adapter",
-            "Socket \u00d7 MPT adapter"
+            "Socket × MPT adapter"
         ],
         "materials": [
             "PVC (Schedule 40)"
@@ -2820,7 +2820,7 @@
         "sizes": [
             "1-1/4\""
         ],
-        "connectionType": "Socket (Slip) \u00d7 Male Pipe Thread (MPT)",
+        "connectionType": "Socket (Slip) × Male Pipe Thread (MPT)",
         "compatibility": [
             "1-1/4\" PVC pipe (socket end)",
             "1-1/4\" FPT fittings (threaded end)"
@@ -2839,7 +2839,7 @@
         "primaryName": "1-1/4\" PVC Schedule 40 Male Adapter",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 male adapter (CPF 2109) with a socket (slip) end and a male pipe thread (MPT) end in 1-1/4\" size. Transitions from solvent-weld PVC pipe to a threaded connection.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "pvc-male-adapter-reducer-1half-x-2",
@@ -2852,9 +2852,9 @@
             "PVC (Schedule 40)"
         ],
         "sizes": [
-            "1-1/2\" \u00d7 2\""
+            "1-1/2\" × 2\""
         ],
-        "connectionType": "Socket (Slip) 1-1/2\" \u00d7 Male Pipe Thread (MPT) 2\"",
+        "connectionType": "Socket (Slip) 1-1/2\" × Male Pipe Thread (MPT) 2\"",
         "compatibility": [
             "1-1/2\" PVC pipe (socket end)",
             "2\" FPT fittings (threaded end)"
@@ -2869,10 +2869,10 @@
             "/images/parts/20260309_183751.jpg",
             "/images/parts/20260309_183755.jpg"
         ],
-        "primaryName": "1-1/2\" \u00d7 2\" PVC Schedule 40 Male Adapter Reducer",
+        "primaryName": "1-1/2\" × 2\" PVC Schedule 40 Male Adapter Reducer",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 male adapter reducer (CPF 2110) that transitions from a 1-1/2\" socket to a 2\" male pipe thread. Combines reducing and adapting functions in one fitting.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "pvc-reducer-bushing-1quarter-x-1",
@@ -2884,9 +2884,9 @@
             "PVC (Schedule 40)"
         ],
         "sizes": [
-            "1-1/4\" \u00d7 1\""
+            "1-1/4\" × 1\""
         ],
-        "connectionType": "Spigot \u00d7 Socket \u2014 Solvent Weld",
+        "connectionType": "Spigot × Socket — Solvent Weld",
         "compatibility": [
             "1-1/4\" PVC fittings (spigot end)",
             "1\" PVC pipe (socket end)"
@@ -2902,10 +2902,10 @@
             "/images/parts/20260309_183804.jpg",
             "/images/parts/20260309_183808.jpg"
         ],
-        "primaryName": "1-1/4\" \u00d7 1\" PVC Schedule 40 Reducer Bushing",
+        "primaryName": "1-1/4\" × 1\" PVC Schedule 40 Reducer Bushing",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 reducer bushing (CPF 2107) that steps down from 1-1/4\" to 1\". Hex-shaped body allows wrench grip. Fits into a 1-1/4\" fitting socket and accepts a 1\" pipe.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "pvc-reducer-bushing-1half-x-1quarter",
@@ -2917,9 +2917,9 @@
             "PVC (Schedule 40)"
         ],
         "sizes": [
-            "1-1/2\" \u00d7 1-1/4\""
+            "1-1/2\" × 1-1/4\""
         ],
-        "connectionType": "Spigot \u00d7 Socket \u2014 Solvent Weld",
+        "connectionType": "Spigot × Socket — Solvent Weld",
         "compatibility": [
             "1-1/2\" PVC fittings (spigot end)",
             "1-1/4\" PVC pipe (socket end)"
@@ -2936,10 +2936,10 @@
             "/images/parts/20260309_183725.jpg",
             "/images/parts/20260309_183734.jpg"
         ],
-        "primaryName": "1-1/2\" \u00d7 1-1/4\" PVC Schedule 40 Reducer Bushing",
+        "primaryName": "1-1/2\" × 1-1/4\" PVC Schedule 40 Reducer Bushing",
         "category": "plumbing",
         "overview": "A Charlotte Pipe PVC Schedule 40 reducer bushing that steps down from 1-1/2\" to 1-1/4\". Hex-shaped body for wrench grip. Fits into a 1-1/2\" fitting socket and accepts 1-1/4\" pipe.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "pvc-tee-three-quarter",
@@ -2954,7 +2954,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Socket (Slip) \u00d7 Socket (Slip) \u00d7 Socket (Slip) \u2014 Solvent Weld",
+        "connectionType": "Socket (Slip) × Socket (Slip) × Socket (Slip) — Solvent Weld",
         "compatibility": [
             "3/4\" PVC Schedule 40 pipe"
         ],
@@ -2971,8 +2971,8 @@
         ],
         "primaryName": "3/4\" PVC Schedule 40 Tee SxSxS",
         "category": "plumbing",
-        "overview": "A Charlotte Pipe PVC Schedule 40 tee with socket \u00d7 socket \u00d7 socket (SxSxS) connections in 3/4\" size. Creates a T-shaped branch in a pipe run. All three ports accept 3/4\" PVC pipe via solvent welding.",
-        "subCategory": "fittings"
+        "overview": "A Charlotte Pipe PVC Schedule 40 tee with socket × socket × socket (SxSxS) connections in 3/4\" size. Creates a T-shaped branch in a pipe run. All three ports accept 3/4\" PVC pipe via solvent welding.",
+        "subCategory": "tees"
     },
     {
         "id": "fernco-quik-rubber-coupling-1half",
@@ -2998,7 +2998,7 @@
             "Repair couplings for drain lines",
             "Transition fittings between pipe types"
         ],
-        "installationNotes": "Slide over pipe ends and tighten band clamps to 60 in. lbs. For sewer and drain use only \u2014 not rated for pressure.",
+        "installationNotes": "Slide over pipe ends and tighten band clamps to 60 in. lbs. For sewer and drain use only — not rated for pressure.",
         "images": [
             "/images/parts/20260309_183905.jpg",
             "/images/parts/20260309_183907.jpg",
@@ -3008,7 +3008,7 @@
         "primaryName": "1-1/2\" FerncoQuik Rubber Coupling",
         "category": "plumbing",
         "overview": "A FerncoQuik flexible rubber coupling (P1056-150) for 1-1/2\" pipes. Features stainless steel band clamps for a secure, watertight connection. Rated for sewer, drain, and vent use only at 60 in. lbs torque.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "fernco-quik-copper-coupling-2",
@@ -3042,7 +3042,7 @@
         "primaryName": "2\" FerncoQuik Copper Coupling",
         "category": "plumbing",
         "overview": "A FerncoQuik copper-banded flexible coupling (P3001-22) for 2\" pipes. Features stainless steel shielding and band clamps. Designed for connecting copper, PVC, cast iron, steel, or lead pipe.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "no-hub-coupling-1half",
@@ -3080,7 +3080,7 @@
         "primaryName": "1-1/2\" No Hub Coupling",
         "category": "plumbing",
         "overview": "A 1-1/2\" no hub coupling for joining hubless cast iron, PVC, or other drain pipe. Features a neoprene gasket with stainless steel shielding and band clamp for a secure, watertight seal.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "fernco-shielded-flexible-coupling-1half",
@@ -3116,8 +3116,8 @@
         ],
         "primaryName": "1-1/2\" Fernco Shielded Flexible Coupling",
         "category": "plumbing",
-        "overview": "A Fernco 1-1/2\" \u00d7 1-1/2\" shielded flexible coupling (P3002-150) with stainless steel shielding and band clamps. The shielded design provides more rigidity than standard rubber couplings. For sewer, drain and vent applications.",
-        "subCategory": "fittings"
+        "overview": "A Fernco 1-1/2\" × 1-1/2\" shielded flexible coupling (P3002-150) with stainless steel shielding and band clamps. The shielded design provides more rigidity than standard rubber couplings. For sewer, drain and vent applications.",
+        "subCategory": "couplings"
     },
     {
         "id": "fernco-quick-tee-2",
@@ -3142,7 +3142,7 @@
             "Tapping into a drain pipe without solvent welding",
             "Connecting dissimilar pipe materials in a tee configuration"
         ],
-        "installationNotes": "Slide onto pipes and tighten all three band clamps evenly. For sewer and drain use only \u2014 not rated for pressure.",
+        "installationNotes": "Slide onto pipes and tighten all three band clamps evenly. For sewer and drain use only — not rated for pressure.",
         "images": [
             "/images/parts/20260309_184211.jpg",
             "/images/parts/20260309_184216.jpg",
@@ -3157,7 +3157,7 @@
         "primaryName": "2\" Fernco Quick-Tee",
         "category": "plumbing",
         "overview": "A Fernco Quick-Tee (QT-200) flexible rubber tee fitting for 2\" drain pipes. Features band clamps on all three ports for secure connections. Allows adding a branch connection to an existing drain line without cutting and gluing.",
-        "subCategory": "fittings"
+        "subCategory": "tees"
     },
     {
         "id": "fernco-flexible-elbow-1half",
@@ -3178,7 +3178,7 @@
             "1-1/2\" PVC, cast iron, copper, steel, or lead pipe"
         ],
         "useCases": [
-            "Creating a flexible 90\u00b0 turn in a drain line",
+            "Creating a flexible 90° turn in a drain line",
             "Connecting misaligned pipes",
             "Repair fittings where rigid elbows won't fit"
         ],
@@ -3189,8 +3189,8 @@
         ],
         "primaryName": "1-1/2\" Fernco Flexible Elbow",
         "category": "plumbing",
-        "overview": "A Fernco flexible elbow (PQL-150) for 1-1/2\" drain pipes. Features rubber construction with stainless steel band clamps. Creates a 90\u00b0 turn in a drain line without rigid PVC fittings.",
-        "subCategory": "fittings"
+        "overview": "A Fernco flexible elbow (PQL-150) for 1-1/2\" drain pipes. Features rubber construction with stainless steel band clamps. Creates a 90° turn in a drain line without rigid PVC fittings.",
+        "subCategory": "elbows"
     },
     {
         "id": "fernco-flexible-coupling-3x2",
@@ -3204,12 +3204,12 @@
             "Stainless steel band clamps"
         ],
         "sizes": [
-            "3\" \u00d7 2\""
+            "3\" × 2\""
         ],
         "connectionType": "Band clamp compression",
         "compatibility": [
             "3\" pipe (large end)",
-            "2\" pipe (small end) \u2014 PVC, cast iron, copper, steel, or lead"
+            "2\" pipe (small end) — PVC, cast iron, copper, steel, or lead"
         ],
         "useCases": [
             "Reducing pipe size from 3\" to 2\" in drain lines",
@@ -3226,10 +3226,10 @@
             "/images/parts/20260309_184354.jpg",
             "/images/parts/20260309_184357.jpg"
         ],
-        "primaryName": "3\" \u00d7 2\" Fernco Flexible Coupling",
+        "primaryName": "3\" × 2\" Fernco Flexible Coupling",
         "category": "plumbing",
         "overview": "A Fernco flexible reducing coupling (P1056-32) that transitions from 3\" to 2\" pipe. Features rubber construction with stainless steel band clamps. Connects different pipe sizes and materials.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "fernco-quik-rubber-coupling-3",
@@ -3264,7 +3264,7 @@
         "primaryName": "3\" FerncoQuik Rubber Coupling",
         "category": "plumbing",
         "overview": "A FerncoQuik flexible rubber coupling (P1056-33) for 3\" pipes. Features stainless steel band clamps for secure, watertight connections. For sewer, drain, and vent use.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "brass-boiler-drain-valve-three-quarter",
@@ -3280,7 +3280,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Female Pipe Thread (FPT) inlet \u00d7 Male Hose Thread (MHT) outlet",
+        "connectionType": "Female Pipe Thread (FPT) inlet × Male Hose Thread (MHT) outlet",
         "compatibility": [
             "3/4\" MPT fittings",
             "Standard garden hose"
@@ -3320,7 +3320,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Female Pipe Thread (FPT) \u00d7 3 ports",
+        "connectionType": "Female Pipe Thread (FPT) × 3 ports",
         "compatibility": [
             "3/4\" MPT fittings on all three ports"
         ],
@@ -3392,7 +3392,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Solder \u00d7 Solder (Sweat)",
+        "connectionType": "Solder × Solder (Sweat)",
         "compatibility": [
             "3/4\" copper pipe"
         ],
@@ -3410,7 +3410,7 @@
         ],
         "primaryName": "3/4\" Everbilt Lead-Free Brass Ball Valve",
         "category": "plumbing",
-        "overview": "A 3/4\" Everbilt lead-free brass ball valve (150WSP/600WOG rated) with a blue lever handle. Solder \u00d7 solder connections. Lead-free construction compliant with NSF/ANSI 372 for potable water use.",
+        "overview": "A 3/4\" Everbilt lead-free brass ball valve (150WSP/600WOG rated) with a blue lever handle. Solder × solder connections. Lead-free construction compliant with NSF/ANSI 372 for potable water use.",
         "subCategory": "valves"
     },
     {
@@ -3427,7 +3427,7 @@
         "sizes": [
             "1\""
         ],
-        "connectionType": "Solder \u00d7 Solder (Sweat)",
+        "connectionType": "Solder × Solder (Sweat)",
         "compatibility": [
             "1\" copper pipe"
         ],
@@ -3450,7 +3450,7 @@
         ],
         "primaryName": "1\" Everbilt Brass Ball Valve",
         "category": "plumbing",
-        "overview": "A 1\" Everbilt brass ball valve (107-455EB) with a blue lever handle. Solder \u00d7 solder connections for copper pipe. Full port design for maximum flow.",
+        "overview": "A 1\" Everbilt brass ball valve (107-455EB) with a blue lever handle. Solder × solder connections for copper pipe. Full port design for maximum flow.",
         "subCategory": "valves"
     },
     {
@@ -3464,9 +3464,9 @@
             "Brass"
         ],
         "sizes": [
-            "1/4\" \u00d7 2\" long"
+            "1/4\" × 2\" long"
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "1/4\" FPT/FIP fittings"
         ],
@@ -3480,10 +3480,10 @@
             "/images/parts/20260309_184945.jpg",
             "/images/parts/20260309_184947.jpg"
         ],
-        "primaryName": "1/4\" \u00d7 2\" Brass Pipe Nipple",
+        "primaryName": "1/4\" × 2\" Brass Pipe Nipple",
         "category": "plumbing",
-        "overview": "A 1/4\" MIP \u00d7 2\" long brass pipe nipple (LFA-742). Male pipe threads on both ends for connecting two female-threaded fittings. Used for extending or connecting small-diameter threaded pipe runs.",
-        "subCategory": "fittings"
+        "overview": "A 1/4\" MIP × 2\" long brass pipe nipple (LFA-742). Male pipe threads on both ends for connecting two female-threaded fittings. Used for extending or connecting small-diameter threaded pipe runs.",
+        "subCategory": "nipples"
     },
     {
         "id": "brass-pipe-nipple-quarter-x-3",
@@ -3495,9 +3495,9 @@
             "Brass"
         ],
         "sizes": [
-            "1/4\" \u00d7 3\" long"
+            "1/4\" × 3\" long"
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "1/4\" FPT/FIP fittings"
         ],
@@ -3511,10 +3511,10 @@
             "/images/parts/20260309_184953.jpg",
             "/images/parts/20260309_184955.jpg"
         ],
-        "primaryName": "1/4\" \u00d7 3\" Brass Pipe Nipple",
+        "primaryName": "1/4\" × 3\" Brass Pipe Nipple",
         "category": "plumbing",
-        "overview": "A 1/4\" MIP \u00d7 3\" long brass pipe nipple (LFA-744). Male pipe threads on both ends. Longer than the 2\" version for applications requiring more spacing between threaded connections.",
-        "subCategory": "fittings"
+        "overview": "A 1/4\" MIP × 3\" long brass pipe nipple (LFA-744). Male pipe threads on both ends. Longer than the 2\" version for applications requiring more spacing between threaded connections.",
+        "subCategory": "nipples"
     },
     {
         "id": "brass-pipe-nipple-three-eighth-x-2half",
@@ -3526,9 +3526,9 @@
             "Brass"
         ],
         "sizes": [
-            "3/8\" \u00d7 2-1/2\" long"
+            "3/8\" × 2-1/2\" long"
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "3/8\" FPT/FIP fittings"
         ],
@@ -3542,10 +3542,10 @@
             "/images/parts/20260309_185007.jpg",
             "/images/parts/20260309_185015.jpg"
         ],
-        "primaryName": "3/8\" \u00d7 2-1/2\" Brass Pipe Nipple",
+        "primaryName": "3/8\" × 2-1/2\" Brass Pipe Nipple",
         "category": "plumbing",
-        "overview": "A 3/8\" MIP \u00d7 2-1/2\" long brass pipe nipple (LFA-788). Male pipe threads on both ends. Used for connecting threaded fittings in small-diameter pipe runs.",
-        "subCategory": "fittings"
+        "overview": "A 3/8\" MIP × 2-1/2\" long brass pipe nipple (LFA-788). Male pipe threads on both ends. Used for connecting threaded fittings in small-diameter pipe runs.",
+        "subCategory": "nipples"
     },
     {
         "id": "brass-pipe-nipple-three-eighth-x-3",
@@ -3557,9 +3557,9 @@
             "Brass"
         ],
         "sizes": [
-            "3/8\" \u00d7 3\" long"
+            "3/8\" × 3\" long"
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "3/8\" FPT/FIP fittings"
         ],
@@ -3572,10 +3572,10 @@
         "images": [
             "/images/parts/20260309_185020.jpg"
         ],
-        "primaryName": "3/8\" \u00d7 3\" Brass Pipe Nipple",
+        "primaryName": "3/8\" × 3\" Brass Pipe Nipple",
         "category": "plumbing",
-        "overview": "A 3/8\" MIP \u00d7 3\" long brass pipe nipple (LFA-789). Male pipe threads on both ends.",
-        "subCategory": "fittings"
+        "overview": "A 3/8\" MIP × 3\" long brass pipe nipple (LFA-789). Male pipe threads on both ends.",
+        "subCategory": "nipples"
     },
     {
         "id": "brass-pipe-nipple-three-quarter-x-2",
@@ -3587,9 +3587,9 @@
             "Brass"
         ],
         "sizes": [
-            "3/4\" \u00d7 2\" long"
+            "3/4\" × 2\" long"
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "3/4\" FPT/FIP fittings"
         ],
@@ -3605,10 +3605,10 @@
             "/images/parts/20260309_185041.jpg",
             "/images/parts/20260309_185045.jpg"
         ],
-        "primaryName": "3/4\" \u00d7 2\" Brass Pipe Nipple",
+        "primaryName": "3/4\" × 2\" Brass Pipe Nipple",
         "category": "plumbing",
-        "overview": "A 3/4\" MIP \u00d7 2\" long brass pipe nipple (LFA-879). Male pipe threads on both ends for connecting larger threaded fittings.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" MIP × 2\" long brass pipe nipple (LFA-879). Male pipe threads on both ends for connecting larger threaded fittings.",
+        "subCategory": "nipples"
     },
     {
         "id": "brass-pipe-nipple-three-quarter-x-4",
@@ -3620,9 +3620,9 @@
             "Brass"
         ],
         "sizes": [
-            "3/4\" \u00d7 4\" long"
+            "3/4\" × 4\" long"
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "3/4\" FPT/FIP fittings"
         ],
@@ -3637,10 +3637,10 @@
             "/images/parts/20260309_185101.jpg",
             "/images/parts/20260309_185107.jpg"
         ],
-        "primaryName": "3/4\" \u00d7 4\" Brass Pipe Nipple",
+        "primaryName": "3/4\" × 4\" Brass Pipe Nipple",
         "category": "plumbing",
-        "overview": "A 3/4\" MIP \u00d7 4\" long brass pipe nipple (LFA-889). Male pipe threads on both ends. Longer version for greater spacing between fittings.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" MIP × 4\" long brass pipe nipple (LFA-889). Male pipe threads on both ends. Longer version for greater spacing between fittings.",
+        "subCategory": "nipples"
     },
     {
         "id": "brass-pipe-nipple-half-close",
@@ -3652,9 +3652,9 @@
             "Brass"
         ],
         "sizes": [
-            "1/2\" \u00d7 Close"
+            "1/2\" × Close"
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "1/2\" FPT/FIP fittings"
         ],
@@ -3663,15 +3663,15 @@
             "Tight-space connections",
             "Compact pipe assemblies"
         ],
-        "installationNotes": "Apply PTFE tape to both ends. Close nipples have very little wrench surface \u2014 use two wrenches when tightening.",
+        "installationNotes": "Apply PTFE tape to both ends. Close nipples have very little wrench surface — use two wrenches when tightening.",
         "images": [
             "/images/parts/20260309_185147.jpg",
             "/images/parts/20260309_185150.jpg"
         ],
-        "primaryName": "1/2\" \u00d7 Close Brass Pipe Nipple",
+        "primaryName": "1/2\" × Close Brass Pipe Nipple",
         "category": "plumbing",
-        "overview": "A 1/2\" MIP \u00d7 close brass pipe nipple (LFA-833). Close nipples have threads running nearly the full length with minimal unthreaded body. Used to connect two FPT fittings with minimal spacing.",
-        "subCategory": "fittings"
+        "overview": "A 1/2\" MIP × close brass pipe nipple (LFA-833). Close nipples have threads running nearly the full length with minimal unthreaded body. Used to connect two FPT fittings with minimal spacing.",
+        "subCategory": "nipples"
     },
     {
         "id": "brass-pipe-nipple-half-x-2",
@@ -3683,9 +3683,9 @@
             "Brass"
         ],
         "sizes": [
-            "1/2\" \u00d7 2\" long"
+            "1/2\" × 2\" long"
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "1/2\" FPT/FIP fittings"
         ],
@@ -3700,10 +3700,10 @@
             "/images/parts/20260309_185158.jpg",
             "/images/parts/20260309_185205.jpg"
         ],
-        "primaryName": "1/2\" \u00d7 2\" Brass Pipe Nipple",
+        "primaryName": "1/2\" × 2\" Brass Pipe Nipple",
         "category": "plumbing",
-        "overview": "A 1/2\" MIP \u00d7 2\" long brass pipe nipple. Male pipe threads on both ends for standard threaded connections.",
-        "subCategory": "fittings"
+        "overview": "A 1/2\" MIP × 2\" long brass pipe nipple. Male pipe threads on both ends for standard threaded connections.",
+        "subCategory": "nipples"
     },
     {
         "id": "brass-pipe-nipple-three-quarter-close",
@@ -3715,9 +3715,9 @@
             "Brass"
         ],
         "sizes": [
-            "3/4\" \u00d7 Close"
+            "3/4\" × Close"
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "3/4\" FPT/FIP fittings"
         ],
@@ -3726,16 +3726,16 @@
             "Compact water line assemblies",
             "Boiler connections"
         ],
-        "installationNotes": "Apply PTFE tape. Use two wrenches \u2014 close nipples have minimal wrench surface. Price: ~$10.81.",
+        "installationNotes": "Apply PTFE tape. Use two wrenches — close nipples have minimal wrench surface. Price: ~$10.81.",
         "images": [
             "/images/parts/20260309_185210.jpg",
             "/images/parts/20260309_185216.jpg",
             "/images/parts/20260309_185219.jpg"
         ],
-        "primaryName": "3/4\" \u00d7 Close Brass Pipe Nipple",
+        "primaryName": "3/4\" × Close Brass Pipe Nipple",
         "category": "plumbing",
-        "overview": "A 3/4\" MIP \u00d7 close brass pipe nipple (LFA-877). Close nipples have threads running nearly the full length. Connects two 3/4\" FPT fittings with minimal spacing.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" MIP × close brass pipe nipple (LFA-877). Close nipples have threads running nearly the full length. Connects two 3/4\" FPT fittings with minimal spacing.",
+        "subCategory": "nipples"
     },
     {
         "id": "brass-pipe-nipple-1-close",
@@ -3747,9 +3747,9 @@
             "Brass"
         ],
         "sizes": [
-            "1\" \u00d7 Close"
+            "1\" × Close"
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "1\" FPT/FIP fittings"
         ],
@@ -3763,10 +3763,10 @@
             "/images/parts/20260309_185227.jpg",
             "/images/parts/20260309_185232.jpg"
         ],
-        "primaryName": "1\" \u00d7 Close Brass Pipe Nipple",
+        "primaryName": "1\" × Close Brass Pipe Nipple",
         "category": "plumbing",
-        "overview": "A 1\" MIP \u00d7 close brass pipe nipple (LFA-911). Close nipples connect two 1\" FPT fittings with minimal spacing between them.",
-        "subCategory": "fittings"
+        "overview": "A 1\" MIP × close brass pipe nipple (LFA-911). Close nipples connect two 1\" FPT fittings with minimal spacing between them.",
+        "subCategory": "nipples"
     },
     {
         "id": "brass-reducing-bushing-1-x-three-quarter",
@@ -3779,9 +3779,9 @@
             "Brass (Red Brass)"
         ],
         "sizes": [
-            "1\" \u00d7 3/4\""
+            "1\" × 3/4\""
         ],
-        "connectionType": "Male Iron Pipe (MIP) 1\" \u00d7 Female Iron Pipe (FIP) 3/4\"",
+        "connectionType": "Male Iron Pipe (MIP) 1\" × Female Iron Pipe (FIP) 3/4\"",
         "compatibility": [
             "1\" FPT fittings (MIP end)",
             "3/4\" MPT fittings (FIP end)"
@@ -3797,10 +3797,10 @@
             "/images/parts/20260309_185311.jpg",
             "/images/parts/20260309_185320.jpg"
         ],
-        "primaryName": "1\" \u00d7 3/4\" Brass Reducing Bushing",
+        "primaryName": "1\" × 3/4\" Brass Reducing Bushing",
         "category": "plumbing",
-        "overview": "A 1\" MIP \u00d7 3/4\" FIP brass reducing bushing (LFA-878). Steps down from a 1\" female fitting to accept a 3/4\" male threaded connection. Hex-shaped for wrench grip.",
-        "subCategory": "fittings"
+        "overview": "A 1\" MIP × 3/4\" FIP brass reducing bushing (LFA-878). Steps down from a 1\" female fitting to accept a 3/4\" male threaded connection. Hex-shaped for wrench grip.",
+        "subCategory": "adapters"
     },
     {
         "id": "viega-propress-coupling-three-quarter",
@@ -3816,7 +3816,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Press \u00d7 Press",
+        "connectionType": "Press × Press",
         "compatibility": [
             "3/4\" Type K, L, or M copper pipe"
         ],
@@ -3833,13 +3833,13 @@
         "primaryName": "3/4\" Viega ProPress Coupling",
         "category": "plumbing",
         "overview": "A 3/4\" Viega ProPress coupling for copper pipe. Features copper construction with integrated EPDM sealing elements and Smart Connect technology. Press connections on both ends eliminate the need for soldering.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "viega-propress-adapter-three-quarter",
         "aliases": [
             "ProPress adapter",
-            "Press \u00d7 MPT adapter",
+            "Press × MPT adapter",
             "AD-02"
         ],
         "materials": [
@@ -3849,7 +3849,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Press \u00d7 Male Pipe Thread (MPT)",
+        "connectionType": "Press × Male Pipe Thread (MPT)",
         "compatibility": [
             "3/4\" copper pipe (press end)",
             "3/4\" FPT fittings (threaded end)"
@@ -3880,13 +3880,13 @@
         "primaryName": "3/4\" Viega ProPress Adapter",
         "category": "plumbing",
         "overview": "A 3/4\" Viega ProPress adapter (AD-02, Part #77995) with a press connection on one end and male pipe thread (MPT) on the other. Transitions from ProPress copper system to threaded fittings.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "brass-90-elbow-three-quarter",
         "aliases": [
             "Brass elbow",
-            "90\u00b0 elbow",
+            "90° elbow",
             "FPT elbow"
         ],
         "materials": [
@@ -3895,12 +3895,12 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Female Pipe Thread (FPT) \u00d7 Female Pipe Thread (FPT)",
+        "connectionType": "Female Pipe Thread (FPT) × Female Pipe Thread (FPT)",
         "compatibility": [
             "3/4\" MPT fittings or pipe nipples"
         ],
         "useCases": [
-            "Creating 90\u00b0 turns in threaded pipe systems",
+            "Creating 90° turns in threaded pipe systems",
             "Water heater connections",
             "Boiler piping direction changes"
         ],
@@ -3915,10 +3915,10 @@
             "/images/parts/20260309_185637.jpg",
             "/images/parts/20260309_185642.jpg"
         ],
-        "primaryName": "3/4\" Brass 90\u00b0 FPT Elbow",
+        "primaryName": "3/4\" Brass 90° FPT Elbow",
         "category": "plumbing",
-        "overview": "A 3/4\" brass 90\u00b0 elbow with female pipe thread (FPT) connections on both ends. Creates a right-angle turn in a threaded pipe run.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" brass 90° elbow with female pipe thread (FPT) connections on both ends. Creates a right-angle turn in a threaded pipe run.",
+        "subCategory": "elbows"
     },
     {
         "id": "brass-reducing-adapter-half",
@@ -3932,7 +3932,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Male Iron Pipe (MIP) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Male Iron Pipe (MIP) × Male Iron Pipe (MIP)",
         "compatibility": [
             "FPT/FIP fittings of corresponding sizes"
         ],
@@ -3948,10 +3948,10 @@
             "/images/parts/20260309_185659.jpg",
             "/images/parts/20260309_185702.jpg"
         ],
-        "primaryName": "1/2\" Brass Reducing Adapter MIP \u00d7 MIP",
+        "primaryName": "1/2\" Brass Reducing Adapter MIP × MIP",
         "category": "plumbing",
         "overview": "A brass reducing adapter with male pipe threads (MIP) on both ends in different sizes. Used to connect two female-threaded fittings of different diameters.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "viega-propress-coupling-half",
@@ -3967,7 +3967,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Press \u00d7 Press",
+        "connectionType": "Press × Press",
         "compatibility": [
             "1/2\" Type K, L, or M copper pipe"
         ],
@@ -3986,7 +3986,7 @@
         "primaryName": "1/2\" Viega ProPress Coupling",
         "category": "plumbing",
         "overview": "A 1/2\" Viega ProPress coupling for copper pipe. Features copper construction with EPDM sealing elements and Smart Connect technology for flameless connections.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "viega-propress-90-elbow-half",
@@ -4002,12 +4002,12 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Press \u00d7 Press",
+        "connectionType": "Press × Press",
         "compatibility": [
             "1/2\" Type K, L, or M copper pipe"
         ],
         "useCases": [
-            "Creating 90\u00b0 turns in copper pipe without soldering",
+            "Creating 90° turns in copper pipe without soldering",
             "Tight-space direction changes",
             "Retrofit plumbing work"
         ],
@@ -4021,17 +4021,17 @@
             "/images/parts/20260309_185842.jpg",
             "/images/parts/20260309_185857.jpg"
         ],
-        "primaryName": "1/2\" Viega ProPress 90\u00b0 Elbow",
+        "primaryName": "1/2\" Viega ProPress 90° Elbow",
         "category": "plumbing",
-        "overview": "A 1/2\" Viega ProPress 90\u00b0 elbow for copper pipe. Creates a right-angle turn using press connections \u2014 no soldering required. Features EPDM sealing elements.",
-        "subCategory": "fittings"
+        "overview": "A 1/2\" Viega ProPress 90° elbow for copper pipe. Creates a right-angle turn using press connections — no soldering required. Features EPDM sealing elements.",
+        "subCategory": "elbows"
     },
     {
         "id": "viega-propress-street-elbow-half",
         "aliases": [
             "Street elbow",
             "ProPress street 90",
-            "Press \u00d7 FTG elbow"
+            "Press × FTG elbow"
         ],
         "materials": [
             "Copper",
@@ -4040,13 +4040,13 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Press \u00d7 Fitting (FTG)",
+        "connectionType": "Press × Fitting (FTG)",
         "compatibility": [
             "1/2\" copper pipe (press end)",
             "1/2\" ProPress fitting (FTG end)"
         ],
         "useCases": [
-            "Creating compact 90\u00b0 turns",
+            "Creating compact 90° turns",
             "Connecting directly into another press fitting",
             "Space-saving installations"
         ],
@@ -4060,8 +4060,8 @@
         ],
         "primaryName": "1/2\" Viega ProPress Street Elbow",
         "category": "plumbing",
-        "overview": "A 1/2\" Viega ProPress 90\u00b0 street elbow with a press connection on one end and a fitting (FTG) insertion end on the other. The FTG end inserts directly into another press fitting, saving space.",
-        "subCategory": "fittings"
+        "overview": "A 1/2\" Viega ProPress 90° street elbow with a press connection on one end and a fitting (FTG) insertion end on the other. The FTG end inserts directly into another press fitting, saving space.",
+        "subCategory": "elbows"
     },
     {
         "id": "viega-propress-tee-half",
@@ -4077,7 +4077,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Press \u00d7 Press \u00d7 Press",
+        "connectionType": "Press × Press × Press",
         "compatibility": [
             "1/2\" Type K, L, or M copper pipe"
         ],
@@ -4099,7 +4099,7 @@
         "primaryName": "1/2\" Viega ProPress Tee",
         "category": "plumbing",
         "overview": "A 1/2\" Viega ProPress tee (TE-03, Part #77237) for ASTM B88 copper tubing. Features press connections on all three ports. Creates a branch connection without soldering.",
-        "subCategory": "fittings"
+        "subCategory": "tees"
     },
     {
         "id": "viega-propress-ball-valve-half",
@@ -4116,7 +4116,7 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Press \u00d7 Press",
+        "connectionType": "Press × Press",
         "compatibility": [
             "1/2\" Type K, L, or M copper pipe"
         ],
@@ -4149,9 +4149,9 @@
             "EPDM sealing elements"
         ],
         "sizes": [
-            "3/4\" \u00d7 1/2\""
+            "3/4\" × 1/2\""
         ],
-        "connectionType": "Press \u00d7 Press",
+        "connectionType": "Press × Press",
         "compatibility": [
             "3/4\" copper pipe (large end)",
             "1/2\" copper pipe (small end)"
@@ -4177,10 +4177,10 @@
             "/images/parts/20260309_190240.jpg",
             "/images/parts/20260309_190245.jpg"
         ],
-        "primaryName": "3/4\" \u00d7 1/2\" Viega ProPress Reducing Coupling",
+        "primaryName": "3/4\" × 1/2\" Viega ProPress Reducing Coupling",
         "category": "plumbing",
         "overview": "A Viega ProPress reducing coupling that transitions from 3/4\" to 1/2\" copper pipe. Press connections on both ends. Eliminates the need for soldering when reducing pipe size.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "viega-propress-90-elbow-three-quarter",
@@ -4196,12 +4196,12 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Press \u00d7 Press",
+        "connectionType": "Press × Press",
         "compatibility": [
             "3/4\" Type K, L, or M copper pipe"
         ],
         "useCases": [
-            "Creating 90\u00b0 turns in 3/4\" copper pipe",
+            "Creating 90° turns in 3/4\" copper pipe",
             "Main water line direction changes",
             "Flameless installations"
         ],
@@ -4213,10 +4213,10 @@
             "/images/parts/20260309_190403.jpg",
             "/images/parts/20260309_190406.jpg"
         ],
-        "primaryName": "3/4\" Viega ProPress 90\u00b0 Elbow",
+        "primaryName": "3/4\" Viega ProPress 90° Elbow",
         "category": "plumbing",
-        "overview": "A 3/4\" Viega ProPress 90\u00b0 elbow for copper pipe. Creates a right-angle turn using press connections \u2014 no soldering required.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" Viega ProPress 90° elbow for copper pipe. Creates a right-angle turn using press connections — no soldering required.",
+        "subCategory": "elbows"
     },
     {
         "id": "viega-propress-tee-three-quarter",
@@ -4232,7 +4232,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Press \u00d7 Press \u00d7 Press",
+        "connectionType": "Press × Press × Press",
         "compatibility": [
             "3/4\" Type K, L, or M copper pipe"
         ],
@@ -4256,7 +4256,7 @@
         "primaryName": "3/4\" Viega ProPress Tee",
         "category": "plumbing",
         "overview": "A 3/4\" Viega ProPress tee for copper pipe. Press connections on all three ports allow creating branch connections without soldering.",
-        "subCategory": "fittings"
+        "subCategory": "tees"
     },
     {
         "id": "viega-propress-reducing-tee-three-quarter-x-half",
@@ -4270,9 +4270,9 @@
             "EPDM sealing elements"
         ],
         "sizes": [
-            "3/4\" \u00d7 3/4\" \u00d7 1/2\""
+            "3/4\" × 3/4\" × 1/2\""
         ],
-        "connectionType": "Press \u00d7 Press \u00d7 Press",
+        "connectionType": "Press × Press × Press",
         "compatibility": [
             "3/4\" copper pipe (run)",
             "1/2\" copper pipe (branch)"
@@ -4295,10 +4295,10 @@
             "/images/parts/20260309_190628.jpg",
             "/images/parts/20260309_190630.jpg"
         ],
-        "primaryName": "3/4\" \u00d7 3/4\" \u00d7 1/2\" Viega ProPress Reducing Tee",
+        "primaryName": "3/4\" × 3/4\" × 1/2\" Viega ProPress Reducing Tee",
         "category": "plumbing",
         "overview": "A Viega ProPress reducing tee with 3/4\" run connections and a 1/2\" branch. Allows branching off a smaller line from a 3/4\" main without soldering.",
-        "subCategory": "fittings"
+        "subCategory": "tees"
     },
     {
         "id": "viega-propress-ball-valve-three-quarter",
@@ -4315,7 +4315,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Press \u00d7 Press",
+        "connectionType": "Press × Press",
         "compatibility": [
             "3/4\" Type K, L, or M copper pipe"
         ],
@@ -4355,14 +4355,14 @@
         "sizes": [
             "1\""
         ],
-        "connectionType": "Press \u00d7 Press",
+        "connectionType": "Press × Press",
         "compatibility": [
             "1\" Type K, L, or M copper pipe"
         ],
         "useCases": [
-            "Creating 45\u00b0 turns in 1\" copper pipe",
+            "Creating 45° turns in 1\" copper pipe",
             "Gentle direction changes in main lines",
-            "Reducing flow restriction vs 90\u00b0 elbows"
+            "Reducing flow restriction vs 90° elbows"
         ],
         "installationNotes": "Use Viega-approved pressing tool with 1\" jaws. Price: ~$19.76.",
         "images": [
@@ -4371,10 +4371,10 @@
             "/images/parts/20260309_190841.jpg",
             "/images/parts/20260309_190844.jpg"
         ],
-        "primaryName": "1\" Viega ProPress 45\u00b0 Elbow",
+        "primaryName": "1\" Viega ProPress 45° Elbow",
         "category": "plumbing",
-        "overview": "A 1\" Viega ProPress 45\u00b0 elbow (EL-06, Part #77275) for ASTM B88 copper tubing. Creates a 45\u00b0 direction change using press connections.",
-        "subCategory": "fittings"
+        "overview": "A 1\" Viega ProPress 45° elbow (EL-06, Part #77275) for ASTM B88 copper tubing. Creates a 45° direction change using press connections.",
+        "subCategory": "elbows"
     },
     {
         "id": "viega-propress-coupling-1",
@@ -4390,7 +4390,7 @@
         "sizes": [
             "1\""
         ],
-        "connectionType": "Press \u00d7 Press",
+        "connectionType": "Press × Press",
         "compatibility": [
             "1\" Type K, L, or M copper pipe"
         ],
@@ -4407,7 +4407,7 @@
         "primaryName": "1\" Viega ProPress Coupling",
         "category": "plumbing",
         "overview": "A 1\" Viega ProPress coupling for copper pipe. Press connections on both ends for flameless joining of 1\" copper pipe.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "viega-propress-90-elbow-1",
@@ -4422,12 +4422,12 @@
         "sizes": [
             "1\""
         ],
-        "connectionType": "Press \u00d7 Press",
+        "connectionType": "Press × Press",
         "compatibility": [
             "1\" Type K, L, or M copper pipe"
         ],
         "useCases": [
-            "Creating 90\u00b0 turns in 1\" copper main lines",
+            "Creating 90° turns in 1\" copper main lines",
             "Direction changes without soldering",
             "Flameless installations"
         ],
@@ -4438,10 +4438,10 @@
             "/images/parts/20260309_190944.jpg",
             "/images/parts/20260309_190959.jpg"
         ],
-        "primaryName": "1\" Viega ProPress 90\u00b0 Elbow",
+        "primaryName": "1\" Viega ProPress 90° Elbow",
         "category": "plumbing",
-        "overview": "A 1\" Viega ProPress 90\u00b0 elbow for copper pipe. Creates a right-angle turn in 1\" copper pipe using press connections.",
-        "subCategory": "fittings"
+        "overview": "A 1\" Viega ProPress 90° elbow for copper pipe. Creates a right-angle turn in 1\" copper pipe using press connections.",
+        "subCategory": "elbows"
     },
     {
         "id": "viega-propress-tee-1",
@@ -4456,7 +4456,7 @@
         "sizes": [
             "1\""
         ],
-        "connectionType": "Press \u00d7 Press \u00d7 Press",
+        "connectionType": "Press × Press × Press",
         "compatibility": [
             "1\" Type K, L, or M copper pipe"
         ],
@@ -4477,22 +4477,22 @@
         "primaryName": "1\" Viega ProPress Tee",
         "category": "plumbing",
         "overview": "A 1\" Viega ProPress tee for copper pipe. Press connections on all three ports for creating branch connections without soldering.",
-        "subCategory": "fittings"
+        "subCategory": "tees"
     },
     {
         "id": "viega-propress-reducing-tee-1-x-half",
         "aliases": [
             "ProPress reducing tee",
-            "1\" \u00d7 1/2\" press tee"
+            "1\" × 1/2\" press tee"
         ],
         "materials": [
             "Copper",
             "EPDM sealing elements"
         ],
         "sizes": [
-            "1\" \u00d7 1\" \u00d7 1/2\""
+            "1\" × 1\" × 1/2\""
         ],
-        "connectionType": "Press \u00d7 Press \u00d7 Press",
+        "connectionType": "Press × Press × Press",
         "compatibility": [
             "1\" copper pipe (run)",
             "1/2\" copper pipe (branch)"
@@ -4516,10 +4516,10 @@
             "/images/parts/20260309_191140.jpg",
             "/images/parts/20260309_191142.jpg"
         ],
-        "primaryName": "1\" \u00d7 1\" \u00d7 1/2\" Viega ProPress Reducing Tee",
+        "primaryName": "1\" × 1\" × 1/2\" Viega ProPress Reducing Tee",
         "category": "plumbing",
         "overview": "A Viega ProPress reducing tee with 1\" run connections and a 1/2\" branch port. Allows branching a smaller fixture line from a 1\" main.",
-        "subCategory": "fittings"
+        "subCategory": "tees"
     },
     {
         "id": "weller-lead-free-plumbing-solder",
@@ -4556,7 +4556,7 @@
         ],
         "primaryName": "Weller Lead-Free Solid Core Plumbing Solder",
         "category": "plumbing",
-        "overview": "Weller lead-free solid core plumbing solder, 4oz spool, 0.118\"/3mm diameter. Melting point 440-599\u00b0F. NSF certified for potable water connections.",
+        "overview": "Weller lead-free solid core plumbing solder, 4oz spool, 0.118\"/3mm diameter. Melting point 440-599°F. NSF certified for potable water connections.",
         "subCategory": "supplies"
     },
     {
@@ -4608,7 +4608,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Solder (Sweat) \u00d7 Solder (Sweat)",
+        "connectionType": "Solder (Sweat) × Solder (Sweat)",
         "compatibility": [
             "3/4\" Type K, L, or M copper pipe"
         ],
@@ -4626,15 +4626,15 @@
         ],
         "primaryName": "3/4\" Nibco Copper Coupling",
         "category": "plumbing",
-        "overview": "A 3/4\" Nibco copper coupling (C \u00d7 C) for joining two lengths of copper pipe. Standard solder/sweat connection.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" Nibco copper coupling (C × C) for joining two lengths of copper pipe. Standard solder/sweat connection.",
+        "subCategory": "couplings"
     },
     {
         "id": "copper-street-elbow-90-three-quarter",
         "aliases": [
             "Street elbow",
             "Copper street 90",
-            "FTG \u00d7 C elbow"
+            "FTG × C elbow"
         ],
         "materials": [
             "Copper"
@@ -4642,12 +4642,12 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Fitting (FTG) \u00d7 Solder Cup (C)",
+        "connectionType": "Fitting (FTG) × Solder Cup (C)",
         "compatibility": [
             "3/4\" copper pipe and fittings"
         ],
         "useCases": [
-            "Creating compact 90\u00b0 turns",
+            "Creating compact 90° turns",
             "Connecting directly into another fitting",
             "Space-saving installations"
         ],
@@ -4658,16 +4658,16 @@
             "/images/parts/20260309_191410.jpg",
             "/images/parts/20260309_191411.jpg"
         ],
-        "primaryName": "3/4\" Copper 90\u00b0 Street Elbow",
+        "primaryName": "3/4\" Copper 90° Street Elbow",
         "category": "plumbing",
-        "overview": "A 3/4\" copper 90\u00b0 street elbow (607-2) with a fitting (FTG) end that inserts into another fitting cup and a solder cup on the other end. Saves space by eliminating the need for a short piece of pipe.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" copper 90° street elbow (607-2) with a fitting (FTG) end that inserts into another fitting cup and a solder cup on the other end. Saves space by eliminating the need for a short piece of pipe.",
+        "subCategory": "elbows"
     },
     {
         "id": "copper-90-elbow-three-quarter",
         "aliases": [
             "Copper elbow",
-            "90\u00b0 elbow",
+            "90° elbow",
             "Sweat elbow"
         ],
         "materials": [
@@ -4676,12 +4676,12 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Solder (C) \u00d7 Solder (C)",
+        "connectionType": "Solder (C) × Solder (C)",
         "compatibility": [
             "3/4\" Type K, L, or M copper pipe"
         ],
         "useCases": [
-            "Creating 90\u00b0 turns in copper pipe",
+            "Creating 90° turns in copper pipe",
             "Water supply direction changes",
             "Standard plumbing installations"
         ],
@@ -4694,16 +4694,16 @@
             "/images/parts/20260309_192147.jpg",
             "/images/parts/20260309_192149.jpg"
         ],
-        "primaryName": "3/4\" Copper 90\u00b0 Elbow",
+        "primaryName": "3/4\" Copper 90° Elbow",
         "category": "plumbing",
-        "overview": "A 3/4\" copper 90\u00b0 elbow (607) with solder cup connections on both ends (C \u00d7 C). Standard fitting for making right-angle turns in copper pipe.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" copper 90° elbow (607) with solder cup connections on both ends (C × C). Standard fitting for making right-angle turns in copper pipe.",
+        "subCategory": "elbows"
     },
     {
         "id": "copper-female-adapter-three-quarter",
         "aliases": [
             "FPT adapter",
-            "C \u00d7 FPT adapter",
+            "C × FPT adapter",
             "Sweat to thread adapter"
         ],
         "materials": [
@@ -4712,7 +4712,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Solder (C) \u00d7 Female Pipe Thread (FPT)",
+        "connectionType": "Solder (C) × Female Pipe Thread (FPT)",
         "compatibility": [
             "3/4\" copper pipe (solder end)",
             "3/4\" MPT fittings (threaded end)"
@@ -4734,8 +4734,8 @@
         ],
         "primaryName": "3/4\" Copper Female Adapter",
         "category": "plumbing",
-        "overview": "A 3/4\" copper female adapter (C \u00d7 FPT) that transitions from a solder connection to a female pipe thread. Accepts 3/4\" MPT threaded connections.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" copper female adapter (C × FPT) that transitions from a solder connection to a female pipe thread. Accepts 3/4\" MPT threaded connections.",
+        "subCategory": "adapters"
     },
     {
         "id": "everbilt-copper-union-1",
@@ -4751,7 +4751,7 @@
         "sizes": [
             "1\""
         ],
-        "connectionType": "Solder (C) \u00d7 Solder (C) with union nut",
+        "connectionType": "Solder (C) × Solder (C) with union nut",
         "compatibility": [
             "1\" Type K, L, or M copper pipe"
         ],
@@ -4772,8 +4772,8 @@
         ],
         "primaryName": "1\" Everbilt Copper Union",
         "category": "plumbing",
-        "overview": "A 1\" Everbilt copper union (C633W, C \u00d7 C) that allows disconnection of a pipe joint without cutting. Features a brass threaded nut for easy assembly/disassembly.",
-        "subCategory": "fittings"
+        "overview": "A 1\" Everbilt copper union (C633W, C × C) that allows disconnection of a pipe joint without cutting. Features a brass threaded nut for easy assembly/disassembly.",
+        "subCategory": "unions"
     },
     {
         "id": "copper-reducing-coupling-1-x-three-quarter",
@@ -4786,9 +4786,9 @@
             "Copper"
         ],
         "sizes": [
-            "1\" \u00d7 3/4\""
+            "1\" × 3/4\""
         ],
-        "connectionType": "Solder (C) \u00d7 Solder (C)",
+        "connectionType": "Solder (C) × Solder (C)",
         "compatibility": [
             "1\" copper pipe (large end)",
             "3/4\" copper pipe (small end)"
@@ -4809,16 +4809,16 @@
             "/images/parts/20260309_192112.jpg",
             "/images/parts/20260309_192115.jpg"
         ],
-        "primaryName": "1\" \u00d7 3/4\" Copper Reducing Coupling",
+        "primaryName": "1\" × 3/4\" Copper Reducing Coupling",
         "category": "plumbing",
-        "overview": "A 1\" \u00d7 3/4\" copper reducing coupling (Everbilt #857041, C \u00d7 C) that transitions from 1\" to 3/4\" copper pipe. Solder connections on both ends.",
-        "subCategory": "fittings"
+        "overview": "A 1\" × 3/4\" copper reducing coupling (Everbilt #857041, C × C) that transitions from 1\" to 3/4\" copper pipe. Solder connections on both ends.",
+        "subCategory": "couplings"
     },
     {
         "id": "copper-male-adapter-1",
         "aliases": [
             "MPT adapter",
-            "C \u00d7 MPT adapter",
+            "C × MPT adapter",
             "Sweat to male thread adapter"
         ],
         "materials": [
@@ -4827,7 +4827,7 @@
         "sizes": [
             "1\""
         ],
-        "connectionType": "Solder (C) \u00d7 Male Pipe Thread (MPT)",
+        "connectionType": "Solder (C) × Male Pipe Thread (MPT)",
         "compatibility": [
             "1\" copper pipe (solder end)",
             "1\" FPT fittings (threaded end)"
@@ -4850,14 +4850,14 @@
         ],
         "primaryName": "1\" Copper Male Adapter",
         "category": "plumbing",
-        "overview": "A 1\" copper male adapter (C \u00d7 MPT) that transitions from a solder connection to a male pipe thread connection.",
-        "subCategory": "fittings"
+        "overview": "A 1\" copper male adapter (C × MPT) that transitions from a solder connection to a male pipe thread connection.",
+        "subCategory": "adapters"
     },
     {
         "id": "copper-male-adapter-three-quarter",
         "aliases": [
             "MPT adapter",
-            "C \u00d7 MIP adapter"
+            "C × MIP adapter"
         ],
         "materials": [
             "Copper"
@@ -4865,7 +4865,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Solder (C) \u00d7 Male Iron Pipe (MIP)",
+        "connectionType": "Solder (C) × Male Iron Pipe (MIP)",
         "compatibility": [
             "3/4\" copper pipe (solder end)",
             "3/4\" FPT/FIP fittings (thread end)"
@@ -4890,13 +4890,13 @@
         ],
         "primaryName": "3/4\" Copper Male Adapter",
         "category": "plumbing",
-        "overview": "A 3/4\" copper male adapter (C \u00d7 MIP) made by Everbilt (#497903). Transitions from solder cup to male pipe thread. Available in 10-packs.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" copper male adapter (C × MIP) made by Everbilt (#497903). Transitions from solder cup to male pipe thread. Available in 10-packs.",
+        "subCategory": "adapters"
     },
     {
         "id": "copper-45-elbow-1",
         "aliases": [
-            "45\u00b0 elbow",
+            "45° elbow",
             "Copper 45"
         ],
         "materials": [
@@ -4905,12 +4905,12 @@
         "sizes": [
             "1\""
         ],
-        "connectionType": "Solder (C) \u00d7 Solder (C)",
+        "connectionType": "Solder (C) × Solder (C)",
         "compatibility": [
             "1\" Type K, L, or M copper pipe"
         ],
         "useCases": [
-            "Creating 45\u00b0 turns in 1\" copper pipe",
+            "Creating 45° turns in 1\" copper pipe",
             "Gentle direction changes",
             "Offset pipe routing"
         ],
@@ -4921,17 +4921,17 @@
             "/images/parts/20260309_191950.jpg",
             "/images/parts/20260309_191955.jpg"
         ],
-        "primaryName": "1\" Copper 45\u00b0 Elbow",
+        "primaryName": "1\" Copper 45° Elbow",
         "category": "plumbing",
-        "overview": "A 1\" copper 45\u00b0 elbow with solder cup connections on both ends (C \u00d7 C). Creates a gentle 45\u00b0 direction change in copper pipe.",
-        "subCategory": "fittings"
+        "overview": "A 1\" copper 45° elbow with solder cup connections on both ends (C × C). Creates a gentle 45° direction change in copper pipe.",
+        "subCategory": "elbows"
     },
     {
         "id": "copper-tee-three-quarter",
         "aliases": [
             "Copper tee",
             "Sweat tee",
-            "C \u00d7 C \u00d7 C tee"
+            "C × C × C tee"
         ],
         "materials": [
             "Copper"
@@ -4939,7 +4939,7 @@
         "sizes": [
             "3/4\""
         ],
-        "connectionType": "Solder (C) \u00d7 Solder (C) \u00d7 Solder (C)",
+        "connectionType": "Solder (C) × Solder (C) × Solder (C)",
         "compatibility": [
             "3/4\" Type K, L, or M copper pipe"
         ],
@@ -4963,8 +4963,8 @@
         ],
         "primaryName": "3/4\" Copper Tee",
         "category": "plumbing",
-        "overview": "A 3/4\" copper tee with solder cup connections on all three ports (C \u00d7 C \u00d7 C). Creates a branch connection in copper pipe runs.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" copper tee with solder cup connections on all three ports (C × C × C). Creates a branch connection in copper pipe runs.",
+        "subCategory": "tees"
     },
     {
         "id": "nibco-copper-tube-strap-three-quarter",
@@ -5016,12 +5016,12 @@
         "sizes": [
             "1/2\""
         ],
-        "connectionType": "Solder (C) \u00d7 Solder (C)",
+        "connectionType": "Solder (C) × Solder (C)",
         "compatibility": [
             "1/2\" Type K, L, or M copper pipe"
         ],
         "useCases": [
-            "Creating 90\u00b0 turns in 1/2\" copper pipe",
+            "Creating 90° turns in 1/2\" copper pipe",
             "Fixture supply routing",
             "Standard plumbing installations"
         ],
@@ -5040,10 +5040,10 @@
             "/images/parts/20260309_192401.jpg",
             "/images/parts/20260309_192407.jpg"
         ],
-        "primaryName": "1/2\" Copper 90\u00b0 Elbow",
+        "primaryName": "1/2\" Copper 90° Elbow",
         "category": "plumbing",
-        "overview": "A 1/2\" Everbilt copper 90\u00b0 elbow (C607, C \u00d7 C) with solder cup connections on both ends. Standard fitting for 1/2\" copper pipe direction changes.",
-        "subCategory": "fittings"
+        "overview": "A 1/2\" Everbilt copper 90° elbow (C607, C × C) with solder cup connections on both ends. Standard fitting for 1/2\" copper pipe direction changes.",
+        "subCategory": "elbows"
     },
     {
         "id": "copper-reducing-tee-three-quarter-x-half",
@@ -5056,9 +5056,9 @@
             "Copper"
         ],
         "sizes": [
-            "3/4\" \u00d7 3/4\" \u00d7 1/2\""
+            "3/4\" × 3/4\" × 1/2\""
         ],
-        "connectionType": "Solder (C) \u00d7 Solder (C) \u00d7 Solder (C)",
+        "connectionType": "Solder (C) × Solder (C) × Solder (C)",
         "compatibility": [
             "3/4\" copper pipe (run)",
             "1/2\" copper pipe (branch)"
@@ -5079,10 +5079,10 @@
             "/images/parts/20260309_192452.jpg",
             "/images/parts/20260309_192458.jpg"
         ],
-        "primaryName": "3/4\" \u00d7 3/4\" \u00d7 1/2\" Copper Reducing Tee",
+        "primaryName": "3/4\" × 3/4\" × 1/2\" Copper Reducing Tee",
         "category": "plumbing",
-        "overview": "A 3/4\" \u00d7 3/4\" \u00d7 1/2\" Everbilt copper reducing tee (#187526) with solder connections. 3/4\" run with a 1/2\" branch port for stepping down to smaller fixture supply lines.",
-        "subCategory": "fittings"
+        "overview": "A 3/4\" × 3/4\" × 1/2\" Everbilt copper reducing tee (#187526) with solder connections. 3/4\" run with a 1/2\" branch port for stepping down to smaller fixture supply lines.",
+        "subCategory": "tees"
     },
     {
         "id": "copper-90-elbow-1",
@@ -5097,12 +5097,12 @@
         "sizes": [
             "1\""
         ],
-        "connectionType": "Solder (C) \u00d7 Solder (C)",
+        "connectionType": "Solder (C) × Solder (C)",
         "compatibility": [
             "1\" Type K, L, or M copper pipe"
         ],
         "useCases": [
-            "Creating 90\u00b0 turns in 1\" copper main lines",
+            "Creating 90° turns in 1\" copper main lines",
             "Direction changes in main water supply",
             "Standard plumbing installations"
         ],
@@ -5113,14 +5113,14 @@
             "/images/parts/20260309_192526.jpg",
             "/images/parts/20260309_192528.jpg"
         ],
-        "primaryName": "1\" Copper 90\u00b0 Elbow",
+        "primaryName": "1\" Copper 90° Elbow",
         "category": "plumbing",
-        "overview": "A 1\" copper 90\u00b0 elbow (607) with solder cup connections on both ends (C \u00d7 C). Standard fitting for making right-angle turns in 1\" copper pipe.",
-        "subCategory": "fittings"
+        "overview": "A 1\" copper 90° elbow (607) with solder cup connections on both ends (C × C). Standard fitting for making right-angle turns in 1\" copper pipe.",
+        "subCategory": "elbows"
     },
     {
         "id": "nibco-pc200-coupling-pxp",
-        "primaryName": "Coupling P \u00d7 P",
+        "primaryName": "Coupling P × P",
         "aliases": [
             "press coupling",
             "press-connect coupling",
@@ -5142,16 +5142,16 @@
             "Gas systems (nitrogen, CO2, argon)",
             "Vacuum systems"
         ],
-        "installationNotes": "Cut pipe square, deburr, and clean. Mark insertion depth on pipe before inserting into fitting. Press with approved jaw tool. Min spacing between adjacent fittings: 0.20\" for \u00bd\"\u20131\", 0.59\" for 1\u00bc\"\u20132\".",
+        "installationNotes": "Cut pipe square, deburr, and clean. Mark insertion depth on pipe before inserting into fitting. Press with approved jaw tool. Min spacing between adjacent fittings: 0.20\" for ½\"–1\", 0.59\" for 1¼\"–2\".",
         "materials": [
             "carbon steel"
         ],
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5199,11 +5199,11 @@
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
         "overview": "Standard press-connect coupling used to join two sections of carbon steel pipe without soldering, threading, or open flame. Both ends use a press connection with an EPDM O-ring seal that is permanently deformed by a press tool to create a watertight, gas-tight joint. The most commonly used fitting in carbon steel press piping systems.",
-        "subCategory": "fittings"
+        "subCategory": "tees"
     },
     {
         "id": "nibco-pc200r-coupling-reducing",
-        "primaryName": "Reducing Coupling P \u00d7 P",
+        "primaryName": "Reducing Coupling P × P",
         "aliases": [
             "press reducing coupling",
             "reducer coupling",
@@ -5229,9 +5229,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5275,12 +5275,12 @@
         ],
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
-        "overview": "Press-connect coupling that reduces from a larger to a smaller pipe diameter in a single fitting. Both ends use EPDM O-ring press connections. Eliminates the need for a full-size coupling plus a separate reducer bushing. Available in multiple reducing combinations from \u00be\" down to \u00bd\" through 2\" down to 1\u00bc\".",
-        "subCategory": "fittings"
+        "overview": "Press-connect coupling that reduces from a larger to a smaller pipe diameter in a single fitting. Both ends use EPDM O-ring press connections. Eliminates the need for a full-size coupling plus a separate reducer bushing. Available in multiple reducing combinations from ¾\" down to ½\" through 2\" down to 1¼\".",
+        "subCategory": "couplings"
     },
     {
         "id": "nibco-pc200-2-coupling-ftgxp",
-        "primaryName": "Reducing Coupling Ftg \u00d7 P",
+        "primaryName": "Reducing Coupling Ftg × P",
         "aliases": [
             "fitting by press coupling",
             "ftg x press reducer",
@@ -5304,9 +5304,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring (press end)",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5355,11 +5355,11 @@
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
         "overview": "One end is a fitting (Ftg) or socket end for sweat/solder or push-on connection; the other end is a standard press connection. Used to transition between an existing threaded or soldered pipe system and a new carbon steel press piping run, while also stepping down in diameter.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "nibco-pc201-repair-coupling",
-        "primaryName": "Repair Coupling P \u00d7 P (No Stop)",
+        "primaryName": "Repair Coupling P × P (No Stop)",
         "aliases": [
             "repair coupling",
             "slip coupling",
@@ -5385,9 +5385,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5433,11 +5433,11 @@
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
         "overview": "A repair coupling with no internal stop, allowing it to slide freely along the pipe for repositioning before pressing. Used to repair damaged or leaking pipe sections without cutting back to a fitting. Available in standard length (PC201) and long version (PC201-L) for greater insertion range.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "nibco-pc203-adapter-pxf",
-        "primaryName": "Adapter P \u00d7 F (Press \u00d7 Female NPT)",
+        "primaryName": "Adapter P × F (Press × Female NPT)",
         "aliases": [
             "press by female adapter",
             "press to female threaded adapter",
@@ -5463,9 +5463,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring (press end); NPT thread seal on female end",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5511,11 +5511,11 @@
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
         "overview": "One press end connects to carbon steel pipe; the other end has a female NPT (National Pipe Taper) threaded connection for joining to a male-threaded valve, instrument, or pipe nipple. Used as the termination point where a press piping run connects to threaded components such as valves, sensors, or equipment ports.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "nibco-pc204-adapter-pxm",
-        "primaryName": "Adapter P \u00d7 M (Press \u00d7 Male NPT)",
+        "primaryName": "Adapter P × M (Press × Male NPT)",
         "aliases": [
             "press by male adapter",
             "press to male threaded adapter",
@@ -5534,16 +5534,16 @@
             "Equipment hook-ups requiring male thread termination",
             "Valve and strainer connections"
         ],
-        "installationNotes": "Apply thread sealant or PTFE tape to the male threads. Press end requires standard press jaw. The hex body allows wrench engagement \u2014 do not use pipe wrenches on the press end body.",
+        "installationNotes": "Apply thread sealant or PTFE tape to the male threads. Press end requires standard press jaw. The hex body allows wrench engagement — do not use pipe wrenches on the press end body.",
         "materials": [
             "carbon steel"
         ],
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring (press end); NPT thread seal on male end",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5588,11 +5588,11 @@
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
         "overview": "One press end connects to carbon steel pipe; the other end has a male NPT threaded connection. Used to connect a press piping system to female-threaded equipment such as pumps, boilers, heat exchangers, manifolds, or valves. The hexagonal shoulder between ends facilitates wrench tightening.",
-        "subCategory": "fittings"
+        "subCategory": "nipples"
     },
     {
         "id": "nibco-pc206-45elbow-pxp",
-        "primaryName": "45\u00b0 Elbow P \u00d7 P",
+        "primaryName": "45° Elbow P × P",
         "aliases": [
             "45 degree elbow",
             "forty-five elbow",
@@ -5610,7 +5610,7 @@
             "Gentle pipe direction changes in mechanical rooms",
             "Hydronic system routing",
             "Chilled water distribution",
-            "Reducing pressure drop vs 90\u00b0 elbows"
+            "Reducing pressure drop vs 90° elbows"
         ],
         "installationNotes": "Press both ends with appropriate jaw size. Maintain minimum fitting spacing from adjacent connections. Supports and hangers should be placed on both sides of the elbow.",
         "materials": [
@@ -5619,9 +5619,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5663,12 +5663,12 @@
         ],
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
-        "overview": "A 45-degree directional change fitting with press connections on both ends. Used when a gradual offset is needed instead of a sharp 90\u00b0 turn. Reduces turbulence and pressure drop compared to a 90\u00b0 elbow. Common in hydronic heating, chilled water, and mechanical piping systems where space allows a gentler routing angle.",
-        "subCategory": "fittings"
+        "overview": "A 45-degree directional change fitting with press connections on both ends. Used when a gradual offset is needed instead of a sharp 90° turn. Reduces turbulence and pressure drop compared to a 90° elbow. Common in hydronic heating, chilled water, and mechanical piping systems where space allows a gentler routing angle.",
+        "subCategory": "elbows"
     },
     {
         "id": "nibco-pc206-2-45elbow-ftgxp",
-        "primaryName": "45\u00b0 Elbow Ftg \u00d7 P",
+        "primaryName": "45° Elbow Ftg × P",
         "aliases": [
             "45 elbow fitting by press",
             "socket by press 45",
@@ -5681,7 +5681,7 @@
         "modelNumber": "PC206-2",
         "connectionType": "press / socket (ftg)",
         "useCases": [
-            "Transitioning from soldered systems into press piping at 45\u00b0",
+            "Transitioning from soldered systems into press piping at 45°",
             "Retrofit connections off existing socket fittings",
             "Directional changes at system transitions"
         ],
@@ -5692,9 +5692,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring (press end)",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5738,11 +5738,11 @@
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
         "overview": "A 45-degree elbow with one fitting (socket/sweat) end and one press end. Used to introduce a press piping run from an existing soldered or push-fit connection at a 45-degree angle. Ideal for retrofit jobs where the starting point is a soldered copper or existing socket connection.",
-        "subCategory": "fittings"
+        "subCategory": "elbows"
     },
     {
         "id": "nibco-pc207-90elbow-pxp",
-        "primaryName": "90\u00b0 Elbow P \u00d7 P",
+        "primaryName": "90° Elbow P × P",
         "aliases": [
             "90 degree elbow",
             "press 90",
@@ -5771,9 +5771,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5817,12 +5817,12 @@
         ],
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
-        "overview": "A 90-degree directional change fitting with press connections on both ends. The most commonly used elbow in carbon steel press piping systems. Used wherever a pipe run needs to turn 90 degrees \u2014 around beams, walls, equipment, or between floors. Both ends accept EPDM-sealed press joints.",
-        "subCategory": "fittings"
+        "overview": "A 90-degree directional change fitting with press connections on both ends. The most commonly used elbow in carbon steel press piping systems. Used wherever a pipe run needs to turn 90 degrees — around beams, walls, equipment, or between floors. Both ends accept EPDM-sealed press joints.",
+        "subCategory": "elbows"
     },
     {
         "id": "nibco-pc207-2-90elbow-ftgxp",
-        "primaryName": "90\u00b0 Elbow Ftg \u00d7 P",
+        "primaryName": "90° Elbow Ftg × P",
         "aliases": [
             "90 elbow fitting by press",
             "socket by press 90",
@@ -5835,7 +5835,7 @@
         "modelNumber": "PC207-2",
         "connectionType": "press / socket (ftg)",
         "useCases": [
-            "Transitioning from soldered systems into press piping at 90\u00b0",
+            "Transitioning from soldered systems into press piping at 90°",
             "Retrofit connections off existing socket or sweat fittings",
             "Direction changes at system transition points"
         ],
@@ -5846,9 +5846,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring (press end)",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5893,11 +5893,11 @@
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
         "overview": "A 90-degree elbow with one fitting (socket/sweat) end and one press end. The fitting end allows connection to an existing soldered copper or socket-type pipe system; the press end connects to new carbon steel press piping. Used when changing direction at the point where two different piping systems meet.",
-        "subCategory": "fittings"
+        "subCategory": "elbows"
     },
     {
         "id": "nibco-pc211-tee-pxpxp",
-        "primaryName": "Tee P \u00d7 P \u00d7 P",
+        "primaryName": "Tee P × P × P",
         "aliases": [
             "press tee",
             "equal tee press",
@@ -5924,9 +5924,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -5977,12 +5977,12 @@
         ],
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
-        "overview": "A three-way tee fitting with press connections on all three ends \u2014 two inline run ends and one branch outlet. Used to create a branch line off a main pipe run without cutting and welding. Available in equal (all same diameter) and reducing branch configurations. The workhorse branch fitting in carbon steel press systems.",
-        "subCategory": "fittings"
+        "overview": "A three-way tee fitting with press connections on all three ends — two inline run ends and one branch outlet. Used to create a branch line off a main pipe run without cutting and welding. Available in equal (all same diameter) and reducing branch configurations. The workhorse branch fitting in carbon steel press systems.",
+        "subCategory": "tees"
     },
     {
         "id": "nibco-pc212-tee-pxpxf",
-        "primaryName": "Tee P \u00d7 P \u00d7 F",
+        "primaryName": "Tee P × P × F",
         "aliases": [
             "press tee female branch",
             "tee with threaded branch",
@@ -6007,9 +6007,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring (press ends); NPT thread seal on branch",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -6059,7 +6059,7 @@
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
         "overview": "A tee fitting where both run ends are press-connect but the branch (outlet) end is a female NPT threaded connection. Allows a threaded instrument, valve, drain, or sensor to tap directly off a press piping main without requiring a separate adapter. Eliminates one joint compared to using a standard press tee plus a threaded adapter.",
-        "subCategory": "fittings"
+        "subCategory": "tees"
     },
     {
         "id": "nibco-pc217-cap",
@@ -6082,16 +6082,16 @@
             "Pressure testing pipe sections",
             "Permanently terminating branch runs"
         ],
-        "installationNotes": "Fully insert pipe into cap to the marked depth and press with the correct jaw size. Unlike threaded caps, this is a permanent connection \u2014 plan before pressing.",
+        "installationNotes": "Fully insert pipe into cap to the marked depth and press with the correct jaw size. Unlike threaded caps, this is a permanent connection — plan before pressing.",
         "materials": [
             "carbon steel"
         ],
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -6134,12 +6134,12 @@
         ],
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
-        "overview": "A domed end cap that seals the open end of a carbon steel pipe using a press connection. Used to permanently cap dead ends, future tap points, or the end of a branch run. The press connection creates a permanent, leak-free termination. Must be pressed \u2014 not interchangeable with threaded or push-in caps.",
-        "subCategory": "fittings"
+        "overview": "A domed end cap that seals the open end of a carbon steel pipe using a press connection. Used to permanently cap dead ends, future tap points, or the end of a branch run. The press connection creates a permanent, leak-free termination. Must be pressed — not interchangeable with threaded or push-in caps.",
+        "subCategory": "caps"
     },
     {
         "id": "nibco-pc233-union-pxp",
-        "primaryName": "Union P \u00d7 P",
+        "primaryName": "Union P × P",
         "aliases": [
             "press union",
             "press fitting union",
@@ -6165,9 +6165,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring (press ends); union seat gasket at center joint",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -6212,11 +6212,11 @@
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
         "overview": "A three-piece union assembly with press connections on both ends that allows the piping system to be disconnected and reconnected for servicing, equipment replacement, or future modifications without cutting pipe. The center nut unscrews to separate the two halves. Both pipe ends are permanently pressed; only the union joint is serviceable.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "nibco-pc233-3-union-pxf",
-        "primaryName": "Union P \u00d7 F (Press \u00d7 Female NPT)",
+        "primaryName": "Union P × F (Press × Female NPT)",
         "aliases": [
             "press union female thread",
             "union press to FNPT",
@@ -6234,16 +6234,16 @@
             "Valve station connections with disconnect capability",
             "Any point needing both a press-to-thread transition and serviceability"
         ],
-        "installationNotes": "Press end is permanent \u2014 press onto pipe first. Threaded end connects to male-threaded component with PTFE tape or thread sealant. Union nut allows disconnection from the threaded side for service.",
+        "installationNotes": "Press end is permanent — press onto pipe first. Threaded end connects to male-threaded component with PTFE tape or thread sealant. Union nut allows disconnection from the threaded side for service.",
         "materials": [
             "carbon steel"
         ],
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring (press end); NPT thread + union seat gasket",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -6287,7 +6287,7 @@
         "source": "NIBCO BenchPress Submittal Package BPSP-1220-R091025",
         "category": "plumbing",
         "overview": "A union assembly with one press end and one female NPT threaded end. Combines the serviceability of a union with a threaded-to-press transition in one fitting. Used where a press piping run needs to connect to a threaded component (pump, valve, equipment) with the ability to disconnect for service. Eliminates the need for a separate adapter plus union.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "nibco-pc241-flange",
@@ -6318,9 +6318,9 @@
         "finish": "zinc plated / galvanized",
         "sealType": "EPDM O-ring (press end); flange gasket at bolted face",
         "maxPressure": "200 psi",
-        "tempRange": "0\u00b0F to 250\u00b0F",
+        "tempRange": "0°F to 250°F",
         "compatibility": [
-            "ASTM A53, A106, A135, A795 Schedule 10\u201340"
+            "ASTM A53, A106, A135, A795 Schedule 10–40"
         ],
         "certifications": [
             "UL Listed",
@@ -6390,7 +6390,7 @@
             "Connecting copper to PEX transitions",
             "Remodeling and retrofit plumbing"
         ],
-        "installationNotes": "Cut pipe square and deburr. For PEX, insert a tube stiffener before pushing. Push pipe firmly until it bottoms out. To release, use the NIBCO removal tool \u2014 depress the release collar and pull the pipe out.",
+        "installationNotes": "Cut pipe square and deburr. For PEX, insert a tube stiffener before pushing. Push pipe firmly until it bottoms out. To release, use the NIBCO removal tool — depress the release collar and pull the pipe out.",
         "materials": [
             "lead-free brass body",
             "316 stainless steel grip ring",
@@ -6398,7 +6398,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -6478,10 +6478,10 @@
         "images": [
             "/images/parts/P700-LF.jpg"
         ],
-        "primaryName": "Coupling Push \u00d7 Push",
+        "primaryName": "Coupling Push × Push",
         "category": "plumbing",
-        "overview": "Lead-free brass push-to-connect coupling for joining two pipes without solder, glue, or special tools. Push the pipe in until it clicks and it locks permanently via an internal 316 stainless steel grip ring and EPDM O-ring seal. Compatible with hard drawn copper (K, L, M), PEX (with stiffeners), and CPVC. The fastest way to make a coupling connection on a job site \u2014 no flame, no fittings, no waiting.",
-        "subCategory": "fittings",
+        "overview": "Lead-free brass push-to-connect coupling for joining two pipes without solder, glue, or special tools. Push the pipe in until it clicks and it locks permanently via an internal 316 stainless steel grip ring and EPDM O-ring seal. Compatible with hard drawn copper (K, L, M), PEX (with stiffeners), and CPVC. The fastest way to make a coupling connection on a job site — no flame, no fittings, no waiting.",
+        "subCategory": "couplings",
         "diagramUrl": "/images/parts/P700-LF.jpg"
     },
     {
@@ -6511,7 +6511,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -6556,10 +6556,10 @@
             "emergency repair"
         ],
         "source": "NIBCO Push Fittings Valves & Flexible Connectors PTC-0818-R041624",
-        "primaryName": "Repair Coupling Push \u00d7 Push (No Stop)",
+        "primaryName": "Repair Coupling Push × Push (No Stop)",
         "category": "plumbing",
         "overview": "A push-to-connect repair coupling with no internal stop, allowing it to slide freely over pipe for in-line repair work. Used to repair a pinhole, crack, or damaged section of pipe by sliding the coupling back over the pipe, cutting out the damaged section, and repositioning. No flame, solder, or special tools needed.",
-        "subCategory": "fittings"
+        "subCategory": "couplings"
     },
     {
         "id": "nibco-p703-lf-adapter-pxf",
@@ -6590,7 +6590,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -6647,10 +6647,10 @@
             "transition"
         ],
         "source": "NIBCO Push Fittings Valves & Flexible Connectors PTC-0818-R041624",
-        "primaryName": "Adapter Push \u00d7 Female (FNPT)",
+        "primaryName": "Adapter Push × Female (FNPT)",
         "category": "plumbing",
         "overview": "One push-to-connect end and one female NPT threaded end. Used to transition from a push-fit piping run to a male-threaded valve, fixture, or pipe nipple without soldering. The push end accepts copper, PEX, or CPVC; the female thread accepts a standard male NPT pipe fitting or valve.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "nibco-p704-lf-adapter-pxm",
@@ -6681,7 +6681,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -6742,10 +6742,10 @@
             "transition"
         ],
         "source": "NIBCO Push Fittings Valves & Flexible Connectors PTC-0818-R041624",
-        "primaryName": "Adapter Push \u00d7 Male (MNPT)",
+        "primaryName": "Adapter Push × Male (MNPT)",
         "category": "plumbing",
         "overview": "One push-to-connect end and one male NPT threaded end. Used to transition from push-fit piping into a female-threaded valve, fitting, or equipment port. The push end handles copper, PEX, or CPVC; the male thread screws into any standard female NPT connection.",
-        "subCategory": "fittings"
+        "subCategory": "adapters"
     },
     {
         "id": "nibco-p717-lf-cap",
@@ -6776,7 +6776,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -6834,8 +6834,8 @@
         ],
         "primaryName": "Cap Push",
         "category": "plumbing",
-        "overview": "A push-to-connect end cap for sealing off open pipe ends without soldering. Just push the pipe in and it locks. Used to cap dead ends, test pipe sections, or temporarily seal future connection points during construction. Available from \u00bc\" to 1\".",
-        "subCategory": "fittings",
+        "overview": "A push-to-connect end cap for sealing off open pipe ends without soldering. Just push the pipe in and it locks. Used to cap dead ends, test pipe sections, or temporarily seal future connection points during construction. Available from ¼\" to 1\".",
+        "subCategory": "caps",
         "diagramUrl": "/images/parts/P717-LF.jpg"
     },
     {
@@ -6865,7 +6865,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -6903,8 +6903,8 @@
         "source": "NIBCO Push Fittings Valves & Flexible Connectors PTC-0818-R041624",
         "primaryName": "Cap with Drain Push",
         "category": "plumbing",
-        "overview": "A push-to-connect end cap with a built-in drain port. Seals the end of a pipe run while providing a small drainage point for purging air or draining the system without fully removing the cap. Available in \u00bd\" only.",
-        "subCategory": "fittings"
+        "overview": "A push-to-connect end cap with a built-in drain port. Seals the end of a pipe run while providing a small drainage point for purging air or draining the system without fully removing the cap. Available in ½\" only.",
+        "subCategory": "caps"
     },
     {
         "id": "nibco-p707-lf-90elbow-pxp",
@@ -6936,7 +6936,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7005,10 +7005,10 @@
             "no-solder"
         ],
         "source": "NIBCO Push Fittings Valves & Flexible Connectors PTC-0818-R041624",
-        "primaryName": "90\u00b0 Elbow Push \u00d7 Push",
+        "primaryName": "90° Elbow Push × Push",
         "category": "plumbing",
-        "overview": "A 90-degree push-to-connect elbow with push ends on both legs. No solder, no glue, no tools. Used for right-angle direction changes in copper, PEX, or CPVC potable water systems. Available in equal and reducing configurations from \u00bc\" up to 1\".",
-        "subCategory": "fittings"
+        "overview": "A 90-degree push-to-connect elbow with push ends on both legs. No solder, no glue, no tools. Used for right-angle direction changes in copper, PEX, or CPVC potable water systems. Available in equal and reducing configurations from ¼\" up to 1\".",
+        "subCategory": "elbows"
     },
     {
         "id": "nibco-p707-3-lf-90elbow-pxf",
@@ -7028,7 +7028,7 @@
             "Wall-stub-out valve connections",
             "Quick right-angle transitions to threaded fixtures"
         ],
-        "installationNotes": "Push end: insert pipe fully. Threaded end: use PTFE tape or thread sealant on male thread being inserted. Available in \u00bd\" and \u00be\".",
+        "installationNotes": "Push end: insert pipe fully. Threaded end: use PTFE tape or thread sealant on male thread being inserted. Available in ½\" and ¾\".",
         "materials": [
             "lead-free DZR brass body",
             "316 stainless steel grip ring",
@@ -7036,7 +7036,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7081,10 +7081,10 @@
         "images": [
             "/images/parts/P707-3-LF.jpg"
         ],
-        "primaryName": "90\u00b0 Elbow Push \u00d7 Female (FNPT)",
+        "primaryName": "90° Elbow Push × Female (FNPT)",
         "category": "plumbing",
-        "overview": "A 90-degree elbow with one push-to-connect end and one female NPT threaded end. Used when a push-fit piping run needs to make a 90\u00b0 turn and terminate into a female-threaded valve or fixture at the same time. Eliminates a separate elbow plus adapter combination.",
-        "subCategory": "fittings",
+        "overview": "A 90-degree elbow with one push-to-connect end and one female NPT threaded end. Used when a push-fit piping run needs to make a 90° turn and terminate into a female-threaded valve or fixture at the same time. Eliminates a separate elbow plus adapter combination.",
+        "subCategory": "elbows",
         "diagramUrl": "/images/parts/P707-3-LF.jpg"
     },
     {
@@ -7105,7 +7105,7 @@
             "Shower and bath valve connections",
             "Appliance connection right-angle transitions"
         ],
-        "installationNotes": "Thread the male end into the female-threaded port with PTFE tape or thread sealant first. Then push pipe into the push end. Available in \u00bc\" through \u00be\".",
+        "installationNotes": "Thread the male end into the female-threaded port with PTFE tape or thread sealant first. Then push pipe into the push end. Available in ¼\" through ¾\".",
         "materials": [
             "lead-free DZR brass body",
             "316 stainless steel grip ring",
@@ -7113,7 +7113,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7168,10 +7168,10 @@
         "images": [
             "/images/parts/P707-4-LF.jpg"
         ],
-        "primaryName": "90\u00b0 Elbow Push \u00d7 Male (MNPT)",
+        "primaryName": "90° Elbow Push × Male (MNPT)",
         "category": "plumbing",
-        "overview": "A 90-degree elbow with one push-to-connect end and one male NPT threaded end. Combines a direction change and a threaded transition in one fitting \u2014 used to turn a push-fit run and plug into a female-threaded valve, port, or fixture without extra fittings.",
-        "subCategory": "fittings",
+        "overview": "A 90-degree elbow with one push-to-connect end and one male NPT threaded end. Combines a direction change and a threaded transition in one fitting — used to turn a push-fit run and plug into a female-threaded valve, port, or fixture without extra fittings.",
+        "subCategory": "elbows",
         "diagramUrl": "/images/parts/P707-4-LF.jpg"
     },
     {
@@ -7195,7 +7195,7 @@
             "Washing machine hot and cold stub-outs",
             "Wall-mounted fixture supply points"
         ],
-        "installationNotes": "Screw the mounting ears to blocking or a backing plate before pushing pipe in. This fitting is structural \u2014 ensure it is firmly secured before connecting supply lines.",
+        "installationNotes": "Screw the mounting ears to blocking or a backing plate before pushing pipe in. This fitting is structural — ensure it is firmly secured before connecting supply lines.",
         "materials": [
             "lead-free DZR brass body",
             "316 stainless steel grip ring",
@@ -7203,7 +7203,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7244,10 +7244,10 @@
         "images": [
             "/images/parts/P707-5-LF.jpg"
         ],
-        "primaryName": "90\u00b0 Drop Elbow Push \u00d7 Push",
+        "primaryName": "90° Drop Elbow Push × Push",
         "category": "plumbing",
         "overview": "A 90-degree push-to-connect drop (ear) elbow with mounting ears for screwing directly to a wall stud or backing plate. Used to terminate a supply run at a wall and provide a fixed stub-out point for a faucet, shower valve, or washing machine connection. Both ends are push-to-connect.",
-        "subCategory": "fittings",
+        "subCategory": "elbows",
         "diagramUrl": "/images/parts/P707-5-LF.jpg"
     },
     {
@@ -7277,7 +7277,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7331,10 +7331,10 @@
         "images": [
             "/images/parts/P707-3-5-LF.jpg"
         ],
-        "primaryName": "90\u00b0 Drop Elbow Push \u00d7 Female (FNPT)",
+        "primaryName": "90° Drop Elbow Push × Female (FNPT)",
         "category": "plumbing",
-        "overview": "A 90-degree drop elbow with mounting ears, one push-to-connect end, and one female NPT threaded end. Allows a supply run to terminate at the wall with a female-threaded stub-out for direct connection to a male-threaded faucet supply or valve \u2014 no additional adapter needed.",
-        "subCategory": "fittings",
+        "overview": "A 90-degree drop elbow with mounting ears, one push-to-connect end, and one female NPT threaded end. Allows a supply run to terminate at the wall with a female-threaded stub-out for direct connection to a male-threaded faucet supply or valve — no additional adapter needed.",
+        "subCategory": "elbows",
         "diagramUrl": "/images/parts/P707-3-5-LF.jpg"
     },
     {
@@ -7367,7 +7367,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7478,10 +7478,10 @@
         "images": [
             "/images/parts/P711-LF.jpg"
         ],
-        "primaryName": "Tee Push \u00d7 Push \u00d7 Push",
+        "primaryName": "Tee Push × Push × Push",
         "category": "plumbing",
-        "overview": "A three-way push-to-connect tee with push ends on all three outlets. Used to create branch lines in potable water supply systems without soldering. Available in equal and reducing configurations across \u00bc\" to 1\". The fastest way to add a branch to an existing run \u2014 no flame, no glue, no tools.",
-        "subCategory": "fittings",
+        "overview": "A three-way push-to-connect tee with push ends on all three outlets. Used to create branch lines in potable water supply systems without soldering. Available in equal and reducing configurations across ¼\" to 1\". The fastest way to add a branch to an existing run — no flame, no glue, no tools.",
+        "subCategory": "tees",
         "diagramUrl": "/images/parts/P711-LF.jpg"
     },
     {
@@ -7517,7 +7517,7 @@
             "POM nut and release collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7578,9 +7578,9 @@
         "images": [
             "/images/parts/PFP200A-LF.jpg"
         ],
-        "primaryName": "Ball Valve Push \u00d7 Push",
+        "primaryName": "Ball Valve Push × Push",
         "category": "plumbing",
-        "overview": "A full-bore lead-free brass ball valve with push-to-connect ends on both sides. Installs without solder or special tools \u2014 push the pipe in and the valve is ready to operate. Quarter-turn handle gives instant open/close for isolation. Used as a shut-off valve at fixtures, appliances, and branches in residential and commercial potable water systems.",
+        "overview": "A full-bore lead-free brass ball valve with push-to-connect ends on both sides. Installs without solder or special tools — push the pipe in and the valve is ready to operate. Quarter-turn handle gives instant open/close for isolation. Used as a shut-off valve at fixtures, appliances, and branches in residential and commercial potable water systems.",
         "subCategory": "valves",
         "diagramUrl": "/images/parts/PFP200A-LF.jpg"
     },
@@ -7615,7 +7615,7 @@
             "brass drain cap"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7673,9 +7673,9 @@
         "images": [
             "/images/parts/P-FP-200-D-LF.jpg"
         ],
-        "primaryName": "Ball Valve with Drain Push \u00d7 Push",
+        "primaryName": "Ball Valve with Drain Push × Push",
         "category": "plumbing",
-        "overview": "A push-to-connect ball valve with a built-in side drain port that allows the downstream piping to be drained after shutting off flow. Combines a full-bore shut-off valve with a drain point in one fitting \u2014 ideal for outdoor supply lines, seasonal systems, and anywhere convenient drainage is needed without cutting pipe.",
+        "overview": "A push-to-connect ball valve with a built-in side drain port that allows the downstream piping to be drained after shutting off flow. Combines a full-bore shut-off valve with a drain point in one fitting — ideal for outdoor supply lines, seasonal systems, and anywhere convenient drainage is needed without cutting pipe.",
         "subCategory": "valves",
         "diagramUrl": "/images/parts/P-FP-200-D-LF.jpg"
     },
@@ -7708,7 +7708,7 @@
             "POM nut and release collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7726,7 +7726,7 @@
                 "dimB_in": 1.73,
                 "dimC_in": 6.23,
                 "dimD_in": 2.32,
-                "dimE_in": 4.0
+                "dimE_in": 4
             },
             {
                 "nominalSize": "3/4\"",
@@ -7763,9 +7763,9 @@
             "retrofit"
         ],
         "source": "NIBCO Push Fittings Valves & Flexible Connectors PTC-0818-R041624",
-        "primaryName": "Slip Ball Valve Push \u00d7 Push",
+        "primaryName": "Slip Ball Valve Push × Push",
         "category": "plumbing",
-        "overview": "A push-to-connect ball valve with no internal stop on one end, allowing it to slide over pipe during installation for repair applications. Combines the repair coupling concept with a full shut-off valve \u2014 ideal for adding valve access to an existing pipe run without cutting back to a fitting.",
+        "overview": "A push-to-connect ball valve with no internal stop on one end, allowing it to slide over pipe during installation for repair applications. Combines the repair coupling concept with a full shut-off valve — ideal for adding valve access to an existing pipe run without cutting back to a fitting.",
         "subCategory": "valves"
     },
     {
@@ -7795,7 +7795,7 @@
             "316 stainless steel grip ring"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7816,7 +7816,7 @@
             },
             {
                 "nominalSize": "3/4\"",
-                "dimA_in": 2.0,
+                "dimA_in": 2,
                 "dimB_in": 1.85,
                 "dimC_in": 4.85,
                 "dimD_in": 2.6
@@ -7849,7 +7849,7 @@
         "images": [
             "/images/parts/TP-FP-200-LF.jpg"
         ],
-        "primaryName": "Ball Valve Push \u00d7 FPT",
+        "primaryName": "Ball Valve Push × FPT",
         "category": "plumbing",
         "overview": "A ball valve with one push-to-connect end and one female NPT threaded end. Used to add an isolation valve at the transition point between a push-fit piping run and a threaded pipe or equipment connection. One fitting replaces a valve plus a separate adapter.",
         "subCategory": "valves",
@@ -7885,7 +7885,7 @@
             "spring-loaded check insert"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -7905,7 +7905,7 @@
             {
                 "nominalSize": "3/4\"",
                 "dimA_in": 0.94,
-                "dimB_in": 3.0
+                "dimB_in": 3
             },
             {
                 "nominalSize": "1\"",
@@ -7934,9 +7934,9 @@
         "images": [
             "/images/parts/P480W-LF.jpg"
         ],
-        "primaryName": "Check Valve Inline Push \u00d7 Push",
+        "primaryName": "Check Valve Inline Push × Push",
         "category": "plumbing",
-        "overview": "An inline spring-loaded check valve with push-to-connect ends on both sides. Allows flow in one direction only \u2014 automatically closes if flow reverses, preventing backflow and cross-contamination. Installed in push-fit piping without any soldering or tools. Used wherever backflow prevention is needed in potable water systems.",
+        "overview": "An inline spring-loaded check valve with push-to-connect ends on both sides. Allows flow in one direction only — automatically closes if flow reverses, preventing backflow and cross-contamination. Installed in push-fit piping without any soldering or tools. Used wherever backflow prevention is needed in potable water systems.",
         "subCategory": "valves",
         "diagramUrl": "/images/parts/P480W-LF.jpg"
     },
@@ -7962,7 +7962,7 @@
             "Lavatory and kitchen faucet isolation",
             "Replacing corroded compression angle stops"
         ],
-        "installationNotes": "Push the inlet end onto the supply pipe stub-out until seated. Connect FIP outlet to faucet or fill valve supply inlet. Turn handle 90\u00b0 to shut off. The 12\" (7/8\" FIP) version is specifically sized for standard toilet fill valve inlets.",
+        "installationNotes": "Push the inlet end onto the supply pipe stub-out until seated. Connect FIP outlet to faucet or fill valve supply inlet. Turn handle 90° to shut off. The 12\" (7/8\" FIP) version is specifically sized for standard toilet fill valve inlets.",
         "materials": [
             "lead-free DZR brass body and ball",
             "PTFE seat",
@@ -7974,7 +7974,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -8021,7 +8021,7 @@
         "images": [
             "/images/parts/P7185FX-LF.jpg"
         ],
-        "primaryName": "Angle Stop Push \u00d7 FIP (Supply Stop Valve)",
+        "primaryName": "Angle Stop Push × FIP (Supply Stop Valve)",
         "category": "plumbing",
         "overview": "A lead-free push-to-connect angle supply stop valve with an integrated braided stainless steel supply hose. The push end connects to the supply pipe coming out of the wall; the FIP end at the outlet connects to the faucet or toilet supply inlet. Quarter-turn ball valve gives instant shut-off. Available as a 20\" faucet supply line or 12\" toilet supply line configuration.",
         "subCategory": "valves",
@@ -8047,7 +8047,7 @@
             "Toilet supply connections from floor stub-outs",
             "Any straight-line supply connection requiring shut-off"
         ],
-        "installationNotes": "Push the inlet onto the floor or wall stub-out. Connect FIP outlet to appliance supply inlet. The straight configuration requires the supply pipe to align with the fixture inlet \u2014 if the pipe comes from the wall at 90\u00b0, use the angle stop version instead.",
+        "installationNotes": "Push the inlet onto the floor or wall stub-out. Connect FIP outlet to appliance supply inlet. The straight configuration requires the supply pipe to align with the fixture inlet — if the pipe comes from the wall at 90°, use the angle stop version instead.",
         "materials": [
             "lead-free DZR brass body and ball",
             "PTFE seat",
@@ -8059,7 +8059,7 @@
             "POM nut and collar"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -8104,9 +8104,9 @@
         "images": [
             "/images/parts/P7180FX-LF.jpg"
         ],
-        "primaryName": "Straight Stop Push \u00d7 FIP (Supply Stop Valve)",
+        "primaryName": "Straight Stop Push × FIP (Supply Stop Valve)",
         "category": "plumbing",
-        "overview": "A lead-free push-to-connect straight supply stop valve with integrated braided stainless steel supply hose. Unlike the angle stop, the inlet and outlet are inline (straight through) rather than at 90\u00b0. Used where the supply pipe comes straight out of the floor or wall and connects directly inline to a faucet or toilet supply. Quarter-turn ball valve for instant shut-off.",
+        "overview": "A lead-free push-to-connect straight supply stop valve with integrated braided stainless steel supply hose. Unlike the angle stop, the inlet and outlet are inline (straight through) rather than at 90°. Used where the supply pipe comes straight out of the floor or wall and connects directly inline to a faucet or toilet supply. Quarter-turn ball valve for instant shut-off.",
         "subCategory": "valves",
         "diagramUrl": "/images/parts/P7180FX-LF.jpg"
     },
@@ -8128,7 +8128,7 @@
             "Toilet supply with compression connections",
             "Replacing older compression angle stops with push-fit supply end"
         ],
-        "installationNotes": "Push the \u00bd\" inlet onto supply pipe. On the compression outlet, slide the nut and copper olive (ferrule) over the 3/8\" tube, insert into fitting, and tighten nut \u2014 the olive compresses to form the seal. Do not overtighten.",
+        "installationNotes": "Push the ½\" inlet onto supply pipe. On the compression outlet, slide the nut and copper olive (ferrule) over the 3/8\" tube, insert into fitting, and tighten nut — the olive compresses to form the seal. Do not overtighten.",
         "materials": [
             "lead-free DZR brass body and ball",
             "PTFE seat",
@@ -8140,7 +8140,7 @@
             "brass compression cap"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M (push end)",
             "3/8\" OD copper or brass tube (compression end)"
@@ -8178,9 +8178,9 @@
         "images": [
             "/images/parts/P7185-LF.jpg"
         ],
-        "primaryName": "Angle Supply Stop Push \u00d7 Compression",
+        "primaryName": "Angle Supply Stop Push × Compression",
         "category": "plumbing",
-        "overview": "An angle supply stop with a push-to-connect supply inlet and a compression outlet. The compression end accepts a standard 3/8\" compression fitting for connecting to faucet supply tubes or other compression-fitted components. Push end connects directly to \u00bd\" supply pipe. Used when the fixture side connection uses a compression fitting rather than a braided hose.",
+        "overview": "An angle supply stop with a push-to-connect supply inlet and a compression outlet. The compression end accepts a standard 3/8\" compression fitting for connecting to faucet supply tubes or other compression-fitted components. Push end connects directly to ½\" supply pipe. Used when the fixture side connection uses a compression fitting rather than a braided hose.",
         "subCategory": "valves",
         "diagramUrl": "/images/parts/P7185-LF.jpg"
     },
@@ -8202,7 +8202,7 @@
             "Toilet supply from floor stub-out with compression tube",
             "Straight-line valve installation with compression outlet"
         ],
-        "installationNotes": "Push the \u00bd\" inlet onto the pipe fully. Attach 3/8\" compression tube to outlet using the supplied olive and compression nut \u2014 hand tighten then \u00bc turn with wrench only.",
+        "installationNotes": "Push the ½\" inlet onto the pipe fully. Attach 3/8\" compression tube to outlet using the supplied olive and compression nut — hand tighten then ¼ turn with wrench only.",
         "materials": [
             "lead-free DZR brass body and ball",
             "PTFE seat",
@@ -8214,7 +8214,7 @@
             "brass compression cap"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M (push end)",
             "3/8\" OD copper or brass tube (compression end)"
@@ -8248,9 +8248,9 @@
             "NIBCO"
         ],
         "source": "NIBCO Push Fittings Valves & Flexible Connectors PTC-0818-R041624",
-        "primaryName": "Straight Supply Stop Push \u00d7 Compression",
+        "primaryName": "Straight Supply Stop Push × Compression",
         "category": "plumbing",
-        "overview": "A straight (inline) supply stop valve with a push-to-connect inlet and a compression outlet. The push end connects directly to \u00bd\" supply pipe; the compression end connects to a 3/8\" OD supply tube using a copper olive. For floor-supply applications where the pipe runs straight up and the fixture connection uses a compression-type supply tube.",
+        "overview": "A straight (inline) supply stop valve with a push-to-connect inlet and a compression outlet. The push end connects directly to ½\" supply pipe; the compression end connects to a 3/8\" OD supply tube using a copper olive. For floor-supply applications where the pipe runs straight up and the fixture connection uses a compression-type supply tube.",
         "subCategory": "valves"
     },
     {
@@ -8273,7 +8273,7 @@
             "Laundry room supply valve installation or replacement",
             "Any residential or commercial appliance requiring hose-thread supply"
         ],
-        "installationNotes": "Push \u00bd\" supply pipe into inlet until seated. Connect standard 3/4\" washing machine supply hose to the MHT outlet. Red handle = hot line, blue handle = cold line. Install both before connecting the washing machine hoses.",
+        "installationNotes": "Push ½\" supply pipe into inlet until seated. Connect standard 3/4\" washing machine supply hose to the MHT outlet. Red handle = hot line, blue handle = cold line. Install both before connecting the washing machine hoses.",
         "materials": [
             "lead-free DZR brass body and ball",
             "EPDM O-rings",
@@ -8284,7 +8284,7 @@
             "PPSU liner/stiffener"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -8325,9 +8325,9 @@
         "images": [
             "/images/parts/PWMV-LF.jpg"
         ],
-        "primaryName": "Washing Machine Ball Valve Push \u00d7 MHT",
+        "primaryName": "Washing Machine Ball Valve Push × MHT",
         "category": "plumbing",
-        "overview": "A washing machine supply valve with a push-to-connect supply inlet and a male hose thread (MHT) outlet for standard washing machine supply hose connections. Features a dual-color handle \u2014 red for hot, blue for cold \u2014 for instant identification. Quarter-turn ball valve. Designed to replace soldered hose bibbs and supply stops at washing machine connections.",
+        "overview": "A washing machine supply valve with a push-to-connect supply inlet and a male hose thread (MHT) outlet for standard washing machine supply hose connections. Features a dual-color handle — red for hot, blue for cold — for instant identification. Quarter-turn ball valve. Designed to replace soldered hose bibbs and supply stops at washing machine connections.",
         "subCategory": "valves",
         "diagramUrl": "/images/parts/PWMV-LF.jpg"
     },
@@ -8358,7 +8358,7 @@
             "316 stainless steel grip ring"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -8403,9 +8403,9 @@
         "images": [
             "/images/parts/P-FLEX18FIP.jpg"
         ],
-        "primaryName": "Water Heater Connector Push \u00d7 FIP",
+        "primaryName": "Water Heater Connector Push × FIP",
         "category": "plumbing",
-        "overview": "An 18-inch braided stainless steel flexible connector with a push-to-connect end for the supply pipe and a female iron pipe (FIP) threaded end for the water heater inlet or outlet port. Installs without soldering \u2014 push the pipe end in, thread the FIP end onto the heater nipple. Available in \u00bd\" \u00d7 \u00be\" and \u00be\" \u00d7 \u00be\" configurations.",
+        "overview": "An 18-inch braided stainless steel flexible connector with a push-to-connect end for the supply pipe and a female iron pipe (FIP) threaded end for the water heater inlet or outlet port. Installs without soldering — push the pipe end in, thread the FIP end onto the heater nipple. Available in ½\" × ¾\" and ¾\" × ¾\" configurations.",
         "subCategory": "flexible connectors",
         "diagramUrl": "/images/parts/P-FLEX18FIP.jpg"
     },
@@ -8436,7 +8436,7 @@
             "316 stainless steel grip ring"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -8481,7 +8481,7 @@
         "images": [
             "/images/parts/PFP-FLEX18FIP.jpg"
         ],
-        "primaryName": "Water Heater Connector with Ball Valve Push \u00d7 FIP",
+        "primaryName": "Water Heater Connector with Ball Valve Push × FIP",
         "category": "plumbing",
         "overview": "An 18-inch braided stainless steel flexible water heater connector with an integrated push-to-connect ball valve at the supply end. The valve allows the water heater to be isolated without shutting off the whole building supply. The FIP end threads onto the water heater inlet or outlet port. One fitting replaces a separate shut-off valve plus a water heater connector.",
         "subCategory": "flexible connectors",
@@ -8514,7 +8514,7 @@
             "316 stainless steel grip ring"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -8558,9 +8558,9 @@
         "images": [
             "/images/parts/P-FLEX18.jpg"
         ],
-        "primaryName": "Repair Connector Push \u00d7 Push",
+        "primaryName": "Repair Connector Push × Push",
         "category": "plumbing",
-        "overview": "An 18-inch braided stainless steel flexible connector with push-to-connect ends on both sides. Used for pipe repairs where a rigid coupling cannot be easily installed, or where flexibility is needed to connect two fixed pipe ends that are slightly misaligned. Available in \u00bd\" and \u00be\".",
+        "overview": "An 18-inch braided stainless steel flexible connector with push-to-connect ends on both sides. Used for pipe repairs where a rigid coupling cannot be easily installed, or where flexibility is needed to connect two fixed pipe ends that are slightly misaligned. Available in ½\" and ¾\".",
         "subCategory": "flexible connectors",
         "diagramUrl": "/images/parts/P-FLEX18.jpg"
     },
@@ -8582,7 +8582,7 @@
             "Water treatment equipment hook-ups",
             "Any connection requiring a 24\" flexible line with push inlet and FIP outlet"
         ],
-        "installationNotes": "Thread FIP end onto 1\" male threaded port on the water softener with PTFE tape. Push \u00be\" supply pipe into push end. The 24\" length is specifically designed for standard water softener cabinet spacings.",
+        "installationNotes": "Thread FIP end onto 1\" male threaded port on the water softener with PTFE tape. Push ¾\" supply pipe into push end. The 24\" length is specifically designed for standard water softener cabinet spacings.",
         "materials": [
             "reinforced braided 304 stainless steel hose",
             "lead-free brass end fittings",
@@ -8590,7 +8590,7 @@
             "316 stainless steel grip ring"
         ],
         "maxPressure": "200 psi",
-        "maxTemp": "200\u00b0F",
+        "maxTemp": "200°F",
         "compatiblePipe": [
             "copper K, L, M",
             "PEX (with stiffener)",
@@ -8631,9 +8631,9 @@
         "images": [
             "/images/parts/P-FLEX24FIP.jpg"
         ],
-        "primaryName": "Water Softener Connector Push \u00d7 FIP",
+        "primaryName": "Water Softener Connector Push × FIP",
         "category": "plumbing",
-        "overview": "A 24-inch braided stainless steel flexible connector with a push-to-connect end and a female iron pipe (FIP) threaded end. Specifically sized for water softener bypass and inlet connections where the longer 24\" length accommodates the wider spacing of water softener cabinet connections. Available in \u00be\" \u00d7 1\".",
+        "overview": "A 24-inch braided stainless steel flexible connector with a push-to-connect end and a female iron pipe (FIP) threaded end. Specifically sized for water softener bypass and inlet connections where the longer 24\" length accommodates the wider spacing of water softener cabinet connections. Available in ¾\" × 1\".",
         "subCategory": "flexible connectors",
         "diagramUrl": "/images/parts/P-FLEX24FIP.jpg"
     },
@@ -8697,7 +8697,7 @@
         "source": "NIBCO Push Fittings Valves & Flexible Connectors PTC-0818-R041624",
         "primaryName": "Push Fitting Removal Tool",
         "category": "plumbing",
-        "overview": "A small U-shaped plastic disconnect tool used to release push-to-connect fittings without damaging the fitting or pipe. Insert the tool around the pipe at the fitting inlet to depress the release collar, then pull the pipe out. The only correct way to remove a push-fit connection \u2014 attempting to pull without the tool can damage the grip ring and cause leaks.",
+        "overview": "A small U-shaped plastic disconnect tool used to release push-to-connect fittings without damaging the fitting or pipe. Insert the tool around the pipe at the fitting inlet to depress the release collar, then pull the pipe out. The only correct way to remove a push-fit connection — attempting to pull without the tool can damage the grip ring and cause leaks.",
         "subCategory": "accessories"
     }
 ]
