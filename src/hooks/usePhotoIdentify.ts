@@ -211,13 +211,33 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
       }
 
       const data = await response.json();
-      const raw = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-      log(`Received response from Gemini: ${raw?.length || 0} chars`);
+      log(`Response received, extracting text...`);
+      
+      // gemini-2.5-flash may return multiple parts (thinking + answer)
+      // Find the last non-thinking text part which contains the actual JSON
+      const allParts = data?.candidates?.[0]?.content?.parts || [];
+      log(`Response has ${allParts.length} parts`);
+      
+      let raw: string | undefined;
+      for (let i = allParts.length - 1; i >= 0; i--) {
+        const part = allParts[i];
+        if (part.text && !part.thought) {
+          raw = part.text;
+          log(`Using part ${i} (non-thinking): ${raw?.slice(0, 100)}...`);
+          break;
+        }
+      }
+      // Fallback: just use any part with text
+      if (!raw) {
+        raw = allParts.find((p: any) => p.text)?.text;
+        log(`Fallback: using first text part`);
+      }
+
+      log(`Raw text length: ${raw?.length || 0} chars`);
       if (!raw) throw new Error("No response from AI.");
-      log(`Raw response: ${raw.slice(0, 500)}`);
+      log(`Raw response: ${raw.slice(0, 300)}`);
       const clean = raw.replace(/```json|```/g, "").trim();
       const parsed = JSON.parse(clean);
-
       log(`Parsed ${(parsed.matches || []).length} raw matches from Gemini`);
 
       const hydratedMatches = (parsed.matches || [])
