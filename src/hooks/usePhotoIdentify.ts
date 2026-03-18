@@ -180,7 +180,7 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
       const mimeType = "image/jpeg";
 
       log("Requesting Gemini identification via REST v1...");
-      const apiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
+      const apiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`;
       
       const response = await fetch(apiUrl, {
         method: "POST",
