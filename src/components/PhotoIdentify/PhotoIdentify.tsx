@@ -311,8 +311,9 @@ export default function PhotoIdentify({ onClose }: { onClose?: () => void }) {
 
   const handleSelect = (part: NormalizedPart) => {
     log(`Navigating to /part/${part.id}`);
-    reset();
     navigate(`/part/${part.id}`);
+    // Reset AFTER navigation, not before — give React Router time to process
+    setTimeout(() => reset(), 500);
     if (onClose) onClose();
   };
 
