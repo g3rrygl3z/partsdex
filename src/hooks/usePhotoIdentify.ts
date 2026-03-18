@@ -33,36 +33,38 @@ function buildVisionSystemPrompt(parts: NormalizedPart[]) {
 
 A field technician has taken a photo of a part they cannot identify. Your job is to analyze the image and match it to the parts database below.
 
-PARTS DATABASE:
+PARTS DATABASE (use the "id" field EXACTLY as your match ID):
 ${JSON.stringify(slimParts, null, 0)}
 
-IDENTIFICATION APPROACH:
-- Look at the shape, color, material finish, connection ends, and any visible markings
+VISUAL IDENTIFICATION HINTS:
+- Black malleable iron fittings: dark black/matte finish, threaded on both ends, heavy cast iron feel
+  - Coupling = short cylindrical connector with female threads on both ends (id: "black-malleable-coupling-1-4")
+  - Nipple = short pipe segment with male threads on both ends (id: "black-iron-nipple-1-4-x-1")
 - Carbon steel press fittings (BenchPress): silver/zinc-plated, have a distinctive crimped groove ring at each end
 - Push-to-connect fittings: brass/silver, have a visible collet/grip ring collar at each end
-- Expansion tanks: cylindrical steel vessels — blue/teal = potable water, grey = hydronic heating, burgundy/red = ASME commercial
+- Expansion tanks: cylindrical steel vessels — blue/teal = potable water, grey = hydronic heating
 - Relief valves: brass body, spring-loaded, usually have a lever or test handle
 - Ball valves: brass or steel body with a lever handle perpendicular to the pipe
 
-RULES:
-1. Respond ONLY with valid JSON — no prose, no markdown fences outside the JSON.
-2. Response format:
+CRITICAL RULES:
+1. Respond ONLY with valid JSON — no prose, no markdown fences.
+2. The "id" in your response MUST be copied EXACTLY from the database above. Do NOT invent IDs.
+3. Response format:
 {
   "matches": [
     {
-      "id": "exact-part-id-from-database",
+      "id": "exact-id-from-database",
       "confidence": 0.95,
       "reasoning": "one sentence explaining the visual match"
     }
   ],
   "visualDescription": "brief description of what you see in the image",
-  "identificationNotes": "any caveats or things to look for to confirm the ID",
+  "identificationNotes": "any caveats",
   "confident": true
 }
-3. Return 1–3 best matches ordered by confidence (0.0–1.0).
-4. If the image is too blurry, too dark, or you genuinely cannot identify the part, set "confident": false and explain in "identificationNotes".
-5. All "id" values must exactly match ids in the database.
-6. Be honest about uncertainty — a wrong confident ID is worse than an uncertain one.`;
+4. Return 1–3 best matches ordered by confidence (0.0–1.0).
+5. If the image is too blurry or you cannot identify the part, set "confident": false.
+6. ALWAYS copy the id exactly from the database. Example valid ids: "black-malleable-coupling-1-4", "black-iron-nipple-1-4-x-1", "compression-fitting-15mm".`;
 }
 
 // -- Image helpers -------------------------------------------------------------
@@ -220,16 +222,39 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
 
       const hydratedMatches = (parsed.matches || [])
         .map((m: any) => {
-          const found = normalizedParts.find((p) => p.id === m.id);
+          // 1. Exact ID match
+          let found = normalizedParts.find((p) => p.id === m.id);
+          
           if (!found) {
-            log(`⚠️ Match ID "${m.id}" not found in parts database — dropping`);
-            // Attempt fuzzy ID match (e.g. Gemini might return "compression_fitting" instead of "compression-fitting")
-            const fuzzyMatch = normalizedParts.find(
-              (p) => p.id.replace(/-/g, '').toLowerCase() === (m.id || '').replace(/[-_\s]/g, '').toLowerCase()
-            );
-            if (fuzzyMatch) {
-              log(`  ✅ Fuzzy matched to "${fuzzyMatch.id}"`);
-              return { ...m, id: fuzzyMatch.id, part: fuzzyMatch };
+            log(`⚠️ Match ID "${m.id}" not found — trying fuzzy match`);
+            
+            // 2. Normalized ID match (strip dashes, underscores, spaces)
+            const normalize = (s: string) => (s || '').replace(/[-_\s]/g, '').toLowerCase();
+            found = normalizedParts.find((p) => normalize(p.id) === normalize(m.id));
+            
+            // 3. Try matching by name keywords from the ID
+            if (!found) {
+              const idWords = (m.id || '').toLowerCase().split(/[-_\s]+/).filter((w: string) => w.length > 2);
+              found = normalizedParts.find((p) => {
+                const pName = p.name.toLowerCase();
+                return idWords.length > 0 && idWords.every((w: string) => pName.includes(w));
+              });
+            }
+            
+            // 4. Check if the reasoning mentions a specific part name
+            if (!found && m.reasoning) {
+              const reasoning = m.reasoning.toLowerCase();
+              found = normalizedParts.find((p) => {
+                const name = p.name.toLowerCase();
+                return reasoning.includes(name) || name.split(' ').filter((w: string) => w.length > 3).every((w: string) => reasoning.includes(w));
+              });
+            }
+            
+            if (found) {
+              log(`  ✅ Fuzzy matched "${m.id}" → "${found.id}" (${found.name})`);
+              return { ...m, id: found.id, part: found };
+            } else {
+              log(`  ❌ No match found for "${m.id}" — dropping`);
             }
           } else {
             log(`✅ Match: "${m.id}" → ${found.name} (conf: ${m.confidence})`);
