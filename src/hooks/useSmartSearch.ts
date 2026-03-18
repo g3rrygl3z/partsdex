@@ -133,15 +133,12 @@ export function useSmartSearch() {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
-            system_instruction: {
-              parts: [{ text: systemPrompt.current }]
-            },
             contents: [{
-              parts: [{ text: `Search query from a field technician: "${q}"\n\nReturn the matching part IDs as JSON.` }]
-            }],
-            generationConfig: {
-              responseMimeType: "application/json"
-            }
+              parts: [
+                { text: systemPrompt.current },
+                { text: `Search query from a field technician: "${q}"\n\nReturn the matching part IDs as JSON. You MUST return ONLY valid JSON, no markdown.` }
+              ]
+            }]
           })
         });
 

@@ -186,23 +186,18 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          system_instruction: {
-            parts: [{ text: systemPrompt.current }]
-          },
           contents: [{
             parts: [
+              { text: systemPrompt.current },
               {
                 inline_data: {
                   mime_type: mimeType,
                   data: b64
                 }
               },
-              { text: "Please identify this plumbing/HVAC/heating part from the photo. Return your identification as JSON." }
+              { text: "Please identify this plumbing/HVAC/heating part from the photo. You MUST return ONLY valid JSON, no markdown, no explanation." }
             ]
-          }],
-          generationConfig: {
-            responseMimeType: "application/json"
-          }
+          }]
         })
       });
 
