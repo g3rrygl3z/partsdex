@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { GoogleGenAI } from "@google/genai";
 import Fuse from "fuse.js";
 import { getAllParts } from "../utils/search";
 import type { NormalizedPart } from "../utils/search";
@@ -68,7 +69,8 @@ function useDebounce<T>(value: T, delay: number): T {
   return debounced;
 }
 
-const ANTHROPIC_API_KEY = import.meta.env.VITE_ANTHROPIC_API_KEY;
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+const genAI = new GoogleGenAI({ apiKey: GEMINI_API_KEY || "" });
 
 // -- Main hook -----------------------------------------------------------------
 export function useSmartSearch() {
@@ -112,8 +114,8 @@ export function useSmartSearch() {
       return;
     }
 
-    if (!ANTHROPIC_API_KEY) {
-      setAiError("AI key not configured.");
+    if (!GEMINI_API_KEY) {
+      setAiError("Gemini API key not configured.");
       setMode("local");
       return;
     }
@@ -127,32 +129,17 @@ export function useSmartSearch() {
       setMode("ai");
 
       try {
-        // Use local proxy path to avoid CORS issues
-        const response = await fetch("/api/anthropic/messages", {
-          method: "POST",
-          headers: { 
-            "Content-Type": "application/json",
-            "x-api-key": ANTHROPIC_API_KEY,
-            "anthropic-version": "2023-06-01"
-          },
-          signal: abortRef.current?.signal,
-          body: JSON.stringify({
-            model: "claude-3-5-sonnet-20240620",
-            max_tokens: 1000,
-            system: systemPrompt.current,
-            messages: [
-              {
-                role: "user",
-                content: `Search query from a field technician: "${q}"\n\nReturn the matching part IDs as JSON.`,
-              },
-            ],
-          }),
+        const result = await genAI.models.generateContent({
+          model: "gemini-2.0-flash",
+          contents: `Search query from a field technician: "${q}"\n\nReturn the matching part IDs as JSON.`,
+          config: {
+            systemInstruction: systemPrompt.current,
+            responseMimeType: 'application/json',
+          }
         });
 
-        if (!response.ok) throw new Error(`API error: ${response.status}`);
-
-        const data = await response.json();
-        const raw  = data.content?.[0]?.text || "{}";
+        const raw = result.text;
+        if (!raw) throw new Error("No response from AI.");
         const clean = raw.replace(/```json|```/g, "").trim();
         const parsed = JSON.parse(clean);
 

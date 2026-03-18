@@ -4,22 +4,10 @@ import { VitePWA } from 'vite-plugin-pwa'
 import path from 'path'
 
 export default defineConfig({
-  base: '/PartsDex/',
+  base: './',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-    },
-  },
-  server: {
-    proxy: {
-      '/api/anthropic': {
-        target: 'https://api.anthropic.com',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api\/anthropic/, '/v1'),
-        headers: {
-          'anthropic-dangerous-direct-browser-access': 'true',
-        },
-      },
     },
   },
   plugins: [

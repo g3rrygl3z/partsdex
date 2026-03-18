@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback } from "react";
+import { GoogleGenAI } from "@google/genai";
 import { getAllParts } from "../utils/search";
 import type { NormalizedPart } from "../utils/search";
 
@@ -118,7 +119,9 @@ export interface PhotoIdentifyResult {
 }
 
 const normalizedParts = getAllParts();
-const ANTHROPIC_API_KEY = import.meta.env.VITE_ANTHROPIC_API_KEY;
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+
+const genAI = new GoogleGenAI({ apiKey: GEMINI_API_KEY || "" });
 
 export function usePhotoIdentify(): PhotoIdentifyResult {
   const [status,       setStatus]       = useState<"idle" | "processing" | "success" | "error">("idle");
@@ -149,55 +152,37 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
     setPreview(previewUrl);
 
     try {
-      if (!ANTHROPIC_API_KEY) {
-        throw new Error("AI key not configured.");
+      if (!GEMINI_API_KEY) {
+        throw new Error("Gemini API key not configured.");
       }
 
       const resized  = await resizeImage(file);
       const b64      = await fileToBase64(resized);
       const mimeType = "image/jpeg";
 
-      const response = await fetch("/api/anthropic/messages", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "x-api-key": ANTHROPIC_API_KEY,
-          "anthropic-version": "2023-06-01"
-        },
-        signal: abortRef.current.signal,
-        body: JSON.stringify({
-          model: "claude-3-5-sonnet-20240620", // Use the stable version that supports vision
-          max_tokens: 1000,
-          system: systemPrompt.current,
-          messages: [
-            {
-              role: "user",
-              content: [
-                {
-                  type: "image",
-                  source: {
-                    type:       "base64",
-                    media_type: mimeType,
-                    data:       b64,
-                  },
-                },
-                {
-                  type: "text",
-                  text: "Please identify this plumbing/HVAC/heating part from the photo. Return your identification as JSON.",
-                },
-              ],
-            },
-          ],
-        }),
+      const result = await genAI.models.generateContent({
+        model: "gemini-2.0-flash",
+        contents: [
+          {
+            parts: [
+              {
+                inlineData: {
+                  data: b64,
+                  mimeType: mimeType
+                }
+              },
+              { text: "Please identify this plumbing/HVAC/heating part from the photo. Return your identification as JSON." }
+            ]
+          }
+        ],
+        config: {
+          systemInstruction: systemPrompt.current,
+          responseMimeType: 'application/json',
+        }
       });
 
-      if (!response.ok) {
-        const errData = await response.json().catch(() => ({}));
-        throw new Error(errData?.error?.message || `API error ${response.status}`);
-      }
-
-      const data = await response.json();
-      const raw  = data.content?.[0]?.text || "{}";
+      const raw = result.text;
+      if (!raw) throw new Error("No response from AI.");
       const clean = raw.replace(/```json|```/g, "").trim();
       const parsed = JSON.parse(clean);
 

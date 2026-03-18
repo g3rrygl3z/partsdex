@@ -11,7 +11,7 @@ registerPWA()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename="/PartsDex">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </StrictMode>,
