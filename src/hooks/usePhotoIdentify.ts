@@ -3,6 +3,17 @@ import { GoogleGenAI } from "@google/genai";
 import { getAllParts } from "../utils/search";
 import type { NormalizedPart } from "../utils/search";
 
+// -- Mobile Debug Logging -----------------------------------------------------
+const log = (msg: string) => {
+  console.log(`[PhotoID Hook] ${msg}`);
+  if (typeof window !== 'undefined') {
+    (window as any)._photoIdLogs = (window as any)._photoIdLogs || [];
+    (window as any)._photoIdLogs.unshift(`${new Date().toLocaleTimeString()}: ${msg}`);
+    (window as any)._photoIdLogs = (window as any)._photoIdLogs.slice(0, 50);
+    window.dispatchEvent(new CustomEvent('photo-id-log'));
+  }
+};
+
 // -- Slim parts context for vision prompt -------------------------------------
 function buildVisionSystemPrompt(parts: NormalizedPart[]) {
   const slimParts = parts.map((p) => ({
@@ -141,6 +152,7 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
     if (abortRef.current) abortRef.current.abort();
     abortRef.current = new AbortController();
 
+    log(`Identifying image: ${file instanceof File ? file.name : 'Blob'}`);
     setStatus("processing");
     setMatches([]);
     setVisualDesc("");
@@ -157,9 +169,12 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
       }
 
       const resized  = await resizeImage(file);
+      log(`Resized to blob: ${resized.size} bytes`);
       const b64      = await fileToBase64(resized);
+      log("Converted to Base64");
       const mimeType = "image/jpeg";
 
+      log("Requesting Gemini identification...");
       const result = await genAI.models.generateContent({
         model: "gemini-2.0-flash",
         contents: [
@@ -182,6 +197,7 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
       });
 
       const raw = result.text;
+      log(`Received response from Gemini: ${raw?.length || 0} chars`);
       if (!raw) throw new Error("No response from AI.");
       const clean = raw.replace(/```json|```/g, "").trim();
       const parsed = JSON.parse(clean);
@@ -197,6 +213,7 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
       setVisualDesc(parsed.visualDescription || "");
       setIdNotes(parsed.identificationNotes  || "");
       setIsConfident(parsed.confident !== false);
+      log(`Success! Found ${hydratedMatches.length} matches.`);
       setStatus("success");
 
     } catch (err: any) {

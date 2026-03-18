@@ -5,6 +5,18 @@ import type { NormalizedPart } from "../../utils/search";
 import type { PhotoMatch } from "../../hooks/usePhotoIdentify";
 import styles from "./PhotoIdentify.module.css";
 
+// -- Mobile Debug Logging -----------------------------------------------------
+const log = (msg: string) => {
+  console.log(`[PhotoID] ${msg}`);
+  if (typeof window !== 'undefined') {
+    (window as any)._photoIdLogs = (window as any)._photoIdLogs || [];
+    (window as any)._photoIdLogs.unshift(`${new Date().toLocaleTimeString()}: ${msg}`);
+    (window as any)._photoIdLogs = (window as any)._photoIdLogs.slice(0, 50);
+    // Force a custom event to update debug UI if needed
+    window.dispatchEvent(new CustomEvent('photo-id-log'));
+  }
+};
+
 // -- Confidence bar ------------------------------------------------------------
 function ConfidenceBar({ value }: { value: number }) {
   const pct  = Math.round(value * 100);
@@ -141,22 +153,62 @@ function CameraView({ onCapture, onClose }: CameraViewProps) {
   }, [facingMode, startCamera]);
 
   const capture = () => {
-    const video  = videoRef.current;
-    if (!video || !ready) return;
-    const canvas = document.createElement("canvas");
-    canvas.width  = video.videoWidth;
-    canvas.height = video.videoHeight;
-    const ctx = canvas.getContext("2d");
-    if (ctx) {
+    log("Capture triggered");
+    const video = videoRef.current;
+    if (!video) {
+        log("Error: videoRef is null");
+        return;
+    }
+    if (!ready) {
+        log("Error: camera not ready");
+        return;
+    }
+
+    try {
+      const canvas = document.createElement("canvas");
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+      log(`Canvas created: ${canvas.width}x${canvas.height}`);
+      
+      const ctx = canvas.getContext("2d");
+      if (!ctx) {
+          log("Error: could not get canvas context");
+          return;
+      }
+      
       ctx.drawImage(video, 0, 0);
-      canvas.toBlob((blob) => {
+      log("Image drawn to canvas");
+
+      const handleBlob = (blob: Blob | null) => {
         if (blob) {
+          log(`Blob created: ${blob.size} bytes`);
           onCapture(blob);
           if (streamRef.current) {
             streamRef.current.getTracks().forEach((t) => t.stop());
           }
+        } else {
+          log("Error: canvas.toBlob returned null");
+          alert("Could not capture image data. Please try again.");
         }
-      }, "image/jpeg", 0.92);
+      };
+
+      if (canvas.toBlob) {
+        log("Using canvas.toBlob");
+        canvas.toBlob(handleBlob, "image/jpeg", 0.92);
+      } else {
+        log("Fallback: toBlob not supported, using toDataURL");
+        const dataUrl = canvas.toDataURL("image/jpeg", 0.92);
+        fetch(dataUrl)
+          .then(res => res.blob())
+          .then(handleBlob)
+          .catch(err => {
+              log(`Fallback error: ${err.message}`);
+              alert("Capture fallback failed.");
+          });
+      }
+    } catch (err: any) {
+      log(`Capture crash: ${err.message}`);
+      alert(`Capture Error: ${err.message}`);
     }
   };
 
@@ -421,6 +473,55 @@ export default function PhotoIdentify({ onClose }: { onClose?: () => void }) {
           <li>Any visible labels or markings help</li>
         </ul>
       </div>
+
+      <DebugConsole />
+    </div>
+  );
+}
+
+function DebugConsole() {
+  const [logs, setLogs] = useState<string[]>([]);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const update = () => setLogs([...((window as any)._photoIdLogs || [])]);
+    window.addEventListener('photo-id-log', update);
+    update();
+    return () => window.removeEventListener('photo-id-log', update);
+  }, []);
+
+  if (!show) {
+      return (
+          <button 
+            onClick={() => setShow(true)}
+            style={{ marginTop: '2rem', fontSize: '10px', opacity: 0.3, background: 'none', border: 'none', color: '#666' }}
+          >
+            Show Debug Logs
+          </button>
+      );
+  }
+
+  return (
+    <div style={{ 
+        marginTop: '2rem', 
+        padding: '1rem', 
+        background: '#000', 
+        color: '#0f0', 
+        fontSize: '11px', 
+        textAlign: 'left', 
+        width: '100%', 
+        maxHeight: '200px', 
+        overflowY: 'auto',
+        fontFamily: 'monospace',
+        borderRadius: '8px'
+    }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
+          <strong>DEBUG CONSOLE</strong>
+          <button onClick={() => setShow(false)} style={{ color: '#fff', background: '#444', border: 'none', borderRadius: '4px', padding: '0 8px' }}>Close</button>
+      </div>
+      {logs.length === 0 ? "No logs yet..." : logs.map((l, i) => (
+          <div key={i} style={{ marginBottom: '4px', borderBottom: '1px solid #111' }}>{l}</div>
+      ))}
     </div>
   );
 }
