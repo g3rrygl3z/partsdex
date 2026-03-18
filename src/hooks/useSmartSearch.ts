@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef, useCallback } from "react";
-import { GoogleGenAI } from "@google/genai";
 import Fuse from "fuse.js";
 import { getAllParts } from "../utils/search";
 import type { NormalizedPart } from "../utils/search";
@@ -70,7 +69,6 @@ function useDebounce<T>(value: T, delay: number): T {
 }
 
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-const genAI = new GoogleGenAI({ apiKey: GEMINI_API_KEY || "" });
 
 // -- Main hook -----------------------------------------------------------------
 export function useSmartSearch() {
@@ -129,16 +127,31 @@ export function useSmartSearch() {
       setMode("ai");
 
       try {
-        const result = await genAI.models.generateContent({
-          model: "gemini-2.0-flash-lite",
-          contents: `Search query from a field technician: "${q}"\n\nReturn the matching part IDs as JSON.`,
-          config: {
-            systemInstruction: systemPrompt.current,
-            responseMimeType: 'application/json',
-          }
+        const apiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
+        
+        const response = await fetch(apiUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            system_instruction: {
+              parts: [{ text: systemPrompt.current }]
+            },
+            contents: [{
+              parts: [{ text: `Search query from a field technician: "${q}"\n\nReturn the matching part IDs as JSON.` }]
+            }],
+            generationConfig: {
+              responseMimeType: "application/json"
+            }
+          })
         });
 
-        const raw = result.text;
+        if (!response.ok) {
+          const errData = await response.json().catch(() => ({}));
+          throw new Error(errData?.error?.message || `API error ${response.status}`);
+        }
+
+        const data = await response.json();
+        const raw = data?.candidates?.[0]?.content?.parts?.[0]?.text;
         if (!raw) throw new Error("No response from AI.");
         const clean = raw.replace(/```json|```/g, "").trim();
         const parsed = JSON.parse(clean);

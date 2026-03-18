@@ -1,5 +1,4 @@
 import { useState, useRef, useCallback } from "react";
-import { GoogleGenAI } from "@google/genai";
 import { getAllParts } from "../utils/search";
 import type { NormalizedPart } from "../utils/search";
 
@@ -139,7 +138,6 @@ if (!GEMINI_API_KEY) {
   log(`Gemini Key found (starts with: ${GEMINI_API_KEY.slice(0, 8)}...)`);
 }
 
-const genAI = new GoogleGenAI({ apiKey: GEMINI_API_KEY || "" });
 
 export function usePhotoIdentify(): PhotoIdentifyResult {
   const [status,       setStatus]       = useState<"idle" | "processing" | "success" | "error">("idle");
@@ -181,29 +179,42 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
       log("Converted to Base64");
       const mimeType = "image/jpeg";
 
-      log("Requesting Gemini identification...");
-      const result = await genAI.models.generateContent({
-        model: "gemini-2.0-flash-lite",
-        contents: [
-          {
+      log("Requesting Gemini identification via REST v1...");
+      const apiUrl = `https://generativelanguage.googleapis.com/v1/models/gemini-2.0-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
+      
+      const response = await fetch(apiUrl, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          system_instruction: {
+            parts: [{ text: systemPrompt.current }]
+          },
+          contents: [{
             parts: [
               {
-                inlineData: {
-                  data: b64,
-                  mimeType: mimeType
+                inline_data: {
+                  mime_type: mimeType,
+                  data: b64
                 }
               },
               { text: "Please identify this plumbing/HVAC/heating part from the photo. Return your identification as JSON." }
             ]
+          }],
+          generationConfig: {
+            responseMimeType: "application/json"
           }
-        ],
-        config: {
-          systemInstruction: systemPrompt.current,
-          responseMimeType: 'application/json',
-        }
+        })
       });
 
-      const raw = result.text;
+      if (!response.ok) {
+        const errData = await response.json().catch(() => ({}));
+        const errMsg = errData?.error?.message || `API error ${response.status}`;
+        log(`API Error: ${errMsg}`);
+        throw new Error(errMsg);
+      }
+
+      const data = await response.json();
+      const raw = data?.candidates?.[0]?.content?.parts?.[0]?.text;
       log(`Received response from Gemini: ${raw?.length || 0} chars`);
       if (!raw) throw new Error("No response from AI.");
       log(`Raw response: ${raw.slice(0, 500)}`);
