@@ -126,7 +126,10 @@ function CameraView({ onCapture, onClose }: CameraViewProps) {
       streamRef.current = stream;
       if (videoRef.current) {
         videoRef.current.srcObject = stream;
-        videoRef.current.onloadedmetadata = () => setReady(true);
+        videoRef.current.onloadedmetadata = () => {
+          log("Video stream ready and playing");
+          setReady(true);
+        };
       }
     } catch (err: any) {
       console.error("Camera error:", err);

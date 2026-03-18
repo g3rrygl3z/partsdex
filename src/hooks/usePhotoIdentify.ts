@@ -132,6 +132,13 @@ export interface PhotoIdentifyResult {
 const normalizedParts = getAllParts();
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
+// Check key availability on load
+if (!GEMINI_API_KEY) {
+  log("Error: VITE_GEMINI_API_KEY is undefined in this build.");
+} else {
+  log(`Gemini Key found (starts with: ${GEMINI_API_KEY.slice(0, 8)}...)`);
+}
+
 const genAI = new GoogleGenAI({ apiKey: GEMINI_API_KEY || "" });
 
 export function usePhotoIdentify(): PhotoIdentifyResult {

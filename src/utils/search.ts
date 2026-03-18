@@ -17,10 +17,10 @@ export interface NormalizedPart extends Part {
 
 const partsData: NormalizedPart[] = (rawPartsData as any[]).map(part => ({
   ...part,
-  name: part.primaryName,
-  vertical: part.category,
-  description: part.overview,
-  subcategory: part.subCategory,
+  name: part.primaryName || part.name,
+  vertical: part.category || part.vertical,
+  description: part.overview || part.description,
+  subcategory: part.subCategory || part.subcategory,
   manufacturer: part.manufacturer,
   images: part.images,
   modelNumber: part.modelNumber,
