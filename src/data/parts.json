@@ -1,5 +1,40 @@
 [
     {
+        "id": "black-malleable-coupling-1-4",
+        "primaryName": "1/4\" Black Malleable Iron Coupling",
+        "aliases": [
+            "black coupling",
+            "iron coupling",
+            "threaded coupling",
+            "gas pipe joiner",
+            "malleable iron fitting"
+        ],
+        "category": "plumbing",
+        "subCategory": "couplings",
+        "overview": "A 1/4 inch black malleable iron coupling used for joining two lengths of threaded black pipe in a straight line. These are standard in gas supply lines and low-pressure steam/hydronic heating systems. Characterized by its rough, dark surface and internal threads.",
+        "images": [
+            "/images/parts/black-coupling-1-4-1.jpg",
+            "/images/parts/black-coupling-1-4-2.jpg",
+            "/images/parts/black-coupling-1-4-3.jpg"
+        ],
+        "compatibleWith": [
+            "black-iron-pipe-1-4",
+            "nipple-black-1-4"
+        ],
+        "materials": [
+            "black malleable iron"
+        ],
+        "installationNotes": "Apply pipe dope or PTFE tape to male threads before assembly. Tighten with a pipe wrench; hand-tight followed by 1-2 full turns with the wrench is typical for gas-tight seals.",
+        "tags": [
+            "black iron",
+            "gas pipe",
+            "threaded",
+            "coupling",
+            "malleable",
+            "1/4 inch"
+        ]
+    },
+    {
         "id": "compression-fitting-15mm",
         "primaryName": "Compression Fitting",
         "aliases": [
