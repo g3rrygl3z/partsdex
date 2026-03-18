@@ -4,7 +4,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 import path from 'path'
 
 export default defineConfig({
-  base: './',
+  base: '/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -22,7 +22,7 @@ export default defineConfig({
         theme_color: '#1B4F8A',
         background_color: '#F5F5F5',
         display: 'standalone',
-        start_url: './',
+        start_url: '/',
         orientation: 'portrait',
         icons: [
           {

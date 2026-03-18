@@ -289,7 +289,7 @@ function ProcessingView({ preview }: { preview: string | null }) {
       <div className={styles.processingText}>
         <div className={styles.processingSpinner} />
         <p className={styles.processingLabel}>Identifying part…</p>
-        <p className={styles.processingHint}>Claude is analyzing your photo</p>
+        <p className={styles.processingHint}>AI is analyzing your photo</p>
       </div>
     </div>
   );
@@ -300,6 +300,7 @@ export default function PhotoIdentify({ onClose }: { onClose?: () => void }) {
   const navigate  = useNavigate();
   const fileRef   = useRef<HTMLInputElement>(null);
   const [cameraOpen, setCameraOpen] = useState(false);
+  const autoNavRef = useRef(false);
 
   const {
     preview, matches, visualDesc, idNotes,
@@ -309,10 +310,31 @@ export default function PhotoIdentify({ onClose }: { onClose?: () => void }) {
   } = usePhotoIdentify();
 
   const handleSelect = (part: NormalizedPart) => {
+    log(`Navigating to /part/${part.id}`);
     reset();
     navigate(`/part/${part.id}`);
     if (onClose) onClose();
   };
+
+  // Auto-navigate to the part page for high-confidence single matches
+  useEffect(() => {
+    if (
+      isSuccess &&
+      !autoNavRef.current &&
+      matches.length === 1 &&
+      isConfident &&
+      matches[0].confidence >= 0.85
+    ) {
+      autoNavRef.current = true;
+      log(`Auto-navigating to top match: ${matches[0].part.name} (${matches[0].confidence})`);
+      handleSelect(matches[0].part);
+    }
+  }, [isSuccess, matches, isConfident]);
+
+  // Reset auto-nav flag when going back to idle
+  useEffect(() => {
+    if (!isSuccess) autoNavRef.current = false;
+  }, [isSuccess]);
 
   const handleCameraCapture = (blob: Blob) => {
     setCameraOpen(false);
@@ -425,7 +447,7 @@ export default function PhotoIdentify({ onClose }: { onClose?: () => void }) {
       <h2 className={styles.idleTitle}>Identify a part</h2>
       <p className={styles.idleDesc}>
         Take a photo or upload an image of any plumbing, HVAC, or heating part —
-        Claude will identify it instantly.
+        AI will identify it instantly.
       </p>
 
       <button

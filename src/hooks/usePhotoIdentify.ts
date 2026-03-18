@@ -183,7 +183,7 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
 
       log("Requesting Gemini identification...");
       const result = await genAI.models.generateContent({
-        model: "gemini-2.0-flash",
+        model: "gemini-1.5-flash",
         contents: [
           {
             parts: [
@@ -206,21 +206,37 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
       const raw = result.text;
       log(`Received response from Gemini: ${raw?.length || 0} chars`);
       if (!raw) throw new Error("No response from AI.");
+      log(`Raw response: ${raw.slice(0, 500)}`);
       const clean = raw.replace(/```json|```/g, "").trim();
       const parsed = JSON.parse(clean);
 
+      log(`Parsed ${(parsed.matches || []).length} raw matches from Gemini`);
+
       const hydratedMatches = (parsed.matches || [])
-        .map((m: any) => ({
-          ...m,
-          part: normalizedParts.find((p) => p.id === m.id),
-        }))
+        .map((m: any) => {
+          const found = normalizedParts.find((p) => p.id === m.id);
+          if (!found) {
+            log(`⚠️ Match ID "${m.id}" not found in parts database — dropping`);
+            // Attempt fuzzy ID match (e.g. Gemini might return "compression_fitting" instead of "compression-fitting")
+            const fuzzyMatch = normalizedParts.find(
+              (p) => p.id.replace(/-/g, '').toLowerCase() === (m.id || '').replace(/[-_\s]/g, '').toLowerCase()
+            );
+            if (fuzzyMatch) {
+              log(`  ✅ Fuzzy matched to "${fuzzyMatch.id}"`);
+              return { ...m, id: fuzzyMatch.id, part: fuzzyMatch };
+            }
+          } else {
+            log(`✅ Match: "${m.id}" → ${found.name} (conf: ${m.confidence})`);
+          }
+          return { ...m, part: found };
+        })
         .filter((m: any) => m.part) as PhotoMatch[];
 
       setMatches(hydratedMatches);
       setVisualDesc(parsed.visualDescription || "");
       setIdNotes(parsed.identificationNotes  || "");
       setIsConfident(parsed.confident !== false);
-      log(`Success! Found ${hydratedMatches.length} matches.`);
+      log(`Success! Found ${hydratedMatches.length} hydrated matches.`);
       setStatus("success");
 
     } catch (err: any) {

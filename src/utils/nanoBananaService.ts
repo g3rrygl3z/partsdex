@@ -44,7 +44,7 @@ export async function fetchNanoBananaVisualizationData(partName: string): Promis
 
     try {
         const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash',
+            model: 'gemini-1.5-flash',
             contents: `Please provide internal visualization structure data for the following part: ${partName}`,
             config: {
                 systemInstruction: NANO_BANANA_SYSTEM_INSTRUCTION,

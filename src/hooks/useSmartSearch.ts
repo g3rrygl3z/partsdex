@@ -130,7 +130,7 @@ export function useSmartSearch() {
 
       try {
         const result = await genAI.models.generateContent({
-          model: "gemini-2.0-flash",
+          model: "gemini-1.5-flash",
           contents: `Search query from a field technician: "${q}"\n\nReturn the matching part IDs as JSON.`,
           config: {
             systemInstruction: systemPrompt.current,
