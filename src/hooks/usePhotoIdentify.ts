@@ -183,7 +183,7 @@ export function usePhotoIdentify(): PhotoIdentifyResult {
 
       log("Requesting Gemini identification...");
       const result = await genAI.models.generateContent({
-        model: "gemini-1.5-flash",
+        model: "gemini-2.0-flash-lite",
         contents: [
           {
             parts: [
