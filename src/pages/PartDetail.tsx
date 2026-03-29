@@ -6,6 +6,7 @@ import { getVerticalBadgeClass, getVerticalDisplayName } from '../utils/helpers'
 import DiagramViewer from '../components/DiagramViewer';
 import React, { useState, useEffect } from 'react';
 import { fetchNanoBananaVisualizationData, type VisualizationData } from '../utils/nanoBananaService';
+import Recommendations from '../components/Recommendations/Recommendations';
 
 export default function PartDetail() {
   const { partId } = useParams<{ partId: string }>();
@@ -151,12 +152,16 @@ export default function PartDetail() {
                   </span>
                 </div>
                 {/* Alias rows */}
-                {part.aliases.map((alias: string, i: number) => (
-                  <div key={i} className="flex items-center justify-between p-4 hover:bg-white/5 transition-colors">
-                    <span className="text-slate-300 text-sm font-medium">{alias}</span>
-                    <span className="text-slate-500 text-[10px] font-bold uppercase">General Alias</span>
-                  </div>
-                ))}
+                {part.aliases.map((alias: any, i: number) => {
+                  const aliasName = typeof alias === 'string' ? alias : alias?.name || String(alias);
+                  const aliasContext = typeof alias === 'object' && alias?.context ? alias.context : 'General Alias';
+                  return (
+                    <div key={i} className="flex items-center justify-between p-4 hover:bg-white/5 transition-colors">
+                      <span className="text-slate-300 text-sm font-medium">{aliasName}</span>
+                      <span className="text-slate-500 text-[10px] font-bold uppercase">{aliasContext}</span>
+                    </div>
+                  );
+                })}
               </div>
             </Section>
           )}
@@ -196,6 +201,13 @@ export default function PartDetail() {
           </div>
         </div>
       </div>
+
+      {/* AI-Powered Recommendations */}
+      <Recommendations
+        partId={part.id}
+        partName={part.name}
+        partDescription={part.description}
+      />
     </div>
   );
 }

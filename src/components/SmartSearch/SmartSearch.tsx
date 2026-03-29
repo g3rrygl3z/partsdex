@@ -80,9 +80,10 @@ function PartRow({ part, onSelect, isAi }: PartRowProps) {
         <div className={styles.partRowMeta}>
           {part.modelNumber && <code className={styles.sku}>{part.modelNumber}</code>}
           <CategoryBadge category={part.vertical} subCategory={part.subcategory} />
-          {part.aliases?.slice(0, 2).map((alias) => (
-            <span key={alias} className={styles.alias}>{alias}</span>
-          ))}
+          {part.aliases?.slice(0, 2).map((alias: any, idx: number) => {
+            const aliasText = typeof alias === 'string' ? alias : alias?.name || String(alias);
+            return <span key={idx} className={styles.alias}>{aliasText}</span>;
+          })}
         </div>
       </div>
 

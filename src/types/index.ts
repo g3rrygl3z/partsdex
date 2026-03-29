@@ -45,3 +45,25 @@ export interface SearchResult {
     item: Part
     score?: number
 }
+
+export type RelationshipType = 'COMMONLY_PAIRED' | 'SAFETY' | 'MAINTENANCE_KIT' | 'UPGRADE' | 'ACCESSORY'
+
+export interface PartRelationship {
+    parentPartId: string
+    relatedPartId: string
+    type: RelationshipType
+    reason: string
+}
+
+export interface LinkedPart {
+    part: Part
+    type: RelationshipType
+    reason: string
+}
+
+export interface RecommendationResult {
+    linkedParts: LinkedPart[]
+    proTip: string | null
+    loading: boolean
+    error: string | null
+}

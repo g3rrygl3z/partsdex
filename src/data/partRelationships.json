@@ -1,0 +1,308 @@
+[
+  {
+    "parentPartId": "compression-fitting",
+    "relatedPartId": "copper-elbow",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Copper elbows use the same compression connection — technicians often need both on a job"
+  },
+  {
+    "parentPartId": "compression-fitting",
+    "relatedPartId": "tee-fitting",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Tee fittings branch the line where compression fittings join — used together on copper runs"
+  },
+  {
+    "parentPartId": "compression-fitting",
+    "relatedPartId": "pipe-clip",
+    "type": "ACCESSORY",
+    "reason": "Pipe clips secure the copper pipe on either side of the compression joint"
+  },
+  {
+    "parentPartId": "compression-fitting",
+    "relatedPartId": "isolation-valve",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Isolation valves use compression ends — often installed adjacent to compression fittings"
+  },
+  {
+    "parentPartId": "push-fit-fitting",
+    "relatedPartId": "pipe-clip",
+    "type": "ACCESSORY",
+    "reason": "Pipe clips hold the pipe steady near push-fit joints to prevent movement"
+  },
+  {
+    "parentPartId": "push-fit-fitting",
+    "relatedPartId": "pipe-reducer",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Reducers transition pipe sizes before a push-fit connection"
+  },
+  {
+    "parentPartId": "gate-valve",
+    "relatedPartId": "ball-valve",
+    "type": "UPGRADE",
+    "reason": "Ball valves are the modern replacement for gate valves — consider upgrading on older systems"
+  },
+  {
+    "parentPartId": "gate-valve",
+    "relatedPartId": "compression-fitting",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Gate valves often connect via compression fittings on copper pipework"
+  },
+  {
+    "parentPartId": "ball-valve",
+    "relatedPartId": "isolation-valve",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Isolation valves provide local shut-off downstream of the main ball valve"
+  },
+  {
+    "parentPartId": "ball-valve",
+    "relatedPartId": "flexible-tap-connector",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Flexi connectors often attach directly after a ball valve at fixtures"
+  },
+  {
+    "parentPartId": "stop-valve",
+    "relatedPartId": "flexible-tap-connector",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Flexible connectors attach to stop valves under sinks and behind toilets"
+  },
+  {
+    "parentPartId": "stop-valve",
+    "relatedPartId": "isolation-valve",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Isolation valves perform a similar function — technicians often carry both"
+  },
+  {
+    "parentPartId": "p-trap",
+    "relatedPartId": "flexible-tap-connector",
+    "type": "COMMONLY_PAIRED",
+    "reason": "P-traps and flexi connectors are both needed when replacing a basin or sink"
+  },
+  {
+    "parentPartId": "float-valve",
+    "relatedPartId": "check-valve",
+    "type": "SAFETY",
+    "reason": "A check valve prevents backflow contamination where the float valve connects to mains supply"
+  },
+  {
+    "parentPartId": "float-valve",
+    "relatedPartId": "flexible-tap-connector",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Flexi connectors supply water to the float valve in modern cistern installations"
+  },
+  {
+    "parentPartId": "check-valve",
+    "relatedPartId": "filling-loop",
+    "type": "SAFETY",
+    "reason": "Filling loops require a check valve to prevent heating water contaminating the mains"
+  },
+  {
+    "parentPartId": "check-valve",
+    "relatedPartId": "pressure-relief-valve",
+    "type": "SAFETY",
+    "reason": "Both are critical safety devices — check valves prevent backflow, PRVs prevent overpressure"
+  },
+  {
+    "parentPartId": "flexible-tap-connector",
+    "relatedPartId": "isolation-valve",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Always install an isolation valve upstream of a flexi connector for easy maintenance"
+  },
+  {
+    "parentPartId": "flexible-tap-connector",
+    "relatedPartId": "stop-valve",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Stop valves and flexi connectors work together at every tap and toilet connection"
+  },
+  {
+    "parentPartId": "pipe-clip",
+    "relatedPartId": "copper-elbow",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Clips are needed near elbows to support the pipe run at direction changes"
+  },
+  {
+    "parentPartId": "isolation-valve",
+    "relatedPartId": "flexible-tap-connector",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Iso valves sit between the supply pipe and the flexi connector at each fixture"
+  },
+  {
+    "parentPartId": "copper-elbow",
+    "relatedPartId": "tee-fitting",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Elbows and tees are the two most-used fittings on any copper pipe installation"
+  },
+  {
+    "parentPartId": "copper-elbow",
+    "relatedPartId": "pipe-clip",
+    "type": "ACCESSORY",
+    "reason": "Pipe clips secure the run near elbow joints to prevent stress on the solder joint"
+  },
+  {
+    "parentPartId": "tee-fitting",
+    "relatedPartId": "pipe-reducer",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Reducing tees and pipe reducers work together to branch to a smaller pipe size"
+  },
+  {
+    "parentPartId": "pipe-reducer",
+    "relatedPartId": "tee-fitting",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Tee fittings and reducers are used together when branching to a different pipe diameter"
+  },
+  {
+    "parentPartId": "schrader-valve",
+    "relatedPartId": "txv",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Schrader valves are the service access points used when checking TXV superheat"
+  },
+  {
+    "parentPartId": "schrader-valve",
+    "relatedPartId": "filter-drier",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Service valves are accessed when replacing filter driers on the liquid line"
+  },
+  {
+    "parentPartId": "txv",
+    "relatedPartId": "filter-drier",
+    "type": "MAINTENANCE_KIT",
+    "reason": "Always replace the filter drier when replacing a TXV — contaminants damage the new valve"
+  },
+  {
+    "parentPartId": "txv",
+    "relatedPartId": "schrader-valve",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Schrader valves are needed to check superheat after TXV installation or adjustment"
+  },
+  {
+    "parentPartId": "filter-drier",
+    "relatedPartId": "txv",
+    "type": "COMMONLY_PAIRED",
+    "reason": "TXVs are directly downstream of filter driers — both are serviced together"
+  },
+  {
+    "parentPartId": "air-handler",
+    "relatedPartId": "damper",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Dampers control airflow distribution from the air handler through the ductwork"
+  },
+  {
+    "parentPartId": "air-handler",
+    "relatedPartId": "condenser-fan-motor",
+    "type": "COMMONLY_PAIRED",
+    "reason": "The air handler (indoor) and condenser (outdoor) are the two halves of a split system"
+  },
+  {
+    "parentPartId": "damper",
+    "relatedPartId": "air-handler",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Dampers are installed in the ductwork connected to the air handler"
+  },
+  {
+    "parentPartId": "condenser-fan-motor",
+    "relatedPartId": "air-handler",
+    "type": "COMMONLY_PAIRED",
+    "reason": "The condenser and air handler must be matched — service one, check the other"
+  },
+  {
+    "parentPartId": "expansion-vessel",
+    "relatedPartId": "pressure-relief-valve",
+    "type": "SAFETY",
+    "reason": "If the expansion vessel fails, the PRV is the last line of defense against overpressure"
+  },
+  {
+    "parentPartId": "expansion-vessel",
+    "relatedPartId": "filling-loop",
+    "type": "MAINTENANCE_KIT",
+    "reason": "After replacing an expansion vessel, re-pressurize the system via the filling loop"
+  },
+  {
+    "parentPartId": "expansion-vessel",
+    "relatedPartId": "circulator-pump",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Both are core sealed-system components — often checked together during boiler service"
+  },
+  {
+    "parentPartId": "circulator-pump",
+    "relatedPartId": "zone-valve",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Circulator pumps and zone valves work together to distribute heat through the system"
+  },
+  {
+    "parentPartId": "circulator-pump",
+    "relatedPartId": "expansion-vessel",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Both sit on the heating circuit — check one when servicing the other"
+  },
+  {
+    "parentPartId": "pressure-relief-valve",
+    "relatedPartId": "expansion-vessel",
+    "type": "SAFETY",
+    "reason": "A discharging PRV often means the expansion vessel has failed — check it first"
+  },
+  {
+    "parentPartId": "pressure-relief-valve",
+    "relatedPartId": "filling-loop",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Overfilling via the filling loop is a common cause of PRV discharge"
+  },
+  {
+    "parentPartId": "zone-valve",
+    "relatedPartId": "circulator-pump",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Zone valves open to allow flow — the circulator pump provides the motive force"
+  },
+  {
+    "parentPartId": "zone-valve",
+    "relatedPartId": "trv",
+    "type": "COMMONLY_PAIRED",
+    "reason": "TRVs provide room-level control within the zone that the motorized valve serves"
+  },
+  {
+    "parentPartId": "heat-exchanger",
+    "relatedPartId": "circulator-pump",
+    "type": "COMMONLY_PAIRED",
+    "reason": "The circulator pump pushes water through the heat exchanger — poor flow causes kettling"
+  },
+  {
+    "parentPartId": "heat-exchanger",
+    "relatedPartId": "expansion-vessel",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Both are internal boiler components — expansion vessels protect the heat exchanger from overpressure"
+  },
+  {
+    "parentPartId": "lockshield-valve",
+    "relatedPartId": "trv",
+    "type": "COMMONLY_PAIRED",
+    "reason": "Every radiator has a TRV on one end and a lockshield on the other — always paired"
+  },
+  {
+    "parentPartId": "trv",
+    "relatedPartId": "lockshield-valve",
+    "type": "COMMONLY_PAIRED",
+    "reason": "TRVs and lockshields are always installed as a pair on each radiator"
+  },
+  {
+    "parentPartId": "trv",
+    "relatedPartId": "zone-valve",
+    "type": "COMMONLY_PAIRED",
+    "reason": "TRVs handle room-level temperature while zone valves control the zone circuit"
+  },
+  {
+    "parentPartId": "filling-loop",
+    "relatedPartId": "check-valve",
+    "type": "SAFETY",
+    "reason": "Check valves are required on filling loops to prevent heating water backflowing into mains"
+  },
+  {
+    "parentPartId": "filling-loop",
+    "relatedPartId": "expansion-vessel",
+    "type": "MAINTENANCE_KIT",
+    "reason": "If you're using the filling loop frequently, the expansion vessel may have failed"
+  },
+  {
+    "parentPartId": "filling-loop",
+    "relatedPartId": "pressure-relief-valve",
+    "type": "SAFETY",
+    "reason": "Overfilling via the filling loop causes PRV discharge — fill to correct pressure only"
+  }
+]
